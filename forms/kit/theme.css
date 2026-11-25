@@ -1,0 +1,27 @@
+/* Тема блоков материала для дизайна 04 (comic serial): чёрный фон, заголовки Old Standard TT капсом, тёмные карточки, зелёный акцент, бежевые выделения как облачка комикса. */
+.kit {
+  --k-wrap: var(--wrap); --k-pad: clamp(56px, 7vw, 96px);
+  --k-font-h: var(--serif); --k-font-b: var(--sans); --k-h-case: uppercase; --k-h-weight: 400; --k-h-ls: 0; --k-h-size: clamp(36px, 5.4vw, 72px);
+  --k-h-color: var(--ink); --k-ink: var(--ink); --k-muted: var(--muted); --k-bg-a: var(--bg); --k-bg-b: #0b0b0b; --k-card: #141414; --k-card-b: #1b1b1b;
+  --k-line: rgba(255, 255, 255, .14); --k-accent: var(--green); --k-accent-ink: #04140e; --k-accent-soft: rgba(47, 211, 158, .12);
+  --k-mark: var(--accent); --k-tl: var(--bubble); --k-link: var(--green);
+  --k-r: 10px; --k-r-s: 8px; --k-btn-r: 999px; --k-shadow: none; --k-shadow-h: 0 0 0 1px var(--green), 0 14px 34px rgba(47, 211, 158, .18);
+  --k-yes: var(--green); --k-no: var(--pink); --k-th: #1f1f1f;
+}
+.kit .k-h2 { line-height: .95; }
+.kit .k-h3, .kit .k-card-t, .kit .k-tense-h { font-family: var(--wide-font); font-size: clamp(17px, 1.7vw, 21px); text-transform: uppercase; letter-spacing: .01em; }
+.kit .k-h3 small { font-family: var(--sans); }
+.kit .k-chip { background: transparent; color: var(--ink); border-color: rgba(255, 255, 255, .28); font-family: var(--pill-font); }
+.kit .k-chip:hover { border-color: var(--green); color: var(--green); }
+.kit .k-chip.is-on, .kit .k-chip.is-on:hover { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.kit .k-badge { background: var(--badge-bg); color: var(--badge-ink); }
+.kit .k-lv { background: var(--green); color: #04140e; }
+.kit .k-week-n, .kit .k-level-code { background: var(--bubble-tr); color: var(--bubble-tr-ink); font-family: var(--wide-font); }
+.kit .k-table tbody tr:hover { background: rgba(232, 194, 154, .1); }
+.kit .k-btn { font-family: var(--pill-font); background: var(--green); color: #04140e; }
+.kit .k-btn:hover { background: var(--ink); color: var(--bg); }
+.kit .k-cmp-yes { border-color: rgba(47, 211, 158, .45); }
+.kit .k-cmp-no { border-color: rgba(255, 63, 124, .45); }
+.kit .k-opt-l { color: var(--ink); }
+.kit .k-res-score { font-family: var(--serif); color: var(--green); }
+.kit .k-form dd .k-tl { color: var(--bubble); }

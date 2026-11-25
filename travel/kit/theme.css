@@ -1,0 +1,39 @@
+/* Тема блоков материала для дизайна 05 (cobalt): серый фон, белые карточки с большим радиусом, Space Grotesk, кобальт и лайм. */
+.kit {
+  --k-wrap: var(--wrap); --k-pad: clamp(56px, 7vw, 100px);
+  --k-font-h: var(--display); --k-font-b: var(--body); --k-h-case: none; --k-h-weight: 500; --k-h-ls: -.03em; --k-h-size: clamp(34px, 4.6vw, 64px);
+  --k-ink: var(--ink); --k-muted: var(--muted); --k-bg-a: var(--bg); --k-bg-b: var(--bg); --k-card: var(--paper); --k-card-b: #f6f6f6;
+  --k-line: var(--line); --k-accent: var(--blue); --k-accent-ink: #fff; --k-accent-soft: rgba(37, 82, 224, .08);
+  --k-mark: var(--blue); --k-tl: var(--ink); --k-link: var(--blue);
+  --k-r: var(--r-lg); --k-r-s: var(--r-md); --k-btn-r: var(--r-pill); --k-shadow: none; --k-shadow-h: 0 16px 40px rgba(37, 82, 224, .14);
+  --k-yes: #3c8d0d; --k-no: var(--red); --k-th: #f4f4f4;
+  margin: 0 auto; width: min(var(--wrap), calc(100% - 2 * var(--pad)));
+}
+.kit .k-wrap { width: 100%; }
+.kit .k-head { text-align: left; max-width: none; margin-left: 0; display: grid; grid-template-columns: 1.3fr 1fr; gap: 24px; align-items: end; }
+.kit .k-h2 { margin: 0; line-height: 1.02; }
+.kit .k-lead { font-size: 15px; max-width: 420px; justify-self: end; }
+.kit .k-h3, .kit .k-card-t { letter-spacing: -.02em; font-weight: 500; }
+.kit .k-chips { justify-content: flex-start; }
+.kit .k-chip { border: 0; background: var(--paper); }
+.kit .k-chip:hover { background: var(--ink); color: #fff; }
+.kit .k-chip.is-on, .kit .k-chip.is-on:hover { background: var(--lime); color: var(--lime-ink); }
+.kit .k-search { margin-left: 0; border: 0; }
+.kit .k-search:hover, .kit .k-search:focus-within { box-shadow: 0 0 0 2px var(--blue); }
+.kit .k-tablewrap, .kit .k-card, .kit .k-week, .kit .k-cmp, .kit .k-level, .kit .k-panes, .kit .k-quiz:not([data-mode="list"]), .kit .k-q { border: 0; }
+.kit .k-card:nth-child(4n+2) { background: var(--ink); color: #fff; }
+.kit .k-card:nth-child(4n+2) .k-card-t { color: #fff; }
+.kit .k-card:nth-child(4n+2) .k-card-x, .kit .k-card:nth-child(4n+2) .k-card-ul { color: var(--muted-2); }
+.kit .k-card:nth-child(4n+3) { background: var(--lime); }
+.kit .k-card:nth-child(4n+3) .k-card-x, .kit .k-card:nth-child(4n+3) .k-card-ul { color: var(--lime-ink); }
+.kit .k-card:hover { transform: translateY(-4px); }
+.kit .k-week-n, .kit .k-level-code { background: var(--lime); color: var(--lime-ink); font-weight: 500; }
+.kit .k-badge, .kit .k-lv { background: var(--blue); color: #fff; }
+.kit .k-cmp-no { background: var(--ink); color: #fff; }
+.kit .k-cmp-no .k-h3 { color: #fff; }
+.kit .k-cmp-no li span { color: var(--muted-2); }
+.kit .k-cmp-yes { background: var(--lime); }
+.kit .k-cmp-yes li span { color: var(--lime-ink); }
+.kit .k-note { text-align: left; margin-left: 0; }
+@media (max-width: 834px) { .kit .k-head { grid-template-columns: 1fr; } .kit .k-lead { justify-self: start; } }
+.kit .k-card:nth-child(4n+2) .k-card-go { color: var(--lime); }

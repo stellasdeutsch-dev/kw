@@ -1,0 +1,21 @@
+/* Тема блоков материала для дизайна 01 (course landing): Oswald в заголовках, Roboto в тексте, кремовый и белый фон. */
+.kit {
+  --k-wrap: 980px; --k-pad: 74px;
+  --k-font-h: var(--f-head); --k-font-b: var(--f-body); --k-h-case: uppercase; --k-h-weight: 600; --k-h-ls: -.2px; --k-h-size: 37px;
+  --k-ink: #4f4f4f; --k-muted: #8d8270; --k-bg-a: var(--white); --k-bg-b: var(--cream); --k-card: var(--card); --k-card-b: #fff;
+  --k-line: rgba(165, 137, 61, .2); --k-accent: var(--brown); --k-accent-ink: #fff; --k-accent-soft: rgba(244, 202, 75, .2);
+  --k-mark: #c86a5e; --k-tl: var(--gold-dk); --k-link: var(--gold-dk); --k-h-color: #5a5a5a;
+  --k-r: 8px; --k-r-s: 6px; --k-btn-r: 8px; --k-shadow: 0 10px 26px rgba(200, 170, 90, .1); --k-shadow-h: 0 14px 30px rgba(200, 170, 90, .22);
+  --k-yes: #5f9a62; --k-no: #e06f6f; --k-th: var(--faq);
+  --k-btn-bg: linear-gradient(100deg, var(--btn-1) 0%, var(--btn-2) 55%, var(--btn-3) 100%); --k-btn-ink: var(--gold-dk);
+  --k-btn-shadow: 0 4px 0 var(--btn-edge), 0 14px 24px rgba(214, 160, 70, .28);
+  font-size: 14px;
+}
+.kit .k-h2 { background: linear-gradient(90deg, #4f4f4f, #7c7c7c 60%, #5f5f5f); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+.kit .k-lead { font-size: 15px; color: var(--muted); }
+.kit .k-btn { text-transform: uppercase; letter-spacing: 1.4px; font-size: 13px; min-height: 58px; }
+.kit .k-chip.is-on { background: var(--brown); }
+.kit .k-week-n, .kit .k-level-code { background: linear-gradient(90deg, var(--tag-1), var(--tag-2)); }
+.kit .k-badge, .kit .k-lv { background: linear-gradient(90deg, var(--pink), var(--pink-2)); color: #fff; }
+.kit.k-bg-b .k-tablewrap, .kit.k-bg-b .k-card, .kit.k-bg-b .k-week, .kit.k-bg-b .k-cmp, .kit.k-bg-b .k-level, .kit.k-bg-b .k-quiz:not([data-mode="list"]), .kit.k-bg-b .k-q { background: #fffdf6; }
+@media (max-width: 760px) { .kit { --k-h-size: 30px; --k-pad: 56px; } }

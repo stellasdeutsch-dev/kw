@@ -1,0 +1,45 @@
+/* Тема блоков материала для дизайна 02 (gravity): белый лист на небе, Alumni Sans капсом синим, розовые кнопки с жёлтым наведением. */
+.kit {
+  --k-wrap: 100%; --k-pad: 0;
+  --k-font-h: var(--f-display); --k-font-b: var(--f-body); --k-h-case: var(--h-case); --k-h-weight: 900; --k-h-ls: -.005em; --k-h-size: clamp(48px, 6vw, 88px);
+  --k-h-color: var(--blue); --k-ink: var(--ink); --k-muted: #77797f; --k-bg-a: transparent; --k-bg-b: transparent; --k-card: var(--white); --k-card-b: var(--white);
+  --k-line: rgba(17, 17, 17, .1); --k-accent: var(--ink); --k-accent-ink: var(--white); --k-accent-soft: rgba(174, 197, 255, .28);
+  --k-mark: #e35d97; --k-tl: var(--ink); --k-link: var(--ink);
+  --k-r: var(--r-card); --k-r-s: 16px; --k-btn-r: 999px; --k-shadow: none; --k-shadow-h: 0 12px 30px rgba(28, 132, 212, .16);
+  --k-yes: #2f9c63; --k-no: #e35d97; --k-th: rgba(174, 197, 255, .35);
+  --k-btn-bg: var(--pink); --k-btn-ink: var(--ink);
+  padding: 0 0 clamp(90px, 9.7vw, 140px);
+}
+.kit .k-head { text-align: left; max-width: none; margin-left: 0; }
+.kit .k-h2 { line-height: .9; margin-bottom: 18px; }
+.kit .k-lead { color: var(--grey); font-weight: 500; font-size: clamp(16px, 1.5vw, 19px); max-width: 44em; }
+.kit .k-h3 { font-family: var(--f-body); font-weight: 600; letter-spacing: -.015em; }
+.kit .k-chips { justify-content: flex-start; }
+.kit .k-chip { background: var(--white); border: 2px solid var(--blue); font-weight: 600; }
+.kit .k-chip:hover { background: var(--yellow); border-color: var(--yellow); color: var(--ink); }
+.kit .k-chip.is-on, .kit .k-chip.is-on:hover { background: var(--pink); border-color: var(--pink); color: var(--ink); }
+.kit .k-search { margin-left: 0; border: 2px solid var(--blue); }
+.kit .k-tablewrap, .kit .k-card, .kit .k-week, .kit .k-cmp, .kit .k-level, .kit .k-panes, .kit .k-quiz:not([data-mode="list"]), .kit .k-q { border: 0; background: rgba(174, 197, 255, .22); }
+.kit .k-table td { border-bottom-color: rgba(17, 17, 17, .07); }
+.kit .k-table tbody tr:hover { background: rgba(247, 249, 46, .35); }
+.kit .k-card:hover, .kit .k-level:hover { background: var(--yellow); border-color: transparent; }
+.kit .k-card:nth-child(3n+2) { background: rgba(255, 166, 200, .28); }
+.kit .k-card:nth-child(3n+3) { background: rgba(247, 249, 46, .32); }
+.kit .k-card:nth-child(3n+2):hover, .kit .k-card:nth-child(3n+3):hover { background: var(--yellow); }
+.kit .k-badge, .kit .k-lv { background: var(--white); color: var(--ink); }
+.kit .k-card-sub, .kit .k-card-go, .kit .k-day-d { color: var(--ink); }
+.kit .k-week-n, .kit .k-level-code { background: var(--pink); color: var(--ink); font-family: var(--f-display); font-weight: 900; font-size: 24px; }
+.kit .k-tense { border: 0; background: var(--white); }
+.kit .k-btn:hover { background: var(--yellow); }
+.kit .k-opt { border: 0; background: var(--white); }
+.kit .k-opt:hover { background: var(--yellow); }
+.kit .k-opt.is-picked { background: var(--pink); }
+.kit .k-opt.is-picked .k-opt-l { background: var(--ink); border-color: var(--ink); }
+.kit .k-bar { background: var(--white); }
+.kit .k-bar i { background: var(--pink); }
+.kit .k-res-score { color: #e35d97; }
+.kit .k-note { text-align: left; margin-left: 0; }
+@media (max-width: 720px) {
+  .kit .k-tablewrap { background: transparent; }
+  .kit .k-table tr { border: 0; background: rgba(174, 197, 255, .22); }
+}

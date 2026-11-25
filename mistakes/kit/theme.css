@@ -1,0 +1,32 @@
+/* Тема блоков материала для дизайна 07 (beach): белый фон, высокий заголовочный шрифт с золотом, белые карточки с мягкой тенью, золотые кнопки. */
+.kit {
+  --k-wrap: 1000px; --k-pad: clamp(56px, 7vw, 96px);
+  --k-font-h: var(--font-title); --k-font-b: var(--font-text); --k-h-case: none; --k-h-weight: 400; --k-h-ls: 0; --k-h-size: clamp(44px, 5vw, var(--h2));
+  --k-h-color: var(--ink); --k-ink: var(--ink); --k-muted: var(--muted); --k-bg-a: var(--page); --k-bg-b: var(--panel); --k-card: var(--card); --k-card-b: var(--panel);
+  --k-line: rgba(29, 29, 31, .08); --k-accent: var(--blue); --k-accent-ink: #fff; --k-accent-soft: rgba(181, 226, 253, .35);
+  --k-mark: var(--gold-text); --k-tl: var(--ink); --k-link: var(--blue);
+  --k-r: var(--radius); --k-r-s: 10px; --k-btn-r: 10px; --k-shadow: var(--shadow); --k-shadow-h: var(--shadow-hover);
+  --k-yes: #3f9a6b; --k-no: #d9695a; --k-th: var(--gold-soft);
+  --k-btn-bg: var(--gold-btn); --k-btn-ink: var(--gold-text); --k-btn-shadow: 0 4px 0 var(--gold-edge);
+}
+.kit .k-h2 { line-height: 1; }
+.kit .k-h2 .k-mark, .kit .k-h3 .k-mark { color: var(--gold); font-weight: inherit; }
+.kit .k-h3 { font-family: var(--font-text); font-weight: 700; font-size: clamp(18px, 1.8vw, 22px); }
+.kit .k-chip { border-color: transparent; box-shadow: var(--shadow); }
+.kit .k-chip:hover { box-shadow: var(--shadow-hover); color: var(--gold-text); border-color: var(--gold-soft); }
+.kit .k-chip.is-on, .kit .k-chip.is-on:hover { background: var(--gold-panel); color: var(--gold-dark); border-color: var(--gold-panel); }
+.kit .k-search { border-color: transparent; box-shadow: var(--shadow); }
+.kit .k-search:hover, .kit .k-search:focus-within { box-shadow: var(--shadow-hover); border-color: var(--gold); }
+.kit .k-tablewrap, .kit .k-card, .kit .k-week, .kit .k-cmp, .kit .k-level, .kit .k-panes, .kit .k-quiz:not([data-mode="list"]), .kit .k-q { border-color: transparent; }
+.kit .k-table th { color: var(--gold-dark); }
+.kit .k-table tbody tr:hover { background: rgba(244, 230, 195, .5); }
+.kit .k-badge { background: var(--gold-panel); color: var(--gold-dark); }
+.kit .k-lv { background: var(--blue-card); color: var(--blue-text); }
+.kit .k-week-n, .kit .k-level-code { background: var(--gold-panel); color: var(--gold-dark); font-family: var(--font-title); font-size: 24px; }
+.kit .k-cmp-yes { background: var(--blue-soft); }
+.kit .k-cmp-yes li span { color: var(--blue-text); }
+.kit .k-btn:hover { box-shadow: 0 6px 0 var(--gold-edge), var(--shadow-hover); }
+.kit .k-opt.is-picked { border-color: var(--gold); background: var(--gold-soft); }
+.kit .k-opt.is-picked .k-opt-l { background: var(--gold-panel); border-color: var(--gold-panel); color: var(--gold-dark); }
+.kit .k-res-score { color: var(--gold-text); }
+@media (max-width: 720px) { .kit .k-table tr { border-color: transparent; } }

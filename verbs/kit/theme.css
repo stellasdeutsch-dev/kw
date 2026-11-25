@@ -1,0 +1,32 @@
+/* Тема блоков материала для дизайна 03 (ecom dark): чёрный фон, белые карточки, Montserrat капсом, красный акцент, жёлтые выделения. */
+.kit {
+  --k-wrap: var(--wrap); --k-pad: clamp(64px, 8vw, 110px);
+  --k-font-h: var(--f-head); --k-font-b: var(--f-body); --k-h-case: uppercase; --k-h-weight: 800; --k-h-ls: .01em; --k-h-size: clamp(28px, 3.6vw, 46px);
+  --k-h-color: var(--white); --k-ink: var(--ink); --k-muted: var(--ink-2); --k-bg-a: var(--bg); --k-bg-b: var(--bg-2); --k-card: var(--white); --k-card-b: #f6f6f7;
+  --k-line: rgba(0, 0, 0, .1); --k-accent: var(--red); --k-accent-ink: var(--white); --k-accent-soft: rgba(253, 61, 94, .1);
+  --k-mark: var(--red-deep); --k-tl: var(--ink); --k-link: var(--red);
+  --k-r: var(--radius); --k-r-s: 12px; --k-btn-r: 12px; --k-shadow: 0 18px 40px rgba(0, 0, 0, .35); --k-shadow-h: 0 22px 46px rgba(253, 61, 94, .28);
+  --k-yes: #1f9d5a; --k-no: var(--red); --k-th: var(--yellow-soft);
+  color: var(--white);
+}
+.kit .k-lead, .kit .k-note { color: var(--muted); }
+.kit .k-h3 { color: var(--white); }
+.kit .k-h3 small { color: var(--muted); }
+.kit .k-cmp .k-h3, .kit .k-week .k-h3, .kit .k-level .k-h3, .kit .k-result .k-h3, .kit .k-card-t { color: var(--ink); }
+.kit .k-chip { background: transparent; color: var(--white); border-color: var(--line); }
+.kit .k-chip:hover { border-color: var(--yellow); color: var(--yellow); }
+.kit .k-chip.is-on, .kit .k-chip.is-on:hover { background: var(--red); border-color: var(--red); color: var(--white); }
+.kit .k-search { background: var(--white); border-color: transparent; }
+.kit .k-search:hover, .kit .k-search:focus-within { border-color: var(--yellow); box-shadow: 0 0 0 3px rgba(255, 239, 144, .35); }
+.kit .k-table th { color: var(--ink); }
+.kit .k-table tbody tr:hover { background: rgba(255, 239, 144, .45); }
+.kit .k-card:hover { border-color: var(--red); }
+.kit .k-badge { background: var(--yellow); color: var(--ink); }
+.kit .k-lv { background: var(--red); color: var(--white); }
+.kit .k-week-n, .kit .k-level-code { background: var(--red); font-family: var(--f-head); }
+.kit .k-btn { text-transform: uppercase; font-family: var(--f-head); font-weight: 700; font-size: 14px; letter-spacing: .04em; }
+.kit .k-btn:hover { background: var(--red-deep); }
+.kit .k-panes .k-chip, .kit .k-quiz .k-btn2 { color: var(--ink); }
+.kit .k-result p { color: var(--ink-2); }
+.kit .k-cmp-yes { background: var(--yellow-soft); }
+@media (max-width: 720px) { .kit .k-table tr { box-shadow: none; } }

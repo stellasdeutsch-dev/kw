@@ -259,7 +259,7 @@
 .k-m-round .k-mcard { flex-direction: row; align-items: flex-start; gap: 14px; padding: 16px; }
 .k-m-round .k-mimg { flex: none; width: 76px; height: 76px; border-radius: 50%; }
 /* портрет: книги и постеры — картинка сверху */
-.k-m-tall { grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); }
+.k-m-tall { grid-template-columns: repeat(auto-fill, minmax(168px, 1fr)); }
 .k-m-tall .k-mimg { aspect-ratio: 2 / 3; }
 .k-m-tall .k-mbody { padding: 14px 16px 16px; }
 .k-m-wide .k-mimg { aspect-ratio: 16 / 10; }
@@ -273,9 +273,7 @@
 .k-anim .kit .k-mcard.k-rv { transition: opacity .6s ease calc(var(--i, 0) * 60ms), transform .6s ease calc(var(--i, 0) * 60ms), box-shadow .3s, border-color .3s, background .3s; }
 .k-anim .kit .k-mcard.k-rv.k-in:hover { transition-delay: 0s; }
 @media (max-width: 480px) {
-  .k-m-tall { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
-  .k-m-tall .k-mbody { padding: 10px 12px 12px; }
-  .k-m-tall .k-card-x { display: none; }
+  .k-m-tall .k-mbody { padding: 12px 14px; }
   .k-m-sq .k-mimg, .k-m-round .k-mimg { width: 60px; height: 60px; border-radius: 14px; }
   .k-m-round .k-mimg { border-radius: 50%; }
 }
@@ -353,3 +351,18 @@
 .k-pbar { background: var(--k-card); }
 .k-ptab-n { background-color: var(--k-card); background-image: linear-gradient(var(--k-line), var(--k-line)); color: var(--k-ink); }
 .k-ptab.is-on .k-ptab-n { background-image: none; }
+.k-mcredit { margin: 4px 0 0; font-size: 11.5px; line-height: 1.35; color: var(--k-muted); opacity: .85; }
+/* узкие экраны: колонки по ширине, а не жёстко 2; слова не рвутся посередине; плашки переносятся внутри карточки */
+
+.kit .k-mcard .k-card-t, .kit .k-mcard .k-card-sub { overflow-wrap: normal; word-break: normal; hyphens: manual; -webkit-hyphens: manual; }
+.k-mbody .k-card-x, .k-mtip { hyphens: manual; -webkit-hyphens: manual; overflow-wrap: break-word; }
+.k-mbody .k-card-top { gap: 6px; }
+.k-mbody .k-lv, .k-mbody .k-price, .k-mbody .k-badge { white-space: normal; line-height: 1.25; max-width: 100%; text-align: left; }
+.kit .k-mbody .k-badge { background: var(--k-btn-bg, var(--k-accent)); color: var(--k-btn-ink, var(--k-accent-ink)); }
+.k-m-sq .k-mcard, .k-m-round .k-mcard { min-width: 0; }
+@media (max-width: 480px) {
+  .k-m-tall { grid-template-columns: 1fr; }
+  .k-m-tall .k-mcard { flex-direction: row; }
+  .k-m-tall .k-mimg { flex: none; width: 92px; aspect-ratio: 2 / 3; }
+  .k-m-tall .k-card-x { display: block; }
+}

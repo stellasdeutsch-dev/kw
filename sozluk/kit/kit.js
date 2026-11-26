@@ -191,7 +191,8 @@
             '<h4 class="k-card-t"' + (it.lang ? ' lang="' + it.lang + '"' : '') + '>' + rich(it.title) + '</h4>' +
             (it.sub ? '<p class="k-card-sub">' + rich(it.sub) + '</p>' : '') + (it.text ? '<p class="k-card-x">' + rich(it.text) + '</p>' : '') +
             (it.tip ? '<p class="k-mtip">' + ic('yes') + '<span>' + rich(it.tip) + '</span></p>' : '') +
-            (it.href ? '<span class="k-card-go">' + esc(it.go || 'Открыть') + ic(/^https?:/.test(it.href) ? 'link' : 'arrow') + '</span>' : '') + '</div></' + tag + '>';
+            (it.href ? '<span class="k-card-go">' + esc(it.go || 'Открыть') + ic(/^https?:/.test(it.href) ? 'link' : 'arrow') + '</span>' : '') +
+            (it.credit ? '<p class="k-mcredit">' + esc(it.credit) + '</p>' : '') + '</div></' + tag + '>';
         }).join('') + '</div></div>';
     }).join('');
     return head(b) + nav + tools + '<div data-media="' + b.id + '">' + body + '<p class="k-empty" hidden>Ничего не нашлось. Попробуй другое слово или уровень.</p></div>' +

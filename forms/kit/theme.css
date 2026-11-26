@@ -25,3 +25,5 @@
 .kit .k-opt-l { color: var(--ink); }
 .kit .k-res-score { font-family: var(--serif); color: var(--green); }
 .kit .k-form dd .k-tl { color: var(--bubble); }
+/* заголовок первого экрана помещается на самых узких телефонах (было: минимум 64px и обрезка справа) */
+@media (max-width: 400px) { .hero__title { font-size: 15vw; } }

@@ -385,3 +385,5 @@
 .k-wa:hover .k-ic { color: inherit; }
 .kit .k-wa { background: var(--k-card); color: var(--k-ink); border-color: var(--k-line); }
 .kit .k-wa:hover { background: #1f9d55; color: #fff; border-color: #1f9d55; }
+.k-wa span { white-space: nowrap; }
+@media (max-width: 420px) { .kit .k-wa { font-size: 14px; padding: 0 16px; gap: 6px; } }

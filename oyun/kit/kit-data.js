@@ -633,7 +633,9 @@ window.KIT = {
      "cta": {
       "href": "https://app.lava.top/products/2cdbb9f8-e65b-443e-8d2c-4fea4c121e41",
       "text": "Купить Alterna Timur за 30 €",
-      "note": "Один раз, доступ навсегда"
+      "note": "Один раз, доступ навсегда",
+      "wa": "https://wa.me/77758880910",
+      "waText": "Написать Тимуру в WhatsApp"
      }
     }
    ]

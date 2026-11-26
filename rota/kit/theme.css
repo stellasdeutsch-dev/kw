@@ -19,3 +19,6 @@
 .kit .k-badge, .kit .k-lv { background: linear-gradient(90deg, var(--pink), var(--pink-2)); color: #fff; }
 .kit.k-bg-b .k-tablewrap, .kit.k-bg-b .k-card, .kit.k-bg-b .k-week, .kit.k-bg-b .k-cmp, .kit.k-bg-b .k-level, .kit.k-bg-b .k-quiz:not([data-mode="list"]), .kit.k-bg-b .k-q { background: #fffdf6; }
 @media (max-width: 760px) { .kit { --k-h-size: 30px; --k-pad: 56px; } }
+/* цифры в шапке не прижаты к краям экрана на телефоне */
+@media (max-width: 600px) { .hero-strip { padding: 0 14px; } .stat b { font-size: 17px; white-space: nowrap; } }
+@media (max-width: 360px) { .stat b { font-size: 15px; } }

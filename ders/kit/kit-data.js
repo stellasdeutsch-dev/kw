@@ -138,47 +138,135 @@ window.KIT = {
      "note": "Темы недели — пример для начала с нуля. На платформе порядок тем задаёт дорожная карта твоего города."
     },
     {
-     "type": "cards",
-     "id": "free",
-     "title": "Бесплатно уже сегодня",
-     "lead": "Открытые страницы Alterna: можно начать до покупки.",
-     "cols": 2,
-     "items": [
+     "type": "media",
+     "id": "days",
+     "title": "Первая неделя в карточках",
+     "lead": "Что делать каждый день и фраза, которую можно сказать уже сегодня.",
+     "groups": [
       {
-       "title": "Тест уровня",
-       "badge": "TÖMER",
-       "text": "Экзамен в формате TÖMER по секциям: показывает, с какого города начинать.",
-       "href": "https://timaxmetov.github.io/alterna-seviye-sinavi/",
-       "go": "Пройти тест"
-      },
-      {
-       "title": "Мультфильмы",
-       "badge": "A1–B1",
-       "text": "Турецкие мультфильмы по уровням: самая медленная речь для старта.",
-       "href": "https://timaxmetov.github.io/alterna-cizgi-katalog/",
-       "go": "Открыть каталог"
-      },
-      {
-       "title": "Подкасты",
-       "badge": "A1–C1",
-       "text": "Подкасты для изучающих турецкий, разложены по уровню и длине выпуска.",
-       "href": "https://timaxmetov.github.io/alterna-podcast-catalog/",
-       "go": "Открыть каталог"
-      },
-      {
-       "title": "Приложения",
-       "badge": "A1–C1",
-       "text": "Приложения и сервисы по уровням и готовые связки инструментов.",
-       "href": "https://timaxmetov.github.io/alterna-application-catalog/",
-       "go": "Открыть каталог"
+       "title": "Дни",
+       "shape": "wide",
+       "items": [
+        {
+         "title": "Пн · Алфавит и звуки",
+         "sub": "15 минут",
+         "text": "Шесть букв, которых нет в английском: ç, ğ, ı, ö, ş, ü. Послушай и повтори слово на каждую.",
+         "tip": "Слова: çay, dağ, ılık, göz, şeker, üzüm",
+         "img": "kit/img/tr11-ph-alphabet.webp",
+         "alt": "Кубики с буквами",
+         "credit": "Фото: Philip N. Cohen, CC BY-SA"
+        },
+        {
+         "title": "Вт · Представиться",
+         "sub": "15 минут",
+         "text": "Поздороваться, назвать имя и сказать, что приятно познакомиться.",
+         "tip": "Фраза дня: «Merhaba, ben Anna. Memnun oldum.»",
+         "img": "kit/img/tr11-ph-hello.webp",
+         "alt": "Рукопожатие",
+         "credit": "Фото: flazingo_photos, CC BY-SA"
+        },
+        {
+         "title": "Ср · Числа и цена",
+         "sub": "15 минут",
+         "text": "Числа от одного до ста и вопрос о цене на рынке.",
+         "tip": "Фраза дня: «Bu ne kadar? — Yirmi lira.»",
+         "img": "kit/img/tr11-ph-bazaar.webp",
+         "alt": "Лампы на Гранд-базаре в Стамбуле",
+         "credit": "Фото: justinschier, CC BY"
+        },
+        {
+         "title": "Чт · В кафе",
+         "sub": "15 минут",
+         "text": "Заказать чай и попросить счёт: две фразы, которые нужны в первый же день.",
+         "tip": "Фраза дня: «İki çay, lütfen. Hesap, lütfen.»",
+         "img": "kit/img/tr11-ph-cafe.webp",
+         "alt": "Кафе на Гранд-базаре",
+         "credit": "Фото: Miguel Virkkunen Carvalho, CC BY"
+        },
+        {
+         "title": "Пт · Дорога и транспорт",
+         "sub": "15 минут",
+         "text": "Спросить, как доехать, и понять ответ: düz, sağa, sola.",
+         "tip": "Фраза дня: «Taksim'e nasıl gidebilirim?»",
+         "img": "kit/img/tr11-ph-tram.webp",
+         "alt": "Трамвай в Стамбуле",
+         "credit": "Фото: blondinrikard, CC BY"
+        },
+        {
+         "title": "Сб · Слова недели вслух",
+         "sub": "15 минут",
+         "text": "Все слова и фразы недели вслух, потом голосовое на минуту о себе.",
+         "tip": "Фраза дня: «Merhaba, teşekkürler, lütfen, ne kadar?»",
+         "img": "kit/img/tr11-ph-aloud.webp",
+         "alt": "Женщина читает вслух",
+         "credit": "Фото: CarbonNYC, CC BY"
+        },
+        {
+         "title": "Вс · Проверка и мультфильм",
+         "sub": "15 минут",
+         "text": "Короткая проверка и одна серия мультфильма уровня A1 дважды.",
+         "tip": "Мультфильм A1 из бесплатного каталога Alterna",
+         "img": "kit/img/tr11-ph-cartoon.webp",
+         "alt": "Дети смотрят мультфильм",
+         "credit": "Фото: A.Wolff, CC BY"
+        }
+       ]
       }
      ]
-    }
-   ]
-  },
-  {
-   "before": "section.wide:has(+ #quiz)",
-   "blocks": [
+    },
+    {
+     "type": "media",
+     "id": "free",
+     "title": "Бесплатно уже сегодня",
+     "lead": "Открытые страницы Alterna: настоящие экраны. Можно начать до покупки.",
+     "groups": [
+      {
+       "title": "Бесплатно",
+       "shape": "wide",
+       "items": [
+        {
+         "title": "Тест уровня",
+         "sub": "Формат TÖMER · по секциям",
+         "text": "Показывает, с какого города маршрута начинать.",
+         "img": "kit/img/tr11-s-test.webp",
+         "alt": "Скриншот теста уровня Alterna",
+         "href": "https://timaxmetov.github.io/alterna-seviye-sinavi/",
+         "go": "Пройти тест"
+        },
+        {
+         "title": "Мультфильмы",
+         "sub": "Каталог по уровням",
+         "level": "A1–B1",
+         "text": "Турецкие мультфильмы по уровням: самая медленная речь для старта.",
+         "img": "kit/img/tr11-s-cizgi.webp",
+         "alt": "Скриншот каталога мультфильмов Alterna",
+         "href": "https://timaxmetov.github.io/alterna-cizgi-katalog/",
+         "go": "Открыть каталог"
+        },
+        {
+         "title": "Подкасты",
+         "sub": "Каталог по уровням",
+         "level": "A1–C1",
+         "text": "Подкасты для изучающих турецкий, разложены по уровню и длине выпуска.",
+         "img": "kit/img/tr11-s-podcast.webp",
+         "alt": "Скриншот каталога подкастов Alterna",
+         "href": "https://timaxmetov.github.io/alterna-podcast-catalog/",
+         "go": "Открыть каталог"
+        },
+        {
+         "title": "Приложения",
+         "sub": "Каталог по уровням",
+         "level": "A1–C1",
+         "text": "Приложения и сервисы по уровням и готовые связки инструментов.",
+         "img": "kit/img/tr11-s-apps.webp",
+         "alt": "Скриншот каталога приложений Alterna",
+         "href": "https://timaxmetov.github.io/alterna-application-catalog/",
+         "go": "Открыть каталог"
+        }
+       ]
+      }
+     ]
+    },
     {
      "type": "platform",
      "id": "notion",

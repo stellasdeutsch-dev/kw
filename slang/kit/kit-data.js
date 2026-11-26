@@ -8,8 +8,8 @@ window.KIT = {
      "type": "table",
      "id": "phrases",
      "bg": "b",
-     "title": "40 замен: книжный → живой",
-     "lead": "Слева фраза из учебника, в середине то, что скажет носитель. Пометка «брит.» — так говорят в основном в Британии. Значок звука читает фразу голосом браузера.",
+     "title": "60 замен: книжный → живой",
+     "lead": "40 фраз из ролика и 20 бонусных. Слева фраза из учебника, в середине то, что скажет носитель. Пометка «брит.» — так говорят в основном в Британии, «амер.» — в Америке. Значок звука читает фразу голосом браузера.",
      "cols": [
       {
        "key": "book",
@@ -297,6 +297,144 @@ window.KIT = {
          "ex": "<span lang=\"en\">You passed? Nice one!</span><small>Сдал? Молодец!</small>"
         }
        ]
+      },
+      {
+       "title": "Бонус: планы и встречи",
+       "sub": "7 фраз сверх ролика",
+       "rows": [
+        {
+         "book": "I'm coming now",
+         "live": "*On my way!*",
+         "ru": "уже еду, уже иду",
+         "ex": "<span lang=\"en\">— Where are you? — On my way!</span><small>— Ты где? — Уже еду!</small>"
+        },
+        {
+         "book": "I'm looking forward to it",
+         "live": "*Can't wait!*",
+         "ru": "жду не дождусь",
+         "ex": "<span lang=\"en\">Holidays next week? Can't wait!</span><small>Отпуск на следующей неделе? Жду не дождусь!</small>"
+        },
+        {
+         "book": "Let's spend time together",
+         "live": "*Let's hang out*",
+         "ru": "давай встретимся, потусуемся",
+         "ex": "<span lang=\"en\">Let's hang out this weekend.</span><small>Давай встретимся на выходных.</small>"
+        },
+        {
+         "book": "That's a good idea",
+         "live": "*Sounds good*",
+         "ru": "договорились, звучит хорошо",
+         "ex": "<span lang=\"en\">— Dinner at eight? — Sounds good.</span><small>— Ужин в восемь? — Договорились.</small>"
+        },
+        {
+         "book": "Write me a message",
+         "live": "*Text me*",
+         "ru": "напиши мне",
+         "ex": "<span lang=\"en\">Text me when you get home.</span><small>Напиши, когда доберёшься домой.</small>"
+        },
+        {
+         "book": "I'm going to bed",
+         "live": "*I'm gonna hit the sack*",
+         "ru": "пойду спать",
+         "ex": "<span lang=\"en\">It's late. I'm gonna hit the sack.</span><small>Поздно. Пойду спать.</small>"
+        },
+        {
+         "book": "Good luck",
+         "live": "*Break a leg!*",
+         "ru": "ни пуха ни пера (перед выступлением)",
+         "ex": "<span lang=\"en\">Your first concert? Break a leg!</span><small>Первый концерт? Ни пуха ни пера!</small>"
+        }
+       ]
+      },
+      {
+       "title": "Бонус: еда и деньги",
+       "sub": "4 фразы",
+       "rows": [
+        {
+         "book": "I'll pay for you",
+         "live": "*It's on me*",
+         "ru": "я угощаю",
+         "ex": "<span lang=\"en\">Put your money away, it's on me.</span><small>Убери деньги, я угощаю.</small>"
+        },
+        {
+         "book": "Let's pay half each",
+         "live": "*Let's split it*",
+         "ru": "давай пополам",
+         "ex": "<span lang=\"en\">Forty dollars? Let's split it.</span><small>Сорок долларов? Давай пополам.</small>"
+        },
+        {
+         "book": "I've eaten too much",
+         "live": "*I'm stuffed*",
+         "ru": "я объелся",
+         "ex": "<span lang=\"en\">No dessert, thanks. I'm stuffed.</span><small>Без десерта, спасибо. Я объелся.</small>"
+        },
+        {
+         "book": "I don't have any money",
+         "live": "*I'm broke*",
+         "ru": "я на мели",
+         "ex": "<span lang=\"en\">I can't come tonight, I'm broke.</span><small>Сегодня не смогу, я на мели.</small>"
+        }
+       ]
+      },
+      {
+       "title": "Бонус: реакции и настроение",
+       "sub": "9 фраз",
+       "rows": [
+        {
+         "book": "It isn't important",
+         "live": "*It's no big deal*",
+         "ru": "ничего особенного, пустяки",
+         "ex": "<span lang=\"en\">— You forgot to call. — It's no big deal.</span><small>— Ты забыл позвонить. — Пустяки.</small>"
+        },
+        {
+         "book": "Are you serious?",
+         "live": "*Seriously?*",
+         "ru": "серьёзно?",
+         "ex": "<span lang=\"en\">— I quit my job. — Seriously?</span><small>— Я уволился. — Серьёзно?</small>"
+        },
+        {
+         "book": "Very good",
+         "live": "*Cool!*",
+         "ru": "круто, отлично",
+         "ex": "<span lang=\"en\">— I'll pick you up at eight. — Cool!</span><small>— Заеду за тобой в восемь. — Отлично!</small>"
+        },
+        {
+         "book": "Excellent!",
+         "live": "*Sweet!*",
+         "ru": "класс! (амер.)",
+         "ex": "<span lang=\"en\">— I got us tickets. — Sweet!</span><small>— Я взял нам билеты. — Класс!</small>"
+        },
+        {
+         "book": "A little",
+         "live": "*Kind of*",
+         "ru": "вроде того, немного",
+         "ex": "<span lang=\"en\">— Are you tired? — Kind of.</span><small>— Устал? — Немного.</small>"
+        },
+        {
+         "book": "Don't worry about it",
+         "live": "*Don't sweat it*",
+         "ru": "не парься",
+         "ex": "<span lang=\"en\">— I broke your cup. — Don't sweat it.</span><small>— Я разбил твою чашку. — Не парься.</small>"
+        },
+        {
+         "book": "I'm very happy",
+         "live": "*I'm over the moon*",
+         "ru": "я на седьмом небе",
+         "ex": "<span lang=\"en\">She said yes! I'm over the moon.</span><small>Она согласилась! Я на седьмом небе.</small>"
+        },
+        {
+         "book": "It's my mistake",
+         "live": "*My bad*",
+         "ru": "моя ошибка, виноват",
+         "ex": "<span lang=\"en\">My bad, I sent it to the wrong person.</span><small>Виноват, отправил не тому человеку.</small>"
+        },
+        {
+         "book": "It's very cold",
+         "live": "*It's freezing*",
+         "ru": "жуткий холод",
+         "ex": "<span lang=\"en\">Close the window, it's freezing!</span><small>Закрой окно, холод жуткий!</small>"
+        }
+       ]
       }
      ],
      "numbered": true,
@@ -305,13 +443,110 @@ window.KIT = {
      "note": "Книжные фразы нужны в письмах, на собеседовании и с незнакомыми. Живые — с друзьями, коллегами и в сериалах."
     },
     {
+     "type": "media",
+     "id": "situations",
+     "bg": "a",
+     "title": "Фразы по ситуациям",
+     "lead": "Те же фразы, разложенные по жизненным сценам: что сказать при встрече, в переписке, в кафе, на работе. По пять на ситуацию.",
+     "groups": [
+      {
+       "title": "Ситуации",
+       "shape": "wide",
+       "items": [
+        {
+         "title": "Встреча с друзьями",
+         "sub": "паб, кафе, улица · 5 фраз",
+         "text": "<b lang=\"en\">Hey!</b> — привет<br><b lang=\"en\">What's up?</b> — как дела?<br><b lang=\"en\">Not bad, you?</b> — нормально, а ты?<br><b lang=\"en\">What's going on?</b> — что происходит?<br><b lang=\"en\">Thanks, mate!</b> — спасибо, друг! (брит.)",
+         "tip": "Long time no see! — «сто лет не виделись»: так здороваются после долгой паузы.",
+         "img": "kit/img/en01-meet.webp",
+         "alt": "Встреча с друзьями",
+         "credit": "Фото: Gareth1953 All Right Now, CC BY"
+        },
+        {
+         "title": "Переписка",
+         "sub": "мессенджер, сообщения · 5 фраз",
+         "text": "<b lang=\"en\">On my way!</b> — уже еду<br><b lang=\"en\">Text me</b> — напиши мне<br><b lang=\"en\">Sounds good</b> — договорились<br><b lang=\"en\">Can't wait!</b> — жду не дождусь<br><b lang=\"en\">Catch you later</b> — ещё увидимся",
+         "tip": "В сообщениях часто сокращают: omw — on my way, thx — thanks.",
+         "img": "kit/img/en01-text.webp",
+         "alt": "Переписка",
+         "credit": "Фото: Artem Beliaikin, CC0"
+        },
+        {
+         "title": "В кафе и за ужином",
+         "sub": "еда и счёт · 5 фраз",
+         "text": "<b lang=\"en\">I'm starving</b> — умираю с голоду<br><b lang=\"en\">It's on me</b> — я угощаю<br><b lang=\"en\">Let's split it</b> — давай пополам<br><b lang=\"en\">I'm stuffed</b> — я объелся<br><b lang=\"en\">That's a rip-off!</b> — это грабёж!",
+         "tip": "Официанту нейтрально: Could we have the bill, please? Живые фразы — для друзей за столом.",
+         "img": "kit/img/en01-cafe.webp",
+         "alt": "В кафе и за ужином",
+         "credit": "Фото: MattHurst, CC BY-SA"
+        },
+        {
+         "title": "На работе",
+         "sub": "коллеги, созвоны · 5 фраз",
+         "text": "<b lang=\"en\">Hang on</b> — секунду<br><b lang=\"en\">Got it</b> — понял<br><b lang=\"en\">I'm swamped</b> — у меня завал<br><b lang=\"en\">Make sense?</b> — понятно?<br><b lang=\"en\">Come again?</b> — что-что?",
+         "tip": "Got it и Make sense? нормальны и на рабочих созвонах. С клиентом вместо Come again? лучше Sorry, could you repeat that?",
+         "img": "kit/img/en01-work.webp",
+         "alt": "На работе",
+         "credit": "Фото: Channy Yun, CC BY"
+        },
+        {
+         "title": "Конец длинного дня",
+         "sub": "дом, вечер · 5 фраз",
+         "text": "<b lang=\"en\">I'm beat</b> — я вымотался<br><b lang=\"en\">I'm off</b> — я пошёл<br><b lang=\"en\">I'm gonna hit the sack</b> — пойду спать<br><b lang=\"en\">Night!</b> — спокойной ночи<br><b lang=\"en\">Chill out</b> — расслабься",
+         "tip": "I'm beat и I'm exhausted значат одно и то же, но первое звучит проще.",
+         "img": "kit/img/en01-tired.webp",
+         "alt": "Конец длинного дня",
+         "credit": "Фото: Lee J Haywood, CC BY-SA"
+        },
+        {
+         "title": "Хорошие новости",
+         "sub": "реакции · 5 фраз",
+         "text": "<b lang=\"en\">No way!</b> — да ладно!<br><b lang=\"en\">Seriously?</b> — серьёзно?<br><b lang=\"en\">Nice one!</b> — молодец!<br><b lang=\"en\">Awesome!</b> — отлично!<br><b lang=\"en\">I'm over the moon</b> — я на седьмом небе",
+         "tip": "Seriously? и No way! говорят и при плохих новостях: всё решает интонация.",
+         "img": "kit/img/en01-news.webp",
+         "alt": "Хорошие новости",
+         "credit": "Фото: jonas_foyn, CC BY"
+        },
+        {
+         "title": "Мелкие неприятности",
+         "sub": "извиниться и успокоить · 5 фраз",
+         "text": "<b lang=\"en\">My bad</b> — виноват<br><b lang=\"en\">No worries</b> — ничего страшного<br><b lang=\"en\">Don't sweat it</b> — не парься<br><b lang=\"en\">It's no big deal</b> — пустяки<br><b lang=\"en\">Never mind</b> — забей",
+         "tip": "My bad — за мелочь. За серьёзное извиняются полностью: I’m really sorry.",
+         "img": "kit/img/en01-oops.webp",
+         "alt": "Мелкие неприятности",
+         "credit": "Фото: Lorie Shaull, CC BY-SA"
+        },
+        {
+         "title": "Просьба о помощи",
+         "sub": "переезд, дела по дому · 5 фраз",
+         "text": "<b lang=\"en\">Can you give me a hand?</b> — поможешь?<br><b lang=\"en\">Sure thing</b> — конечно<br><b lang=\"en\">Yep</b> — ага<br><b lang=\"en\">Cheers!</b> — спасибо! (брит.)<br><b lang=\"en\">No problem</b> — не за что",
+         "tip": "Can you give me a hand? — про помощь руками: донести, передвинуть, починить.",
+         "img": "kit/img/en01-help.webp",
+         "alt": "Просьба о помощи",
+         "credit": "Фото: Meathead Movers, CC BY-SA"
+        },
+        {
+         "title": "Планы на выходные",
+         "sub": "позвать и согласиться · 5 фраз",
+         "text": "<b lang=\"en\">Wanna go?</b> — хочешь пойти?<br><b lang=\"en\">Let's hang out</b> — давай встретимся<br><b lang=\"en\">I'm easy</b> — мне без разницы (брит.)<br><b lang=\"en\">Totally</b> — полностью согласен<br><b lang=\"en\">I'm broke</b> — я на мели",
+         "tip": "Отказаться мягко: I'll pass this time, thanks — «в этот раз пас, спасибо».",
+         "img": "kit/img/en01-plans.webp",
+         "alt": "Планы на выходные",
+         "credit": "Фото: Greg Walters, CC BY"
+        }
+       ]
+      }
+     ],
+     "note": "Фото с Openverse по свободным лицензиям Creative Commons, автор указан на карточке."
+    },
+    {
      "type": "quiz",
      "id": "check",
      "bg": "a",
      "mode": "list",
      "title": "Проверь себя",
      "optLang": "en",
-     "lead": "Пять ситуаций. Выбери, что сказал бы носитель.",
+     "lead": "Семь ситуаций. Выбери, что сказал бы носитель.",
      "questions": [
       {
        "q": "Друг говорит: «I got the tickets!». Ты удивлён. Ответ:",
@@ -362,6 +597,26 @@ window.KIT = {
        ],
        "answer": 0,
        "explain": "*No worries* — «ничего страшного»."
+      },
+      {
+       "q": "Ты платишь за друга в кафе. Как сказать «я угощаю»?",
+       "options": [
+        "It's on me",
+        "I'm broke",
+        "Let's split it"
+       ],
+       "answer": 0,
+       "explain": "*It's on me* — «я угощаю». Let's split it — «давай пополам»."
+      },
+      {
+       "q": "Друг пишет: «Where are you?». Ты уже в пути:",
+       "options": [
+        "Hang on",
+        "On my way!",
+        "I'm off"
+       ],
+       "answer": 1,
+       "explain": "*On my way!* — «уже еду». I'm off — «я пошёл» (ухожу)."
       }
      ],
      "bands": [
@@ -371,22 +626,17 @@ window.KIT = {
        "text": "Пройдись по фразам ещё раз и вернись к проверке завтра."
       },
       {
-       "min": 3,
+       "min": 4,
        "title": "Хорошо",
        "text": "Большинство замен уже твои. Повтори те, где ошибся."
       },
       {
-       "min": 5,
-       "title": "Все пять верно",
+       "min": 7,
+       "title": "Все семь верно",
        "text": "Теперь вставь три новые фразы в разговор или переписку на этой неделе."
       }
      ]
-    }
-   ]
-  },
-  {
-   "before": "#about",
-   "blocks": [
+    },
     {
      "type": "platform",
      "id": "notion",

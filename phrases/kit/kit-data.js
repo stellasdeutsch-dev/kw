@@ -5,10 +5,104 @@ window.KIT = {
    "after": "#about",
    "blocks": [
     {
+     "type": "media",
+     "id": "themes",
+     "title": "Семь тем: где какие фразы",
+     "lead": "Выбери ситуацию: на карточке первые четыре начала, вся десятка — в таблице ниже, во вкладке с тем же названием.",
+     "groups": [
+      {
+       "title": "Темы",
+       "shape": "wide",
+       "items": [
+        {
+         "title": "Из ролика",
+         "sub": "каждый день, о себе · 10 начал",
+         "text": "<b lang=\"en\">I need…</b> — мне нужно…<br><b lang=\"en\">I'd like…</b> — я бы хотел…<br><b lang=\"en\">I can't…</b> — я не могу…<br><b lang=\"en\">I have to…</b> — мне надо…",
+         "tip": "Начни с этих десяти: они из ролика и работают почти в любой ситуации.",
+         "img": "kit/img/en05-reel.webp",
+         "alt": "Из ролика",
+         "credit": "Фото: cclogg, CC0",
+         "href": "#phrases",
+         "go": "В таблице: вкладка «Из ролика»"
+        },
+        {
+         "title": "Просьбы",
+         "sub": "на улице, в кафе, в отеле · 10 начал",
+         "text": "<b lang=\"en\">Could you…?</b> — не могли бы вы…?<br><b lang=\"en\">Can I…?</b> — можно мне…?<br><b lang=\"en\">Do you mind if I…?</b> — вы не против, если я…?<br><b lang=\"en\">Would you like…?</b> — не хотите…?",
+         "tip": "Could you…? и Could I have…? звучат вежливее, чем Can you…?",
+         "img": "kit/img/en05-ask.webp",
+         "alt": "Просьбы",
+         "credit": "Фото: H Sanchez, CC BY",
+         "href": "#phrases",
+         "go": "В таблице: вкладка «Просьбы»"
+        },
+        {
+         "title": "Мнение и чувства",
+         "sub": "спор, обсуждение, отзыв · 10 начал",
+         "text": "<b lang=\"en\">In my opinion…</b> — по-моему…<br><b lang=\"en\">I don't think…</b> — не думаю, что…<br><b lang=\"en\">I feel like…</b> — мне хочется…<br><b lang=\"en\">I'm afraid…</b> — боюсь, что… (вежливо о плохом)",
+         "tip": "I'm afraid… смягчает плохую новость: I'm afraid we're closed.",
+         "img": "kit/img/en05-opin.webp",
+         "alt": "Мнение и чувства",
+         "credit": "Фото: nealstimler, CC BY",
+         "href": "#phrases",
+         "go": "В таблице: вкладка «Мнение и чувства»"
+        },
+        {
+         "title": "Планы и опыт",
+         "sub": "планы, опыт, привычки · 10 начал",
+         "text": "<b lang=\"en\">I'm going to…</b> — я собираюсь…<br><b lang=\"en\">I'm thinking of…</b> — я подумываю…<br><b lang=\"en\">I plan to…</b> — я планирую…<br><b lang=\"en\">I've never…</b> — я никогда не…",
+         "tip": "I'm used to + -ing: I'm used to getting up early. Не путай с I used to.",
+         "img": "kit/img/en05-plan.webp",
+         "alt": "Планы и опыт",
+         "credit": "Фото: lexly87 aka Duc N. Ly, CC BY-SA",
+         "href": "#phrases",
+         "go": "В таблице: вкладка «Планы и опыт»"
+        },
+        {
+         "title": "В разговоре",
+         "sub": "поддержать беседу · 10 начал",
+         "text": "<b lang=\"en\">What do you mean by…?</b> — что ты имеешь в виду под…?<br><b lang=\"en\">Sorry, I didn't catch…</b> — простите, я не расслышал…<br><b lang=\"en\">How do you say…?</b> — как сказать…?<br><b lang=\"en\">By the way…</b> — кстати…",
+         "tip": "Не расслышал — не молчи: Sorry, I didn’t catch that.",
+         "img": "kit/img/en05-talk.webp",
+         "alt": "В разговоре",
+         "credit": "Фото: Gareth1953 All Right Now, CC BY",
+         "href": "#phrases",
+         "go": "В таблице: вкладка «В разговоре»"
+        },
+        {
+         "title": "работа и учёба",
+         "sub": "письма, созвоны, учёба · 10 начал",
+         "text": "<b lang=\"en\">I'll get back to you…</b> — я вернусь к вам с ответом…<br><b lang=\"en\">Could you send me…?</b> — не могли бы вы прислать…?<br><b lang=\"en\">I'm working on…</b> — я работаю над…<br><b lang=\"en\">Let me know if…</b> — дай знать, если…",
+         "tip": "Let me know if… и I’ll get back to you… закрывают половину рабочих писем.",
+         "img": "kit/img/en05-work.webp",
+         "alt": "Бонус: работа и учёба",
+         "credit": "Фото: jeferonix, CC BY-SA",
+         "href": "#phrases",
+         "go": "В таблице: вкладка «Бонус: работа и учёба»",
+         "bonus": true
+        },
+        {
+         "title": "поездка и магазин",
+         "sub": "путешествие, покупки · 10 начал",
+         "text": "<b lang=\"en\">How much is…?</b> — сколько стоит…?<br><b lang=\"en\">Do you have…?</b> — у вас есть…?<br><b lang=\"en\">How do I get to…?</b> — как добраться до…?<br><b lang=\"en\">I have a reservation…</b> — у меня бронь…",
+         "tip": "Excuse me в начале делает любую просьбу вежливой.",
+         "img": "kit/img/en05-trip.webp",
+         "alt": "Бонус: поездка и магазин",
+         "credit": "Фото: Prayitno, CC BY",
+         "href": "#phrases",
+         "go": "В таблице: вкладка «Бонус: поездка и магазин»",
+         "bonus": true
+        }
+       ]
+      }
+     ],
+     "note": "Фото с Openverse по свободным лицензиям Creative Commons и CC0, автор указан на карточке."
+    },
+    {
      "type": "table",
      "id": "phrases",
-     "title": "50 начал фраз",
-     "lead": "Начало, перевод и два примера. Значок звука читает начало фразы голосом браузера.",
+     "title": "50 начал фраз и 20 бонусом",
+     "lead": "Начало, перевод и два примера. Последние две темы — бонус сверх ролика. Значок звука читает начало фразы голосом браузера.",
      "cols": [
       {
        "key": "start",
@@ -301,17 +395,124 @@ window.KIT = {
          "ex": "<span lang=\"en\">It depends on the weather.</span><small>Зависит от погоды.</small><span lang=\"en\">It depends on you.</span><small>Зависит от тебя.</small>"
         }
        ]
+      },
+      {
+       "title": "Бонус: работа и учёба",
+       "sub": "10 сверх ролика",
+       "rows": [
+        {
+         "start": "I*'ll get back to you*…",
+         "ru": "я вернусь к вам с ответом…",
+         "ex": "<span lang=\"en\">I'll get back to you tomorrow.</span><small>Я отвечу вам завтра.</small><span lang=\"en\">I'll get back to you on that.</span><small>Я вернусь к этому вопросу и отвечу.</small>"
+        },
+        {
+         "start": "*Could you send me*…?",
+         "ru": "не могли бы вы прислать…?",
+         "ex": "<span lang=\"en\">Could you send me the file?</span><small>Не могли бы вы прислать файл?</small><span lang=\"en\">Could you send me the details?</span><small>Пришлите, пожалуйста, подробности.</small>"
+        },
+        {
+         "start": "I*'m working on*…",
+         "ru": "я работаю над…",
+         "ex": "<span lang=\"en\">I'm working on a new project.</span><small>Я работаю над новым проектом.</small><span lang=\"en\">I'm working on my English.</span><small>Я работаю над своим английским.</small>"
+        },
+        {
+         "start": "*Let me know if*…",
+         "ru": "дай знать, если…",
+         "ex": "<span lang=\"en\">Let me know if you need help.</span><small>Дай знать, если нужна помощь.</small><span lang=\"en\">Let me know if anything changes.</span><small>Сообщи, если что-то изменится.</small>"
+        },
+        {
+         "start": "I*'m in charge of*…",
+         "ru": "я отвечаю за…",
+         "ex": "<span lang=\"en\">I'm in charge of sales.</span><small>Я отвечаю за продажи.</small><span lang=\"en\">I'm in charge of the budget.</span><small>Я отвечаю за бюджет.</small>"
+        },
+        {
+         "start": "*Can we*…?",
+         "ru": "можем ли мы…? давай…?",
+         "ex": "<span lang=\"en\">Can we talk later?</span><small>Можем поговорить позже?</small><span lang=\"en\">Can we move the meeting?</span><small>Можем перенести встречу?</small>"
+        },
+        {
+         "start": "*As far as I know*…",
+         "ru": "насколько я знаю…",
+         "ex": "<span lang=\"en\">As far as I know, he's on holiday.</span><small>Насколько я знаю, он в отпуске.</small><span lang=\"en\">As far as I know, it's free.</span><small>Насколько я знаю, это бесплатно.</small>"
+        },
+        {
+         "start": "I*'m not good at*…",
+         "ru": "у меня плохо получается…",
+         "ex": "<span lang=\"en\">I'm not good at maths.</span><small>Математика мне не даётся.</small><span lang=\"en\">I'm not good at remembering names.</span><small>Я плохо запоминаю имена.</small>"
+        },
+        {
+         "start": "*It takes*…",
+         "ru": "это занимает (время)…",
+         "ex": "<span lang=\"en\">It takes an hour to get there.</span><small>Дорога туда занимает час.</small><span lang=\"en\">It takes time to learn a language.</span><small>Чтобы выучить язык, нужно время.</small>"
+        },
+        {
+         "start": "*Just to clarify*…",
+         "ru": "просто уточню…",
+         "ex": "<span lang=\"en\">Just to clarify, the meeting is at ten?</span><small>Просто уточню: встреча в десять?</small><span lang=\"en\">Just to clarify, do you mean Monday?</span><small>Уточню: вы имеете в виду понедельник?</small>"
+        }
+       ]
+      },
+      {
+       "title": "Бонус: поездка и магазин",
+       "sub": "10 сверх ролика",
+       "rows": [
+        {
+         "start": "*How much is*…?",
+         "ru": "сколько стоит…?",
+         "ex": "<span lang=\"en\">How much is this jacket?</span><small>Сколько стоит эта куртка?</small><span lang=\"en\">How much is a ticket to the centre?</span><small>Сколько стоит билет до центра?</small>"
+        },
+        {
+         "start": "*Do you have*…?",
+         "ru": "у вас есть…?",
+         "ex": "<span lang=\"en\">Do you have this in a smaller size?</span><small>У вас есть такое на размер меньше?</small><span lang=\"en\">Do you have a map of the city?</span><small>У вас есть карта города?</small>"
+        },
+        {
+         "start": "*How do I get to*…?",
+         "ru": "как добраться до…?",
+         "ex": "<span lang=\"en\">How do I get to the airport?</span><small>Как добраться до аэропорта?</small><span lang=\"en\">How do I get to the old town?</span><small>Как пройти в старый город?</small>"
+        },
+        {
+         "start": "I *have a reservation*…",
+         "ru": "у меня бронь…",
+         "ex": "<span lang=\"en\">I have a reservation for two.</span><small>У меня бронь на двоих.</small><span lang=\"en\">I have a reservation under the name Smith.</span><small>У меня бронь на фамилию Смит.</small>"
+        },
+        {
+         "start": "*What time does*…?",
+         "ru": "во сколько…?",
+         "ex": "<span lang=\"en\">What time does the museum open?</span><small>Во сколько открывается музей?</small><span lang=\"en\">What time does the last train leave?</span><small>Во сколько уходит последний поезд?</small>"
+        },
+        {
+         "start": "I*'ll take*…",
+         "ru": "я возьму…",
+         "ex": "<span lang=\"en\">I'll take this one.</span><small>Я возьму вот этот.</small><span lang=\"en\">I'll take two, please.</span><small>Мне два, пожалуйста.</small>"
+        },
+        {
+         "start": "*Is it OK to*…?",
+         "ru": "можно ли…? ничего, если…?",
+         "ex": "<span lang=\"en\">Is it OK to take photos here?</span><small>Здесь можно фотографировать?</small><span lang=\"en\">Is it OK to pay later?</span><small>Можно заплатить потом?</small>"
+        },
+        {
+         "start": "*Excuse me, is this*…?",
+         "ru": "простите, это…?",
+         "ex": "<span lang=\"en\">Excuse me, is this seat free?</span><small>Простите, это место свободно?</small><span lang=\"en\">Excuse me, is this the bus to the airport?</span><small>Простите, это автобус в аэропорт?</small>"
+        },
+        {
+         "start": "I*'m allergic to*…",
+         "ru": "у меня аллергия на…",
+         "ex": "<span lang=\"en\">I'm allergic to nuts.</span><small>У меня аллергия на орехи.</small><span lang=\"en\">I'm allergic to cats.</span><small>У меня аллергия на кошек.</small>"
+        },
+        {
+         "start": "*Could you recommend*…?",
+         "ru": "не могли бы вы посоветовать…?",
+         "ex": "<span lang=\"en\">Could you recommend a good restaurant?</span><small>Не посоветуете хороший ресторан?</small><span lang=\"en\">Could you recommend something local?</span><small>Посоветуете что-нибудь местное?</small>"
+        }
+       ]
       }
      ],
      "numbered": true,
      "speak": "start",
      "search": "Найти фразу"
-    }
-   ]
-  },
-  {
-   "before": "#platform",
-   "blocks": [
+    },
     {
      "type": "platform",
      "id": "notion",

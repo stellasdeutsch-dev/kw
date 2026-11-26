@@ -7,7 +7,7 @@ window.KIT = {
     {
      "type": "table",
      "id": "verbs",
-     "title": "50 глаголов в форме «я»",
+     "title": "50 глаголов в форме «я» и 20 бонусных",
      "lead": "Форма, как читать и перевод. Значок звука включает голос браузера (если в системе есть турецкий голос, он звучит как носитель).",
      "cols": [
       {
@@ -300,12 +300,221 @@ window.KIT = {
          "ru": "я надеюсь"
         }
        ]
+      },
+      {
+       "title": "Бонус: в кафе и магазине",
+       "sub": "10 глаголов сверх обещанных 50",
+       "rows": [
+        {
+         "tr": "Pişir*iyorum*",
+         "read": "пиширийорум",
+         "ru": "я готовлю (еду)"
+        },
+        {
+         "tr": "Sipariş ed*iyorum*",
+         "read": "сипариш эдийорум",
+         "ru": "я заказываю"
+        },
+        {
+         "tr": "Bak*ıyorum*",
+         "read": "бакыйорум",
+         "ru": "я смотрю"
+        },
+        {
+         "tr": "Seç*iyorum*",
+         "read": "сечийорум",
+         "ru": "я выбираю"
+        },
+        {
+         "tr": "Den*iyorum*",
+         "read": "денийорум",
+         "ru": "я пробую, примеряю"
+        },
+        {
+         "tr": "Sat*ıyorum*",
+         "read": "сатыйорум",
+         "ru": "я продаю"
+        },
+        {
+         "tr": "Getir*iyorum*",
+         "read": "гетирийорум",
+         "ru": "я приношу"
+        },
+        {
+         "tr": "Ver*iyorum*",
+         "read": "верийорум",
+         "ru": "я даю"
+        },
+        {
+         "tr": "Kullan*ıyorum*",
+         "read": "кулланыйорум",
+         "ru": "я пользуюсь"
+        },
+        {
+         "tr": "Aç*ıyorum*",
+         "read": "ачыйорум",
+         "ru": "я открываю"
+        }
+       ]
+      },
+      {
+       "title": "Бонус: дела и планы",
+       "sub": "ещё 10",
+       "rows": [
+        {
+         "tr": "Başl*ıyorum*",
+         "read": "башлыйорум",
+         "ru": "я начинаю"
+        },
+        {
+         "tr": "Bitir*iyorum*",
+         "read": "битирийорум",
+         "ru": "я заканчиваю"
+        },
+        {
+         "tr": "Bul*uyorum*",
+         "read": "булуйорум",
+         "ru": "я нахожу"
+        },
+        {
+         "tr": "Kaybed*iyorum*",
+         "read": "кайбедийорум",
+         "ru": "я теряю"
+        },
+        {
+         "tr": "Gönder*iyorum*",
+         "read": "гёндерийорум",
+         "ru": "я отправляю"
+        },
+        {
+         "tr": "Hazırl*ıyorum*",
+         "read": "хазырлыйорум",
+         "ru": "я готовлю (подготавливаю)"
+        },
+        {
+         "tr": "Dinlen*iyorum*",
+         "read": "динленийорум",
+         "ru": "я отдыхаю"
+        },
+        {
+         "tr": "Karar ver*iyorum*",
+         "read": "карар верийорум",
+         "ru": "я решаю"
+        },
+        {
+         "tr": "Geç kal*ıyorum*",
+         "read": "геч калыйорум",
+         "ru": "я опаздываю"
+        },
+        {
+         "tr": "Gül*üyorum*",
+         "read": "гюлюйорум",
+         "ru": "я смеюсь"
+        }
+       ]
       }
      ],
      "numbered": true,
      "speak": "tr",
      "search": "Найти глагол",
      "note": "Транскрипция русскими буквами — подсказка, а не точное произношение. Ударение в форме на -iyorum падает на -yo-: гелиЙОрум."
+    },
+    {
+     "type": "media",
+     "id": "themes",
+     "title": "Глаголы по темам",
+     "lead": "Десять тем из жизни: в каждой четыре глагола и готовая фраза, которую можно сказать уже сегодня.",
+     "groups": [
+      {
+       "title": "Темы",
+       "shape": "wide",
+       "items": [
+        {
+         "title": "Каждый день",
+         "img": "kit/img/tr05-daily.webp",
+         "alt": "Турецкий завтрак на столе",
+         "credit": "Фото: Jorge Franganillo, CC BY",
+         "text": "<b lang=\"tr\">Kalkıyorum</b> — встаю · <b lang=\"tr\">Yiyorum</b> — ем · <b lang=\"tr\">İçiyorum</b> — пью · <b lang=\"tr\">Çalışıyorum</b> — работаю",
+         "tip": "<span lang=\"tr\">Sabah yedide kalkıyorum, çay içiyorum.</span> — Встаю в семь, пью чай."
+        },
+        {
+         "title": "Общение",
+         "img": "kit/img/tr05-talk.webp",
+         "alt": "Люди беседуют на крытом базаре",
+         "credit": "Фото: Miguel Virkkunen Carvalho, CC BY",
+         "text": "<b lang=\"tr\">Konuşuyorum</b> — говорю · <b lang=\"tr\">Soruyorum</b> — спрашиваю · <b lang=\"tr\">Dinliyorum</b> — слушаю · <b lang=\"tr\">Tanışıyorum</b> — знакомлюсь",
+         "tip": "<span lang=\"tr\">Biraz Türkçe konuşuyorum.</span> — Я немного говорю по-турецки."
+        },
+        {
+         "title": "В дороге",
+         "img": "kit/img/tr05-road.webp",
+         "alt": "Пристань Кадыкёй с парома",
+         "credit": "Фото: mattkrause1969, CC BY",
+         "text": "<b lang=\"tr\">Biniyorum</b> — сажусь · <b lang=\"tr\">İniyorum</b> — выхожу · <b lang=\"tr\">Dönüyorum</b> — возвращаюсь · <b lang=\"tr\">Yürüyorum</b> — иду пешком",
+         "tip": "<span lang=\"tr\">Vapura biniyorum, Kadıköy'de iniyorum.</span> — Сажусь на паром, выхожу в Кадыкёе."
+        },
+        {
+         "title": "Мысли и чувства",
+         "img": "kit/img/tr05-feel.webp",
+         "alt": "Вид на Стамбул с Галатской башни на закате",
+         "credit": "Фото: Tolga Bakı, CC BY",
+         "text": "<b lang=\"tr\">Düşünüyorum</b> — думаю · <b lang=\"tr\">Özlüyorum</b> — скучаю · <b lang=\"tr\">Hatırlıyorum</b> — помню · <b lang=\"tr\">Umuyorum</b> — надеюсь",
+         "tip": "<span lang=\"tr\">İstanbul'u çok özlüyorum.</span> — Я очень скучаю по Стамбулу."
+        },
+        {
+         "title": "Желания",
+         "img": "kit/img/tr05-want.webp",
+         "alt": "Тягучее мороженое на тарелке",
+         "credit": "Фото: avlxyz, CC BY-SA",
+         "text": "<b lang=\"tr\">İstiyorum</b> — хочу · <b lang=\"tr\">Seviyorum</b> — люблю · <b lang=\"tr\">Beğeniyorum</b> — мне нравится · <b lang=\"tr\">Alıyorum</b> — беру",
+         "tip": "<span lang=\"tr\">Bir dondurma istiyorum.</span> — Я хочу мороженое."
+        },
+        {
+         "title": "Учёба",
+         "img": "kit/img/tr05-study.webp",
+         "alt": "Тетрадь с записями на турецком и карандаш",
+         "credit": "Фото: qisur, CC BY",
+         "text": "<b lang=\"tr\">Öğreniyorum</b> — учу · <b lang=\"tr\">Okuyorum</b> — читаю · <b lang=\"tr\">Yazıyorum</b> — пишу · <b lang=\"tr\">Unutuyorum</b> — забываю",
+         "tip": "<span lang=\"tr\">Türkçe öğreniyorum, her gün yazıyorum.</span> — Я учу турецкий и пишу каждый день."
+        },
+        {
+         "title": "Звонки",
+         "img": "kit/img/tr05-call.webp",
+         "alt": "Мужчина говорит по телефону на диване",
+         "credit": "Фото: sco, CC BY",
+         "text": "<b lang=\"tr\">Arıyorum</b> — звоню · <b lang=\"tr\">Duyuyorum</b> — слышу · <b lang=\"tr\">Cevap veriyorum</b> — отвечаю · <b lang=\"tr\">Teşekkür ediyorum</b> — благодарю",
+         "tip": "<span lang=\"tr\">Annemi arıyorum.</span> — Я звоню маме."
+        },
+        {
+         "title": "Дома",
+         "img": "kit/img/tr05-home.webp",
+         "alt": "Две кошки спят на красном диване",
+         "credit": "Фото: ansik, CC BY",
+         "text": "<b lang=\"tr\">Temizliyorum</b> — убираю · <b lang=\"tr\">Pişiriyorum</b> — готовлю · <b lang=\"tr\">Uyuyorum</b> — сплю · <b lang=\"tr\">Kalıyorum</b> — остаюсь",
+         "tip": "<span lang=\"tr\">Bu akşam evde kalıyorum.</span> — Сегодня вечером я остаюсь дома."
+        },
+        {
+         "title": "В кафе и магазине",
+         "img": "kit/img/tr05-shop.webp",
+         "alt": "Магазинчик на углу улицы в Стамбуле",
+         "credit": "Фото: *SHERWOOD*, CC BY-SA",
+         "text": "<b lang=\"tr\">Bakıyorum</b> — смотрю · <b lang=\"tr\">Seçiyorum</b> — выбираю · <b lang=\"tr\">Deniyorum</b> — примеряю · <b lang=\"tr\">Sipariş ediyorum</b> — заказываю",
+         "tip": "<span lang=\"tr\">Sadece bakıyorum, teşekkürler.</span> — Я просто смотрю, спасибо.",
+         "bonus": true
+        },
+        {
+         "title": "Дела и планы",
+         "img": "kit/img/tr05-plan.webp",
+         "alt": "Рабочий стол с компьютером и кофе",
+         "credit": "Фото: DaveFayram, CC BY",
+         "text": "<b lang=\"tr\">Başlıyorum</b> — начинаю · <b lang=\"tr\">Bitiriyorum</b> — заканчиваю · <b lang=\"tr\">Gönderiyorum</b> — отправляю · <b lang=\"tr\">Karar veriyorum</b> — решаю",
+         "tip": "<span lang=\"tr\">Yarın yeni bir kursa başlıyorum.</span> — Завтра я начинаю новый курс.",
+         "bonus": true
+        }
+       ]
+      }
+     ],
+     "note": "Фото со свободными лицензиями Creative Commons из Openverse, автор указан под каждым снимком."
     },
     {
      "type": "table",
@@ -376,12 +585,7 @@ window.KIT = {
       }
      ],
      "compact": true
-    }
-   ]
-  },
-  {
-   "before": "#platform",
-   "blocks": [
+    },
     {
      "type": "platform",
      "id": "notion",

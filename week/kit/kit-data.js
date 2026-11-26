@@ -74,11 +74,123 @@ window.KIT = {
      "note": "Заполни столбец «Что берёшь» на неделю вперёд в воскресенье вечером: так утром не придётся думать, что делать."
     },
     {
+     "type": "media",
+     "id": "days",
+     "title": "Семь дней в карточках",
+     "lead": "Тот же шаблон: что берёшь, как делать и пример из недели «В кафе». Одна карточка — 15 минут.",
+     "groups": [
+      {
+       "title": "Дни недели",
+       "shape": "wide",
+       "items": [
+        {
+         "title": "Пн · Слова",
+         "sub": "10 новых слов одной темы",
+         "text": "Прочитай вслух, каждое — во фразе, запиши в карточки.",
+         "tip": "Пример недели «В кафе»: order — «Are you ready to order?»",
+         "img": "kit/img/en11-ph-words.webp",
+         "alt": "Слова",
+         "credit": "Фото: Deb Stgo, CC BY"
+        },
+        {
+         "title": "Вт · Фразы",
+         "sub": "Одна разговорная конструкция",
+         "text": "Пять своих фраз по образцу, вслух.",
+         "tip": "Пример: «Could I have a flat white, please?»",
+         "img": "kit/img/en11-ph-phrases.webp",
+         "alt": "Фразы",
+         "credit": "Фото: m_shipp22, CC BY"
+        },
+        {
+         "title": "Ср · Грамматика",
+         "sub": "Одна тема",
+         "text": "Правило, три примера, пять своих предложений.",
+         "tip": "Пример: «Have you ever tried sushi?»",
+         "img": "kit/img/en11-ph-grammar.webp",
+         "alt": "Грамматика",
+         "credit": "Фото: katalicia1, CC BY"
+        },
+        {
+         "title": "Чт · Слушать",
+         "sub": "Короткий выпуск или сцена",
+         "text": "Послушай дважды: на слух и с текстом. Повтори за диктором.",
+         "tip": "Пример: выпуск 6 Minute English — на слух, потом с текстом",
+         "img": "kit/img/en11-ph-listen.webp",
+         "alt": "Слушать",
+         "credit": "Фото: GuitarChalk, CC BY"
+        },
+        {
+         "title": "Пт · Квиз",
+         "sub": "Проверка недели",
+         "text": "10 вопросов по словам, фразам и грамматике недели.",
+         "tip": "Пример: квиз пятницы ниже на этой странице, 10 вопросов",
+         "img": "kit/img/en11-ph-quiz.webp",
+         "alt": "Квиз",
+         "credit": "Фото: albertogp123, CC BY"
+        },
+        {
+         "title": "Сб · Разговор",
+         "sub": "Живая речь",
+         "text": "С партнёром, репетитором или ИИ на тему недели.",
+         "tip": "Пример: тема «Еда и кафе» — что ты обычно заказываешь?",
+         "img": "kit/img/en11-ph-talk.webp",
+         "alt": "Разговор",
+         "credit": "Фото: prague.czech.photo, CC BY"
+        },
+        {
+         "title": "Вс · Повторение",
+         "sub": "Без нового",
+         "text": "Все карточки недели и то, где ошибся в квизе.",
+         "tip": "Пример: все 8 слов недели и вопросы, где ошибся в квизе",
+         "img": "kit/img/en11-ph-review.webp",
+         "alt": "Повторение",
+         "credit": "Фото: Generationbass.com, CC BY"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "media",
+     "id": "weeks",
+     "title": "Две готовые недели A2",
+     "lead": "Неделя из ролика и бонусная. Темы меняются, ритм остаётся.",
+     "groups": [
+      {
+       "title": "Недели",
+       "shape": "wide",
+       "items": [
+        {
+         "title": "Неделя «В кафе»",
+         "sub": "Из ролика: слова, Could you…?, Present Perfect, 6 Minute English, квиз и разговор",
+         "text": "Заказать кофе, попросить счёт и спросить про чаевые. Диалог, 8 слов и квиз на 10 вопросов ниже.",
+         "img": "kit/img/en11-ph-cafe.webp",
+         "alt": "Покупатель и бариста у стойки кафе",
+         "credit": "Фото: Wonderlane, CC BY",
+         "href": "#week",
+         "go": "К плану недели"
+        },
+        {
+         "title": "Неделя «В отеле»",
+         "sub": "Бонус: слова, I'd like…, Past Simple, сцена заселения и разговор",
+         "text": "Заселиться по брони, спросить про завтрак и вайфай. Диалог и 8 слов ниже.",
+         "img": "kit/img/en11-ph-hotel.webp",
+         "alt": "Стойка регистрации в отеле",
+         "credit": "Фото: Simbe90, CC BY",
+         "href": "#week",
+         "go": "К плану недели",
+         "bonus": true
+        }
+       ]
+      }
+     ]
+    },
+    {
      "type": "plan",
      "id": "week",
      "bg": "b",
-     "title": "Пример недели A2: «В кафе»",
-     "lead": "Тот же план, что на экранах ролика. Каждый день — 15 минут.",
+     "title": "Примеры недель A2",
+     "lead": "«В кафе» — тот же план, что на экранах ролика. «В отеле» — бонусная неделя по тому же шаблону. Каждый день — 15 минут.",
      "groups": [
       {
        "tag": "A2",
@@ -128,13 +240,62 @@ window.KIT = {
          "min": "15 мин"
         }
        ]
+      },
+      {
+       "tag": "A2",
+       "title": "Неделя «В отеле»",
+       "sub": "Бонус: слова, I'd like…, Past Simple, слушание, квиз, разговор",
+       "items": [
+        {
+         "day": "Пн",
+         "title": "Слова урока «В отеле»",
+         "text": "8 слов ниже, каждое во фразе",
+         "min": "15 мин"
+        },
+        {
+         "day": "Вт",
+         "title": "Фразы с I'd like… и Is there…?",
+         "text": "просьбы на стойке регистрации",
+         "min": "15 мин"
+        },
+        {
+         "day": "Ср",
+         "title": "Past Simple",
+         "text": "рассказать о поездке: I stayed, I booked, I checked in",
+         "min": "15 мин"
+        },
+        {
+         "day": "Чт",
+         "title": "Слушать сцену заселения",
+         "text": "короткое видео: на слух, потом с субтитрами, повтори реплики",
+         "min": "15 мин"
+        },
+        {
+         "day": "Пт",
+         "title": "Квиз по неделе",
+         "text": "закрой перевод в таблице слов и вспомни 8 слов",
+         "min": "15 мин"
+        },
+        {
+         "day": "Сб",
+         "title": "Разговор",
+         "text": "тема «Поездки и отели»: где ты останавливался и как всё прошло",
+         "min": "15 мин"
+        },
+        {
+         "day": "Вс",
+         "title": "Повторение",
+         "text": "все слова и диалог недели",
+         "min": "15 мин"
+        }
+       ]
       }
      ]
     },
     {
      "type": "table",
      "id": "dialog",
-     "title": "Диалог недели",
+     "title": "Диалоги недель",
      "lead": "Вторник и четверг: прочитай по ролям, потом скажи свои реплики без подсказки.",
      "cols": [
       {
@@ -151,36 +312,76 @@ window.KIT = {
        "label": "Перевод"
       }
      ],
-     "rows": [
+     "groups": [
       {
-       "who": "Бариста",
-       "en": "Hi! What can I get you?",
-       "ru": "Привет! Что вам принести?"
+       "title": "В кафе",
+       "rows": [
+        {
+         "who": "Бариста",
+         "en": "Hi! What can I get you?",
+         "ru": "Привет! Что вам принести?"
+        },
+        {
+         "who": "Ты",
+         "en": "Could I have a flat white, please?",
+         "ru": "Можно мне флэт уайт?"
+        },
+        {
+         "who": "Бариста",
+         "en": "Sure. Anything else?",
+         "ru": "Конечно. Что-нибудь ещё?"
+        },
+        {
+         "who": "Ты",
+         "en": "No, that's all, thanks.",
+         "ru": "Нет, это всё, спасибо."
+        },
+        {
+         "who": "Бариста",
+         "en": "That'll be four fifty.",
+         "ru": "С вас четыре пятьдесят."
+        },
+        {
+         "who": "Ты",
+         "en": "Can I pay by card?",
+         "ru": "Можно картой?"
+        }
+       ]
       },
       {
-       "who": "Ты",
-       "en": "Could I have a flat white, please?",
-       "ru": "Можно мне флэт уайт?"
-      },
-      {
-       "who": "Бариста",
-       "en": "Sure. Anything else?",
-       "ru": "Конечно. Что-нибудь ещё?"
-      },
-      {
-       "who": "Ты",
-       "en": "No, that's all, thanks.",
-       "ru": "Нет, это всё, спасибо."
-      },
-      {
-       "who": "Бариста",
-       "en": "That'll be four fifty.",
-       "ru": "С вас четыре пятьдесят."
-      },
-      {
-       "who": "Ты",
-       "en": "Can I pay by card?",
-       "ru": "Можно картой?"
+       "title": "В отеле",
+       "rows": [
+        {
+         "who": "Администратор",
+         "en": "Good evening. How can I help you?",
+         "ru": "Добрый вечер. Чем могу помочь?"
+        },
+        {
+         "who": "Ты",
+         "en": "Hi, I have a reservation under the name Petrova.",
+         "ru": "Здравствуйте, у меня бронь на фамилию Петрова."
+        },
+        {
+         "who": "Администратор",
+         "en": "Can I see your passport, please?",
+         "ru": "Можно ваш паспорт?"
+        },
+        {
+         "who": "Ты",
+         "en": "Sure, here you are.",
+         "ru": "Конечно, вот."
+        },
+        {
+         "who": "Администратор",
+         "en": "You're in room 405. Breakfast is from seven to ten.",
+         "ru": "Ваш номер 405. Завтрак с семи до десяти."
+        },
+        {
+         "who": "Ты",
+         "en": "Great. What's the Wi-Fi password?",
+         "ru": "Отлично. Какой пароль от вайфая?"
+        }
+       ]
       }
      ],
      "speak": "en"
@@ -189,8 +390,8 @@ window.KIT = {
      "type": "table",
      "id": "words",
      "bg": "b",
-     "title": "Слова недели",
-     "lead": "Понедельник: 8 слов урока «В кафе» — каждое сразу во фразе.",
+     "title": "Слова недель",
+     "lead": "Понедельник: по 8 слов на тему — каждое сразу во фразе.",
      "cols": [
       {
        "key": "w",
@@ -207,46 +408,96 @@ window.KIT = {
        "lang": "en"
       }
      ],
-     "rows": [
+     "groups": [
       {
-       "w": "order",
-       "ru": "заказывать",
-       "ex": "Are you ready to order?"
+       "title": "В кафе",
+       "rows": [
+        {
+         "w": "order",
+         "ru": "заказывать",
+         "ex": "Are you ready to order?"
+        },
+        {
+         "w": "to go",
+         "ru": "с собой",
+         "ex": "A latte to go, please."
+        },
+        {
+         "w": "receipt",
+         "ru": "чек",
+         "ex": "Can I have the receipt?"
+        },
+        {
+         "w": "still water",
+         "ru": "вода без газа",
+         "ex": "A bottle of still water, please."
+        },
+        {
+         "w": "a table for two",
+         "ru": "столик на двоих",
+         "ex": "A table for two, please."
+        },
+        {
+         "w": "tip",
+         "ru": "чаевые",
+         "ex": "Is the tip included?"
+        },
+        {
+         "w": "menu",
+         "ru": "меню",
+         "ex": "Could we see the menu?"
+        },
+        {
+         "w": "bill",
+         "ru": "счёт",
+         "ex": "Could we have the bill, please?"
+        }
+       ]
       },
       {
-       "w": "to go",
-       "ru": "с собой",
-       "ex": "A latte to go, please."
-      },
-      {
-       "w": "receipt",
-       "ru": "чек",
-       "ex": "Can I have the receipt?"
-      },
-      {
-       "w": "still water",
-       "ru": "вода без газа",
-       "ex": "A bottle of still water, please."
-      },
-      {
-       "w": "a table for two",
-       "ru": "столик на двоих",
-       "ex": "A table for two, please."
-      },
-      {
-       "w": "tip",
-       "ru": "чаевые",
-       "ex": "Is the tip included?"
-      },
-      {
-       "w": "menu",
-       "ru": "меню",
-       "ex": "Could we see the menu?"
-      },
-      {
-       "w": "bill",
-       "ru": "счёт",
-       "ex": "Could we have the bill, please?"
+       "title": "В отеле",
+       "rows": [
+        {
+         "w": "reservation",
+         "ru": "бронь",
+         "ex": "I have a reservation for two nights."
+        },
+        {
+         "w": "check in",
+         "ru": "заселиться",
+         "ex": "What time can I check in?"
+        },
+        {
+         "w": "check out",
+         "ru": "выехать из номера",
+         "ex": "I'd like to check out, please."
+        },
+        {
+         "w": "single room",
+         "ru": "одноместный номер",
+         "ex": "I'd like a single room, please."
+        },
+        {
+         "w": "key card",
+         "ru": "ключ-карта",
+         "ex": "My key card doesn't work."
+        },
+        {
+         "w": "reception",
+         "ru": "стойка регистрации",
+         "ex": "Please leave your key at reception."
+        },
+        {
+         "w": "breakfast included",
+         "ru": "завтрак включён",
+         "ex": "Is breakfast included?"
+        },
+        {
+         "w": "lift / elevator",
+         "ru": "лифт (брит. / амер.)",
+         "ex": "Where is the lift?"
+        }
+       ]
       }
      ],
      "speak": "w"
@@ -377,12 +628,7 @@ window.KIT = {
        "text": "Отличная неделя. Следующую тему можно брать чуть сложнее."
       }
      ]
-    }
-   ]
-  },
-  {
-   "before": "section.wide:has(+ #quiz)",
-   "blocks": [
+    },
     {
      "type": "platform",
      "id": "notion",

@@ -609,12 +609,7 @@ window.KIT = {
        ]
       ]
      }
-    }
-   ]
-  },
-  {
-   "before": "#author",
-   "blocks": [
+    },
     {
      "type": "platform",
      "id": "notion",

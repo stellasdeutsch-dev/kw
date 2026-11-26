@@ -8,8 +8,8 @@ window.KIT = {
      "type": "table",
      "id": "words",
      "bg": "b",
-     "title": "100 слов *уровня B1*",
-     "lead": "Тот же список, что в ролике: по 25 слов в четырёх группах. Значок звука читает слово голосом браузера.",
+     "title": "100 слов *уровня B1* и 50 бонусных",
+     "lead": "Тот же список, что в ролике: по 25 слов в четырёх группах. Ещё 50 бонусных — по темам. Значок звука читает слово голосом браузера.",
      "cols": [
       {
        "key": "tr",
@@ -550,11 +550,357 @@ window.KIT = {
          "ex": "<span lang=\"tr\">Aniden yağmur başladı.</span><small>Вдруг начался дождь.</small>"
         }
        ]
+      },
+      {
+       "title": "Бонус: работа",
+       "sub": "İş",
+       "rows": [
+        {
+         "tr": "başvuru",
+         "ru": "заявка, отклик",
+         "ex": "<span lang=\"tr\">İş başvurumu dün gönderdim.</span><small>Вчера я отправил заявку на работу.</small>"
+        },
+        {
+         "tr": "özgeçmiş",
+         "ru": "резюме",
+         "ex": "<span lang=\"tr\">Özgeçmişini bana e-postayla gönder.</span><small>Пришли мне своё резюме по почте.</small>"
+        },
+        {
+         "tr": "toplantı",
+         "ru": "совещание, встреча",
+         "ex": "<span lang=\"tr\">Toplantı saat üçte başlıyor.</span><small>Совещание начинается в три.</small>"
+        },
+        {
+         "tr": "müdür",
+         "ru": "руководитель, директор",
+         "ex": "<span lang=\"tr\">Müdürümle konuşmam lazım.</span><small>Мне нужно поговорить с руководителем.</small>"
+        },
+        {
+         "tr": "meslektaş",
+         "ru": "коллега",
+         "ex": "<span lang=\"tr\">Meslektaşlarım çok yardımsever.</span><small>Мои коллеги очень отзывчивые.</small>"
+        },
+        {
+         "tr": "izin",
+         "ru": "отпуск; разрешение",
+         "ex": "<span lang=\"tr\">Gelecek hafta izindeyim.</span><small>На следующей неделе я в отпуске.</small>"
+        },
+        {
+         "tr": "terfi",
+         "ru": "повышение",
+         "ex": "<span lang=\"tr\">Bu yıl terfi aldım.</span><small>В этом году я получил повышение.</small>"
+        },
+        {
+         "tr": "sözleşme",
+         "ru": "договор",
+         "ex": "<span lang=\"tr\">Sözleşmeyi dikkatlice oku.</span><small>Внимательно прочитай договор.</small>"
+        },
+        {
+         "tr": "sorumluluk",
+         "ru": "ответственность",
+         "ex": "<span lang=\"tr\">Bu proje benim sorumluluğumda.</span><small>Этот проект под моей ответственностью.</small>"
+        },
+        {
+         "tr": "mesai",
+         "ru": "рабочее время",
+         "ex": "<span lang=\"tr\">Mesai saat altıda bitiyor.</span><small>Рабочий день заканчивается в шесть.</small>"
+        }
+       ]
+      },
+      {
+       "title": "Бонус: путешествия",
+       "sub": "Seyahat",
+       "rows": [
+        {
+         "tr": "konaklama",
+         "ru": "проживание",
+         "ex": "<span lang=\"tr\">Fiyata konaklama dahil mi?</span><small>Проживание входит в цену?</small>"
+        },
+        {
+         "tr": "bavul",
+         "ru": "чемодан",
+         "ex": "<span lang=\"tr\">Bavulum havalimanında kayboldu.</span><small>Мой чемодан потерялся в аэропорту.</small>"
+        },
+        {
+         "tr": "uçuş",
+         "ru": "рейс, полёт",
+         "ex": "<span lang=\"tr\">Uçuşum iki saat rötar yaptı.</span><small>Мой рейс задержали на два часа.</small>"
+        },
+        {
+         "tr": "aktarma",
+         "ru": "пересадка",
+         "ex": "<span lang=\"tr\">İstanbul'da aktarma yapacağım.</span><small>Я буду делать пересадку в Стамбуле.</small>"
+        },
+        {
+         "tr": "gümrük",
+         "ru": "таможня",
+         "ex": "<span lang=\"tr\">Gümrükte uzun bir kuyruk vardı.</span><small>На таможне была длинная очередь.</small>"
+        },
+        {
+         "tr": "rehber",
+         "ru": "гид; путеводитель",
+         "ex": "<span lang=\"tr\">Rehberimiz çok bilgiliydi.</span><small>Наш гид очень много знал.</small>"
+        },
+        {
+         "tr": "manzara",
+         "ru": "вид, пейзаж",
+         "ex": "<span lang=\"tr\">Otelden harika bir manzara var.</span><small>Из отеля потрясающий вид.</small>"
+        },
+        {
+         "tr": "gezi",
+         "ru": "поездка, экскурсия",
+         "ex": "<span lang=\"tr\">Kapadokya gezisi unutulmazdı.</span><small>Поездка в Каппадокию была незабываемой.</small>"
+        },
+        {
+         "tr": "vize",
+         "ru": "виза",
+         "ex": "<span lang=\"tr\">Vize için başvurdum.</span><small>Я подал документы на визу.</small>"
+        },
+        {
+         "tr": "iptal etmek",
+         "ru": "отменять",
+         "ex": "<span lang=\"tr\">Rezervasyonu iptal etmek istiyorum.</span><small>Я хочу отменить бронь.</small>"
+        }
+       ]
+      },
+      {
+       "title": "Бонус: дом и быт",
+       "sub": "Ev",
+       "rows": [
+        {
+         "tr": "ev sahibi",
+         "ru": "хозяин квартиры",
+         "ex": "<span lang=\"tr\">Ev sahibi kirayı artırdı.</span><small>Хозяин квартиры поднял аренду.</small>"
+        },
+        {
+         "tr": "depozito",
+         "ru": "залог",
+         "ex": "<span lang=\"tr\">Depozitoyu geri aldım.</span><small>Я получил залог обратно.</small>"
+        },
+        {
+         "tr": "fatura",
+         "ru": "счёт (за услуги)",
+         "ex": "<span lang=\"tr\">Elektrik faturası bu ay yüksek geldi.</span><small>Счёт за электричество в этом месяце пришёл большой.</small>"
+        },
+        {
+         "tr": "tamir etmek",
+         "ru": "чинить",
+         "ex": "<span lang=\"tr\">Usta musluğu tamir etti.</span><small>Мастер починил кран.</small>"
+        },
+        {
+         "tr": "taşınmak",
+         "ru": "переезжать",
+         "ex": "<span lang=\"tr\">Geçen ay yeni bir eve taşındık.</span><small>В прошлом месяце мы переехали в новый дом.</small>"
+        },
+        {
+         "tr": "eşya",
+         "ru": "вещи, мебель",
+         "ex": "<span lang=\"tr\">Eşyalarımı kutulara koydum.</span><small>Я сложил вещи в коробки.</small>"
+        },
+        {
+         "tr": "komşuluk",
+         "ru": "соседские отношения",
+         "ex": "<span lang=\"tr\">Burada komşuluk çok güçlü.</span><small>Здесь крепкие соседские отношения.</small>"
+        },
+        {
+         "tr": "temizlik",
+         "ru": "уборка",
+         "ex": "<span lang=\"tr\">Hafta sonu büyük temizlik yaptık.</span><small>На выходных мы сделали генеральную уборку.</small>"
+        },
+        {
+         "tr": "ısınma",
+         "ru": "отопление",
+         "ex": "<span lang=\"tr\">Kışın ısınma pahalı.</span><small>Зимой отопление дорогое.</small>"
+        },
+        {
+         "tr": "aidat",
+         "ru": "взнос за обслуживание дома",
+         "ex": "<span lang=\"tr\">Bu ayın aidatını ödedin mi?</span><small>Ты заплатил взнос за дом в этом месяце?</small>"
+        }
+       ]
+      },
+      {
+       "title": "Бонус: здоровье",
+       "sub": "Sağlık",
+       "rows": [
+        {
+         "tr": "randevu",
+         "ru": "запись, встреча",
+         "ex": "<span lang=\"tr\">Doktordan randevu aldım.</span><small>Я записался к врачу.</small>"
+        },
+        {
+         "tr": "muayene",
+         "ru": "осмотр",
+         "ex": "<span lang=\"tr\">Muayene yarım saat sürdü.</span><small>Осмотр длился полчаса.</small>"
+        },
+        {
+         "tr": "reçete",
+         "ru": "рецепт",
+         "ex": "<span lang=\"tr\">Bu ilaç reçeteyle satılıyor.</span><small>Это лекарство продаётся по рецепту.</small>"
+        },
+        {
+         "tr": "ilaç",
+         "ru": "лекарство",
+         "ex": "<span lang=\"tr\">İlacını düzenli içiyor musun?</span><small>Ты регулярно пьёшь лекарство?</small>"
+        },
+        {
+         "tr": "ağrı",
+         "ru": "боль",
+         "ex": "<span lang=\"tr\">Başımda hafif bir ağrı var.</span><small>У меня немного болит голова.</small>"
+        },
+        {
+         "tr": "ateş",
+         "ru": "температура, жар",
+         "ex": "<span lang=\"tr\">Çocuğun ateşi var.</span><small>У ребёнка температура.</small>"
+        },
+        {
+         "tr": "iyileşmek",
+         "ru": "выздоравливать",
+         "ex": "<span lang=\"tr\">Çabuk iyileşmeni dilerim.</span><small>Желаю тебе скорее выздороветь.</small>"
+        },
+        {
+         "tr": "sigorta",
+         "ru": "страховка",
+         "ex": "<span lang=\"tr\">Sağlık sigortanız var mı?</span><small>У вас есть медицинская страховка?</small>"
+        },
+        {
+         "tr": "egzersiz",
+         "ru": "упражнения, тренировка",
+         "ex": "<span lang=\"tr\">Her gün yarım saat egzersiz yapıyorum.</span><small>Каждый день я полчаса делаю упражнения.</small>"
+        },
+        {
+         "tr": "stres",
+         "ru": "стресс",
+         "ex": "<span lang=\"tr\">Son zamanlarda çok stresliyim.</span><small>В последнее время у меня сильный стресс.</small>"
+        }
+       ]
+      },
+      {
+       "title": "Бонус: отношения",
+       "sub": "İlişkiler",
+       "rows": [
+        {
+         "tr": "güvenmek",
+         "ru": "доверять",
+         "ex": "<span lang=\"tr\">Sana güveniyorum.</span><small>Я тебе доверяю.</small>"
+        },
+        {
+         "tr": "kıskanmak",
+         "ru": "ревновать, завидовать",
+         "ex": "<span lang=\"tr\">Kardeşini kıskanıyor.</span><small>Он завидует своему брату.</small>"
+        },
+        {
+         "tr": "barışmak",
+         "ru": "мириться",
+         "ex": "<span lang=\"tr\">Sonunda barıştılar.</span><small>Наконец они помирились.</small>"
+        },
+        {
+         "tr": "kavga etmek",
+         "ru": "ссориться, драться",
+         "ex": "<span lang=\"tr\">Dün kardeşimle kavga ettim.</span><small>Вчера я поссорился с братом.</small>"
+        },
+        {
+         "tr": "özür dilemek",
+         "ru": "извиняться",
+         "ex": "<span lang=\"tr\">Senden özür dilerim.</span><small>Прошу у тебя прощения.</small>"
+        },
+        {
+         "tr": "sabır",
+         "ru": "терпение",
+         "ex": "<span lang=\"tr\">Dil öğrenmek sabır ister.</span><small>Изучение языка требует терпения.</small>"
+        },
+        {
+         "tr": "saygı",
+         "ru": "уважение",
+         "ex": "<span lang=\"tr\">Büyüklere saygı çok önemli.</span><small>Уважение к старшим очень важно.</small>"
+        },
+        {
+         "tr": "utanmak",
+         "ru": "стесняться, стыдиться",
+         "ex": "<span lang=\"tr\">Türkçe konuşmaktan utanma!</span><small>Не стесняйся говорить по-турецки!</small>"
+        },
+        {
+         "tr": "hayal kırıklığı",
+         "ru": "разочарование",
+         "ex": "<span lang=\"tr\">Film tam bir hayal kırıklığıydı.</span><small>Фильм оказался полным разочарованием.</small>"
+        },
+        {
+         "tr": "gurur duymak",
+         "ru": "гордиться",
+         "ex": "<span lang=\"tr\">Seninle gurur duyuyorum.</span><small>Я тобой горжусь.</small>"
+        }
+       ]
       }
      ],
      "numbered": true,
      "speak": "tr",
-     "search": "Найти слово"
+     "search": "Найти слово",
+     "note": "Слова 1–100 — из ролика, 101–150 — бонус по темам: работа, путешествия, дом, здоровье, отношения."
+    },
+    {
+     "type": "media",
+     "id": "themes",
+     "title": "Бонус: 50 слов *по темам*",
+     "lead": "Пять тем, где B1 нужен чаще всего. На карточке — первые шесть слов темы и пример, все 10 слов каждой темы — в таблице выше.",
+     "groups": [
+      {
+       "title": "Темы",
+       "shape": "wide",
+       "items": [
+        {
+         "title": "Работа",
+         "sub": "<span lang=\"tr\">İş</span> · 10 слов",
+         "bonus": true,
+         "img": "kit/img/tr14-work.webp",
+         "alt": "Коллеги аплодируют на совещании",
+         "credit": "Фото: tec_estromberg, CC BY",
+         "text": "<b lang=\"tr\">başvuru</b> — заявка, отклик · <b lang=\"tr\">özgeçmiş</b> — резюме · <b lang=\"tr\">toplantı</b> — совещание, встреча · <b lang=\"tr\">müdür</b> — руководитель, директор · <b lang=\"tr\">meslektaş</b> — коллега · <b lang=\"tr\">izin</b> — отпуск; разрешение",
+         "tip": "<span lang=\"tr\">İş başvurumu dün gönderdim.</span> — Вчера я отправил заявку на работу."
+        },
+        {
+         "title": "Путешествия",
+         "sub": "<span lang=\"tr\">Seyahat</span> · 10 слов",
+         "bonus": true,
+         "img": "kit/img/tr14-travel.webp",
+         "alt": "Гора чемоданов",
+         "credit": "Фото: jasleen_kaur, CC BY-SA",
+         "text": "<b lang=\"tr\">konaklama</b> — проживание · <b lang=\"tr\">bavul</b> — чемодан · <b lang=\"tr\">uçuş</b> — рейс, полёт · <b lang=\"tr\">aktarma</b> — пересадка · <b lang=\"tr\">gümrük</b> — таможня · <b lang=\"tr\">rehber</b> — гид; путеводитель",
+         "tip": "<span lang=\"tr\">Fiyata konaklama dahil mi?</span> — Проживание входит в цену?"
+        },
+        {
+         "title": "Дом и быт",
+         "sub": "<span lang=\"tr\">Ev</span> · 10 слов",
+         "bonus": true,
+         "img": "kit/img/tr14-home.webp",
+         "alt": "Комната с коробками после переезда",
+         "credit": "Фото: phil_g, CC BY-SA",
+         "text": "<b lang=\"tr\">ev sahibi</b> — хозяин квартиры · <b lang=\"tr\">depozito</b> — залог · <b lang=\"tr\">fatura</b> — счёт (за услуги) · <b lang=\"tr\">tamir etmek</b> — чинить · <b lang=\"tr\">taşınmak</b> — переезжать · <b lang=\"tr\">eşya</b> — вещи, мебель",
+         "tip": "<span lang=\"tr\">Ev sahibi kirayı artırdı.</span> — Хозяин квартиры поднял аренду."
+        },
+        {
+         "title": "Здоровье",
+         "sub": "<span lang=\"tr\">Sağlık</span> · 10 слов",
+         "bonus": true,
+         "img": "kit/img/tr14-health.webp",
+         "alt": "Стетоскоп",
+         "credit": "Фото: Stethoscopes, CC BY-SA",
+         "text": "<b lang=\"tr\">randevu</b> — запись, встреча · <b lang=\"tr\">muayene</b> — осмотр · <b lang=\"tr\">reçete</b> — рецепт · <b lang=\"tr\">ilaç</b> — лекарство · <b lang=\"tr\">ağrı</b> — боль · <b lang=\"tr\">ateş</b> — температура, жар",
+         "tip": "<span lang=\"tr\">Doktordan randevu aldım.</span> — Я записался к врачу."
+        },
+        {
+         "title": "Отношения",
+         "sub": "<span lang=\"tr\">İlişkiler</span> · 10 слов",
+         "bonus": true,
+         "img": "kit/img/tr14-people.webp",
+         "alt": "Трое друзей смеются за столом",
+         "credit": "Фото: ozmafan, CC BY",
+         "text": "<b lang=\"tr\">güvenmek</b> — доверять · <b lang=\"tr\">kıskanmak</b> — ревновать, завидовать · <b lang=\"tr\">barışmak</b> — мириться · <b lang=\"tr\">kavga etmek</b> — ссориться, драться · <b lang=\"tr\">özür dilemek</b> — извиняться · <b lang=\"tr\">sabır</b> — терпение",
+         "tip": "<span lang=\"tr\">Sana güveniyorum.</span> — Я тебе доверяю."
+        }
+       ]
+      }
+     ],
+     "note": "Фото со свободными лицензиями Creative Commons из Openverse, автор указан под каждым снимком."
     },
     {
      "type": "quiz",
@@ -562,7 +908,7 @@ window.KIT = {
      "mode": "list",
      "title": "Проверь *себя*",
      "optLang": "tr",
-     "lead": "Пять вопросов по списку.",
+     "lead": "Семь вопросов по списку.",
      "questions": [
       {
        "q": "«Я и так знал» —",
@@ -605,6 +951,26 @@ window.KIT = {
        "explain": "*henüz* + отрицание — «ещё не»."
       },
       {
+       "q": "«Я записался к врачу» —",
+       "options": [
+        "Doktordan randevu aldım.",
+        "Doktordan reçete aldım.",
+        "Doktordan izin aldım."
+       ],
+       "answer": 0,
+       "explain": "*randevu* — запись, встреча. Reçete — рецепт."
+      },
+      {
+       "q": "aktarma — это…",
+       "options": [
+        "таможня",
+        "пересадка",
+        "рейс"
+       ],
+       "answer": 1,
+       "explain": "*aktarma* — пересадка. Таможня — gümrük, рейс — uçuş."
+      },
+      {
        "q": "«Я с тобой согласен» —",
        "options": [
         "Sana katılıyorum.",
@@ -622,17 +988,12 @@ window.KIT = {
        "text": "Пройди слова ещё раз, по 10 в день."
       },
       {
-       "min": 4,
+       "min": 6,
        "title": "Отлично",
        "text": "Теперь вставляй эти слова в свои фразы — так они станут активными."
       }
      ]
-    }
-   ]
-  },
-  {
-   "before": "#inside",
-   "blocks": [
+    },
     {
      "type": "platform",
      "id": "notion",

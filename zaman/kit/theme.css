@@ -45,3 +45,4 @@
 }
 /* стрелки карусели дизайна не вылезают за экран на самых узких телефонах */
 @media (max-width: 360px) { .arrows { gap: 2px; } .arr { width: 36px; } }
+.kit .k-mtools { align-items: flex-start; }

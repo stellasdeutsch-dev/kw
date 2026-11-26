@@ -175,6 +175,215 @@ window.KIT = {
      "note": "V — глагол, V3 — третья форма (done, seen, worked), V-ing — глагол с -ing."
     },
     {
+     "type": "media",
+     "id": "scenes",
+     "title": "Каждое время в одной сцене",
+     "lead": "Фото ситуации, шкала времени, слова-маркеры и два новых примера к каждому времени. Фильтр по уровню оставит то, что проходят на твоём уровне.",
+     "groups": [
+      {
+       "title": "Present: настоящее",
+       "shape": "wide",
+       "items": [
+        {
+         "title": "Present Simple",
+         "lang": "en",
+         "level": "A1",
+         "levels": [
+          "A1"
+         ],
+         "sub": "Регулярно, привычки, факты, расписание",
+         "text": "<b>Шкала:</b> было — есть — будет: всегда так<br><b>Маркеры:</b> <span lang=\"en\">always, usually, often, every day, never</span><br><span lang=\"en\">I <b class=\"k-mark\">drink</b> coffee every morning.</span> — Я пью кофе каждое утро.<br><span lang=\"en\">The shop <b class=\"k-mark\">opens</b> at nine.</span> — Магазин открывается в девять.",
+         "tip": "He, she, it — с окончанием -s: she drinks, it opens.",
+         "img": "kit/img/en02-ps.webp",
+         "alt": "Present Simple: Регулярно, привычки, факты, расписание",
+         "credit": "Фото: madame.furie, CC BY-SA"
+        },
+        {
+         "title": "Present Continuous",
+         "lang": "en",
+         "level": "A1",
+         "levels": [
+          "A1"
+         ],
+         "sub": "Прямо сейчас или временно",
+         "text": "<b>Шкала:</b> процесс идёт в момент речи<br><b>Маркеры:</b> <span lang=\"en\">now, right now, at the moment, this week</span><br><span lang=\"en\">He<b class=\"k-mark\">'s cooking</b> dinner right now.</span> — Он сейчас готовит ужин.<br><span lang=\"en\">I<b class=\"k-mark\">'m staying</b> with friends this week.</span> — На этой неделе я живу у друзей.",
+         "tip": "Глаголы know, like, want обычно без -ing: I know, а не I am knowing.",
+         "img": "kit/img/en02-pc.webp",
+         "alt": "Present Continuous: Прямо сейчас или временно",
+         "credit": "Фото: Epicantus, CC BY"
+        },
+        {
+         "title": "Present Perfect",
+         "lang": "en",
+         "level": "A2",
+         "levels": [
+          "A2"
+         ],
+         "sub": "Опыт или результат, время не названо",
+         "text": "<b>Шкала:</b> было когда-то → важно сейчас<br><b>Маркеры:</b> <span lang=\"en\">ever, never, already, just, yet</span><br><span lang=\"en\">I<b class=\"k-mark\">'ve</b> never <b class=\"k-mark\">been</b> to Japan.</span> — Я никогда не был в Японии.<br><span lang=\"en\">She<b class=\"k-mark\">'s</b> just <b class=\"k-mark\">left</b>.</span> — Она только что ушла.",
+         "tip": "Есть yesterday или last year — значит, Past Simple.",
+         "img": "kit/img/en02-pp.webp",
+         "alt": "Present Perfect: Опыт или результат, время не названо",
+         "credit": "Фото: hjl, CC BY"
+        },
+        {
+         "title": "Present Perfect Continuous",
+         "lang": "en",
+         "level": "B1",
+         "levels": [
+          "B1"
+         ],
+         "sub": "Длится до сих пор, важно сколько",
+         "text": "<b>Шкала:</b> началось раньше → идёт сейчас<br><b>Маркеры:</b> <span lang=\"en\">for, since, how long, all day</span><br><span lang=\"en\">It<b class=\"k-mark\">'s been raining</b> since morning.</span> — Дождь идёт с утра.<br><span lang=\"en\">We<b class=\"k-mark\">'ve been waiting</b> for twenty minutes.</span> — Мы ждём уже двадцать минут.",
+         "tip": "По-русски здесь настоящее время: «жду уже час» = I’ve been waiting for an hour.",
+         "img": "kit/img/en02-ppc.webp",
+         "alt": "Present Perfect Continuous: Длится до сих пор, важно сколько",
+         "credit": "Фото: fredcamino, CC BY-SA"
+        }
+       ]
+      },
+      {
+       "title": "Past: прошедшее",
+       "shape": "wide",
+       "items": [
+        {
+         "title": "Past Simple",
+         "lang": "en",
+         "level": "A1",
+         "levels": [
+          "A1"
+         ],
+         "sub": "Закончилось, время названо или понятно",
+         "text": "<b>Шкала:</b> точка в прошлом<br><b>Маркеры:</b> <span lang=\"en\">yesterday, last summer, in 2020, two years ago</span><br><span lang=\"en\">We <b class=\"k-mark\">went</b> to the sea last summer.</span> — Прошлым летом мы ездили на море.<br><span lang=\"en\">I <b class=\"k-mark\">met</b> him two years ago.</span> — Я познакомился с ним два года назад.",
+         "tip": "В вопросе и отрицании помогает did, а глагол в начальной форме: Did you go?",
+         "img": "kit/img/en02-pas.webp",
+         "alt": "Past Simple: Закончилось, время названо или понятно",
+         "credit": "Фото: laszlo-photo, CC BY"
+        },
+        {
+         "title": "Past Continuous",
+         "lang": "en",
+         "level": "A2",
+         "levels": [
+          "A2"
+         ],
+         "sub": "Шло в момент в прошлом",
+         "text": "<b>Шкала:</b> процесс в прошлом, его прервали<br><b>Маркеры:</b> <span lang=\"en\">when, while, at ten last night</span><br><span lang=\"en\">I <b class=\"k-mark\">was walking</b> home when it started to rain.</span> — Я шёл домой, когда пошёл дождь.<br><span lang=\"en\">What <b class=\"k-mark\">were</b> you <b class=\"k-mark\">doing</b> at ten last night?</span> — Что ты делал вчера в десять вечера?",
+         "tip": "Длинное действие — Past Continuous, короткое, которое его прервало, — Past Simple.",
+         "img": "kit/img/en02-pac.webp",
+         "alt": "Past Continuous: Шло в момент в прошлом",
+         "credit": "Фото: eflon, CC BY"
+        },
+        {
+         "title": "Past Perfect",
+         "lang": "en",
+         "level": "B1",
+         "levels": [
+          "B1"
+         ],
+         "sub": "Случилось раньше другого прошлого",
+         "text": "<b>Шкала:</b> раньше → потом, оба в прошлом<br><b>Маркеры:</b> <span lang=\"en\">before, by the time, already</span><br><span lang=\"en\">When we arrived, the train <b class=\"k-mark\">had</b> already <b class=\"k-mark\">left</b>.</span> — Когда мы пришли, поезд уже ушёл.<br><span lang=\"en\">I <b class=\"k-mark\">had</b> never <b class=\"k-mark\">seen</b> snow before that trip.</span> — До той поездки я никогда не видел снега.",
+         "tip": "Если порядок понятен из before или after, можно и Past Simple.",
+         "img": "kit/img/en02-pap.webp",
+         "alt": "Past Perfect: Случилось раньше другого прошлого",
+         "credit": "Фото: Rex Roof, CC BY"
+        },
+        {
+         "title": "Past Perfect Continuous",
+         "lang": "en",
+         "level": "B2",
+         "levels": [
+          "B2"
+         ],
+         "sub": "Длилось до момента в прошлом",
+         "text": "<b>Шкала:</b> долгий процесс → момент в прошлом<br><b>Маркеры:</b> <span lang=\"en\">for, since, before, how long</span><br><span lang=\"en\">He was tired because he <b class=\"k-mark\">had been running</b>.</span> — Он устал, потому что бегал.<br><span lang=\"en\">They <b class=\"k-mark\">had been waiting</b> for an hour when the bus came.</span> — Они ждали уже час, когда пришёл автобус.",
+         "tip": "Объясняет причину: почему кто-то устал, промок или злился.",
+         "img": "kit/img/en02-papc.webp",
+         "alt": "Past Perfect Continuous: Длилось до момента в прошлом",
+         "credit": "Фото: Peter Mooney, CC BY"
+        }
+       ]
+      },
+      {
+       "title": "Future: будущее и be going to",
+       "shape": "wide",
+       "items": [
+        {
+         "title": "Future Simple",
+         "lang": "en",
+         "level": "A1",
+         "levels": [
+          "A1"
+         ],
+         "sub": "Решение сейчас, обещание, прогноз",
+         "text": "<b>Шкала:</b> решил в момент речи<br><b>Маркеры:</b> <span lang=\"en\">tomorrow, next week, I think, probably</span><br><span lang=\"en\">I<b class=\"k-mark\">'ll call</b> you tomorrow.</span> — Я позвоню тебе завтра.<br><span lang=\"en\">I think it <b class=\"k-mark\">will be</b> sunny.</span> — Думаю, будет солнечно.",
+         "tip": "Отрицание — won’t: I won’t tell anyone. «Никому не скажу».",
+         "img": "kit/img/en02-fs.webp",
+         "alt": "Future Simple: Решение сейчас, обещание, прогноз",
+         "credit": "Фото: Kelvin_Kevin Gan, CC BY"
+        },
+        {
+         "title": "Future Continuous",
+         "lang": "en",
+         "level": "B1",
+         "levels": [
+          "B1"
+         ],
+         "sub": "Будет в процессе в момент будущего",
+         "text": "<b>Шкала:</b> процесс в точке будущего<br><b>Маркеры:</b> <span lang=\"en\">this time tomorrow, at eight tonight</span><br><span lang=\"en\">Don't call at eight, I<b class=\"k-mark\">'ll be driving</b>.</span> — Не звони в восемь, я буду за рулём.<br><span lang=\"en\">This time next week we<b class=\"k-mark\">'ll be lying</b> on the beach.</span> — Через неделю в это время мы будем лежать на пляже.",
+         "tip": "Удобно вежливо спросить о планах: Will you be using the car tonight?",
+         "img": "kit/img/en02-fc.webp",
+         "alt": "Future Continuous: Будет в процессе в момент будущего",
+         "credit": "Фото: bnilsen, CC BY-SA"
+        },
+        {
+         "title": "Future Perfect",
+         "lang": "en",
+         "level": "B2",
+         "levels": [
+          "B2"
+         ],
+         "sub": "Будет сделано к моменту в будущем",
+         "text": "<b>Шкала:</b> готово к точке будущего<br><b>Маркеры:</b> <span lang=\"en\">by June, by then, by the time</span><br><span lang=\"en\">By June I<b class=\"k-mark\">'ll have finished</b> university.</span> — К июню я окончу университет.<br><span lang=\"en\">The film <b class=\"k-mark\">will have started</b> by the time we get there.</span> — Фильм уже начнётся, когда мы доберёмся.",
+         "tip": "Главное слово — by: by six, by Monday, by the end of the year.",
+         "img": "kit/img/en02-fp.webp",
+         "alt": "Future Perfect: Будет сделано к моменту в будущем",
+         "credit": "Фото: spakattacks, CC BY"
+        },
+        {
+         "title": "Future Perfect Continuous",
+         "lang": "en",
+         "level": "C1",
+         "levels": [
+          "C1"
+         ],
+         "sub": "Сколько будет длиться к моменту в будущем",
+         "text": "<b>Шкала:</b> длится → точка будущего<br><b>Маркеры:</b> <span lang=\"en\">for … by, by next year</span><br><span lang=\"en\">In May I<b class=\"k-mark\">'ll have been living</b> here for ten years.</span> — В мае будет десять лет, как я здесь живу.<br><span lang=\"en\">Next month she<b class=\"k-mark\">'ll have been working</b> here for five years.</span> — В следующем месяце будет пять лет, как она здесь работает.",
+         "tip": "Редкое время: его достаточно узнавать в тексте.",
+         "img": "kit/img/en02-fpc.webp",
+         "alt": "Future Perfect Continuous: Сколько будет длиться к моменту в будущем",
+         "credit": "Фото: rawpixel, CC0"
+        },
+        {
+         "title": "Be going to",
+         "lang": "en",
+         "level": "A2",
+         "levels": [
+          "A2"
+         ],
+         "sub": "План, решённый заранее, или явный признак",
+         "text": "<b>Шкала:</b> уже решил или уже видно<br><b>Маркеры:</b> <span lang=\"en\">tonight, next week, look!</span><br><span lang=\"en\">Look at those clouds! It<b class=\"k-mark\">'s going to rain</b>.</span> — Посмотри на тучи! Сейчас пойдёт дождь.<br><span lang=\"en\">We<b class=\"k-mark\">'re going to buy</b> a car.</span> — Мы собираемся купить машину.",
+         "tip": "Решил заранее — going to. Решил прямо сейчас — will: I’ll get it!",
+         "img": "kit/img/en02-go.webp",
+         "alt": "Be going to: План, решённый заранее, или явный признак",
+         "credit": "Фото: izoo3y, CC BY-SA"
+        }
+       ]
+      }
+     ],
+     "note": "Фото с Openverse по свободным лицензиям Creative Commons, автор указан на карточке."
+    },
+    {
      "type": "forms",
      "id": "work",
      "title": "Один глагол во всех временах",
@@ -507,12 +716,7 @@ window.KIT = {
        ]
       }
      ]
-    }
-   ]
-  },
-  {
-   "before": "#author",
-   "blocks": [
+    },
     {
      "type": "platform",
      "id": "notion",

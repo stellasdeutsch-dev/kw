@@ -5,6 +5,99 @@ window.KIT = {
    "after": "#top",
    "blocks": [
     {
+     "type": "media",
+     "id": "cities",
+     "title": "Пять городов маршрута",
+     "lead": "В Alterna уровни — это города: A1 Стамбул, A2 Измир, B1 Анталья, B2 Анкара, C1 Самсун. Кем ты будешь в каждом и чему там учишься.",
+     "groups": [
+      {
+       "title": "A1 → B1: маршрут из ролика",
+       "shape": "wide",
+       "lead": "Три города, с которых начинается путь.",
+       "items": [
+        {
+         "title": "A1 · İstanbul — Стамбул",
+         "level": "A1",
+         "levels": [
+          "A1"
+         ],
+         "sub": "Гость города: фразы, кафе, транспорт",
+         "text": "Две недели в Стамбуле: ты впервые в Турции, живёшь в Кадыкёе и учишься выживать — поздороваться, заказать, спросить дорогу, доехать, купить, познакомиться.",
+         "tip": "Юниты: Merhaba, İstanbul, Günlük hayat, Kafede, Yol sormak и другие",
+         "img": "kit/img/tr08-ph-istanbul.webp",
+         "alt": "Паром в Кадыкёй, Стамбул",
+         "credit": "Фото: Harold Litwiler, Poppy, CC BY",
+         "href": "#route",
+         "go": "Юниты города"
+        },
+        {
+         "title": "A2 · İzmir — Измир",
+         "level": "A2",
+         "levels": [
+          "A2"
+         ],
+         "sub": "Житель города: покупки, жильё, город",
+         "text": "Переезд в Измир на год: ты снимаешь квартиру в Алсанджаке, обживаешься, становишься не гостем, а жителем — счета, соседи, рынок, врач, кухня.",
+         "tip": "Юниты: Ev arıyorum, Mahalle hayatı, Şehirde, Alışveriş ustası и другие",
+         "img": "kit/img/tr08-ph-izmir.webp",
+         "alt": "Набережная Алсанджака, Измир",
+         "credit": "Фото: birol.aydilek, CC BY",
+         "href": "#route",
+         "go": "Юниты города"
+        },
+        {
+         "title": "B1 · Antalya — Анталья",
+         "level": "B1",
+         "levels": [
+          "B1"
+         ],
+         "sub": "Студент и работник: университет, аренда, работа",
+         "text": "Университет Акдениз в Анталье: учёба, сосед по квартире, подработка в отеле, первые настоящие споры и первое собственное мнение по-турецки.",
+         "tip": "Юниты: Üniversiteye kayıt, Ev arkadaşı, Çalışmak, Antalya hayatı и другие",
+         "img": "kit/img/tr08-ph-antalya.webp",
+         "alt": "Гавань Калеичи, Анталья",
+         "credit": "Фото: TurkeyVision, CC BY",
+         "href": "#route",
+         "go": "Юниты города"
+        }
+       ]
+      },
+      {
+       "title": "Дальше: B2 и C1",
+       "shape": "wide",
+       "lead": "Следующие города открываются тестом уровня.",
+       "items": [
+        {
+         "title": "B2 · Ankara — Анкара",
+         "level": "B2",
+         "levels": [
+          "B2"
+         ],
+         "sub": "Профессионал и резидент: документы, собеседования",
+         "text": "Столица: ВНЖ, налоговый номер, e-Devlet, нотариус, CV по-турецки, собеседование, офис и совещания. Язык становится рабочим инструментом.",
+         "tip": "Юниты: Resmî işler, İş görüşmesi, Ofiste, Başkentte и другие",
+         "img": "kit/img/tr08-ph-ankara.webp",
+         "alt": "Вечерняя Анкара",
+         "credit": "Фото: Jorge Franganillo, CC BY"
+        },
+        {
+         "title": "C1 · Samsun — Самсун",
+         "level": "C1",
+         "levels": [
+          "C1"
+         ],
+         "sub": "Полноправный участник: культура, дискуссии, свобода речи",
+         "text": "Самсун, где в 1919-м началась Республика: язык и идентичность, литература, дискуссия, ирония и подтекст, своя колонка. Ты не изучаешь турецкий — ты на нём думаешь.",
+         "tip": "Юниты: Dil ve kimlik, Edebiyat, Tartışma, İfade özgürlüğü и другие",
+         "img": "kit/img/tr08-ph-samsun.webp",
+         "alt": "Побережье Атакума, Самсун",
+         "credit": "Фото: kerim arli, CC BY"
+        }
+       ]
+      }
+     ]
+    },
+    {
      "type": "levels",
      "id": "route",
      "bg": "b",
@@ -102,10 +195,10 @@ window.KIT = {
      "mode": "steps",
      "showLevel": true,
      "bandBy": "levels",
-     "pass": 0.75,
+     "pass": 0.8,
      "optLang": "tr",
      "title": "Быстрый тест: с какого города начать",
-     "lead": "12 вопросов, по 4 на A1, A2 и B1. Уровень засчитывается, если верно 3 из 4. Полный тест Alterna в формате TÖMER — по ссылке в результате.",
+     "lead": "15 вопросов, по 5 на A1, A2 и B1. Уровень засчитывается, если верно 4 из 5. Полный тест Alterna в формате TÖMER — по ссылке в результате.",
      "questions": [
       {
        "level": "A1",
@@ -152,6 +245,17 @@ window.KIT = {
        "explain": "Возраст: *yaşındayım* — «мне … лет»."
       },
       {
+       "level": "A1",
+       "q": "Ben Türk … — «Я не турок».",
+       "options": [
+        "değilim",
+        "yokum",
+        "değil"
+       ],
+       "answer": 0,
+       "explain": "Отрицание с существительным: değil + личное окончание — Türk *değilim*. yok значит «нет, отсутствует»."
+      },
+      {
        "level": "A2",
        "q": "Dün sinemaya … — «Вчера я ходил в кино».",
        "options": [
@@ -196,6 +300,17 @@ window.KIT = {
        "explain": "Будущее время: ara*yacağım*."
       },
       {
+       "level": "A2",
+       "q": "Çocukken çok top … — «В детстве я много играл в мяч» (привычка в прошлом).",
+       "options": [
+        "oynardım",
+        "oynayacağım",
+        "oynuyorum"
+       ],
+       "answer": 0,
+       "explain": "Привычка в прошлом — широкое время + -dı: oyna*rdım*."
+      },
+      {
        "level": "B1",
        "q": "Keşke daha erken …! — «Вот бы я пришёл раньше!»",
        "options": [
@@ -238,6 +353,17 @@ window.KIT = {
        ],
        "answer": 1,
        "explain": "Реальное условие: yağ*arsa*."
+      },
+      {
+       "level": "B1",
+       "q": "Eve gelince seni ararım. Что значит gelince?",
+       "options": [
+        "когда приду",
+        "если бы пришёл",
+        "чтобы прийти"
+       ],
+       "answer": 0,
+       "explain": "-ınca / -ince — «когда, как только»: gel*ince*."
       }
      ],
      "bands": [
@@ -269,12 +395,7 @@ window.KIT = {
        "linkText": "Полный тест уровня Alterna"
       }
      ]
-    }
-   ]
-  },
-  {
-   "before": "#about",
-   "blocks": [
+    },
     {
      "type": "platform",
      "id": "notion",

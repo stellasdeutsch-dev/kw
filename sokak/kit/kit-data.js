@@ -8,8 +8,8 @@ window.KIT = {
      "type": "table",
      "id": "phrases",
      "bg": "b",
-     "title": "30 фраз: книжный → разговорный",
-     "lead": "Слева то, что дают в учебнике, в середине то, что услышишь на улице. Нажми на значок звука, чтобы послушать фразу голосом браузера.",
+     "title": "45 фраз: книжный → разговорный",
+     "lead": "Слева то, что дают в учебнике, в середине то, что услышишь на улице. Первые 30 — из ролика и его продолжение, последние 15 — бонус. Нажми на значок звука, чтобы послушать фразу голосом браузера.",
      "cols": [
       {
        "key": "book",
@@ -237,6 +237,114 @@ window.KIT = {
          "ex": "<span lang=\"tr\">Sınavda bol şans!</span><small>Удачи на экзамене!</small>"
         }
        ]
+      },
+      {
+       "title": "Бонус: кафе, рынок, мастер",
+       "sub": "5 фраз сверх ролика",
+       "rows": [
+        {
+         "book": "Hesabı alabilir miyim?",
+         "street": "*Hesap lütfen*",
+         "ru": "счёт, пожалуйста",
+         "ex": "<span lang=\"tr\">Hesap lütfen, kartla ödeyeceğim.</span><small>Счёт, пожалуйста, оплачу картой.</small>"
+        },
+        {
+         "book": "İndirim yapabilir misiniz?",
+         "street": "*Son fiyat?*",
+         "ru": "а последняя цена? (торг)",
+         "ex": "<span lang=\"tr\">Güzel ama pahalı. Son fiyat?</span><small>Красиво, но дорого. Последняя цена?</small>"
+        },
+        {
+         "book": "Çok pahalı",
+         "street": "*Kazık!*",
+         "ru": "грабёж, развод (о цене)",
+         "ex": "<span lang=\"tr\">Bu fiyat kazık!</span><small>Эта цена — просто грабёж!</small>"
+        },
+        {
+         "book": "Para üstü sizde kalsın",
+         "street": "*Üstü kalsın*",
+         "ru": "сдачи не надо",
+         "ex": "<span lang=\"tr\">Buyurun, üstü kalsın.</span><small>Держите, сдачи не надо.</small>"
+        },
+        {
+         "book": "İyi çalışmalar",
+         "street": "*Kolay gelsin*",
+         "ru": "бог в помощь (тому, кто работает)",
+         "ex": "<span lang=\"tr\">Kolay gelsin, usta!</span><small>Бог в помощь, мастер!</small>"
+        }
+       ]
+      },
+      {
+       "title": "Бонус: друзья и переписка",
+       "sub": "6 фраз",
+       "rows": [
+        {
+         "book": "Tamam, anladım",
+         "street": "*Tamamdır*",
+         "ru": "понял, договорились",
+         "ex": "<span lang=\"tr\">Tamamdır, akşam ararım.</span><small>Договорились, вечером позвоню.</small>"
+        },
+        {
+         "book": "Rica ederim",
+         "street": "*Ne demek*",
+         "ru": "не за что",
+         "ex": "<span lang=\"tr\">— Sağ ol! — Ne demek, her zaman!</span><small>— Спасибо! — Не за что, обращайся!</small>"
+        },
+        {
+         "book": "Çok teşekkürler",
+         "street": "*Eyvallah*",
+         "ru": "спасибо (по-свойски)",
+         "ex": "<span lang=\"tr\">Eyvallah abi!</span><small>Спасибо, брат!</small>"
+        },
+        {
+         "book": "Hemen geliyorum",
+         "street": "*Geldim geldim*",
+         "ru": "уже иду (хотя ещё в пути)",
+         "ex": "<span lang=\"tr\">— Neredesin? — Geldim geldim, yoldayım!</span><small>— Ты где? — Уже иду, я в пути!</small>"
+        },
+        {
+         "book": "Artık gitmem lazım",
+         "street": "*Ben kaçtım*",
+         "ru": "ну, я побежал",
+         "ex": "<span lang=\"tr\">Geç oldu, ben kaçtım!</span><small>Поздно уже, я побежал!</small>"
+        },
+        {
+         "book": "Gerçekten",
+         "street": "*Valla*",
+         "ru": "честно, правда",
+         "ex": "<span lang=\"tr\">Valla çok yorgunum.</span><small>Честно, я очень устал.</small>"
+        }
+       ]
+      },
+      {
+       "title": "Бонус: чувства и пожелания",
+       "sub": "4 фразы",
+       "rows": [
+        {
+         "book": "Çok acıktım",
+         "street": "*Kurt gibi acıktım*",
+         "ru": "голоден как волк",
+         "ex": "<span lang=\"tr\">Hadi yemeğe gidelim, kurt gibi acıktım.</span><small>Пойдём поедим, я голоден как волк.</small>"
+        },
+        {
+         "book": "Ciddi misin?",
+         "street": "*Yok artık!*",
+         "ru": "да ну, не может быть!",
+         "ex": "<span lang=\"tr\">Yok artık, yine mi yağmur?</span><small>Да ну, опять дождь?</small>"
+        },
+        {
+         "book": "Umarım çabuk iyileşirsin",
+         "street": "*Geçmiş olsun*",
+         "ru": "выздоравливай, пусть пройдёт",
+         "ex": "<span lang=\"tr\">Hastaymışsın, geçmiş olsun!</span><small>Слышал, ты заболел, выздоравливай!</small>"
+        },
+        {
+         "book": "Çok güzel olmuş",
+         "street": "*Maşallah*",
+         "ru": "какая красота (чтобы не сглазить)",
+         "ex": "<span lang=\"tr\">Maşallah, çok tatlı bir bebek!</span><small>Какой милый малыш, чтоб не сглазить!</small>"
+        }
+       ]
       }
      ],
      "numbered": true,
@@ -245,13 +353,100 @@ window.KIT = {
      "note": "Книжные формы не ошибка: они нужны в банке, у врача, с незнакомыми людьми старше тебя. Разговорные — с друзьями, коллегами и в кафе."
     },
     {
+     "type": "media",
+     "id": "scenes",
+     "title": "Где какие фразы пригодятся",
+     "lead": "Девять ситуаций из жизни в Турции и фразы, которые в них пригодятся.",
+     "groups": [
+      {
+       "title": "Ситуации",
+       "shape": "wide",
+       "items": [
+        {
+         "title": "На улице",
+         "img": "kit/img/tr01-street.webp",
+         "alt": "На улице",
+         "credit": "Фото: Mark Ahsmann, CC BY-SA",
+         "tip": "Встретил знакомого: Selam, naber? — и разговор начат.",
+         "text": "*<span lang=\"tr\">Selam</span>* — привет · *<span lang=\"tr\">Naber?</span>* — как дела? · *<span lang=\"tr\">Efendim?</span>* — что-что? · *<span lang=\"tr\">Görüşürüz</span>* — увидимся"
+        },
+        {
+         "title": "В кафе и чайной",
+         "img": "kit/img/tr01-cafe.webp",
+         "alt": "В кафе и чайной",
+         "credit": "Фото: avlxyz, CC BY-SA",
+         "tip": "Bakar mısınız? — вежливый способ позвать официанта.",
+         "text": "*<span lang=\"tr\">Bakar mısınız?</span>* — можно вас? · *<span lang=\"tr\">Hesap lütfen</span>* — счёт, пожалуйста · *<span lang=\"tr\">Sağ ol</span>* — спасибо"
+        },
+        {
+         "title": "На рынке",
+         "img": "kit/img/tr01-bazaar.webp",
+         "alt": "На рынке",
+         "credit": "Фото: Gareth1953 All Right Now, CC BY",
+         "tip": "Торговаться принято на базаре, а не в магазине с ценниками.",
+         "text": "*<span lang=\"tr\">Kaç para?</span>* — почём? · *<span lang=\"tr\">Son fiyat?</span>* — последняя цена? · *<span lang=\"tr\">Kazık!</span>* — грабёж!"
+        },
+        {
+         "title": "За чашкой кофе",
+         "img": "kit/img/tr01-coffee.webp",
+         "alt": "За чашкой кофе",
+         "credit": "Фото: avlxyz, CC BY-SA",
+         "tip": "Слушаешь новости друга? Hadi ya! и Bence de поддержат разговор.",
+         "text": "*<span lang=\"tr\">Ne var ne yok?</span>* — что нового? · *<span lang=\"tr\">Hadi ya!</span>* — да ладно! · *<span lang=\"tr\">Bence de</span>* — я тоже так думаю · *<span lang=\"tr\">Valla</span>* — честно"
+        },
+        {
+         "title": "С друзьями",
+         "img": "kit/img/tr01-friends.webp",
+         "alt": "С друзьями",
+         "credit": "Фото: Miguel Virkkunen Carvalho, CC BY",
+         "tip": "Kanka и Efsane — только для своих.",
+         "text": "*<span lang=\"tr\">Kanka</span>* — бро · *<span lang=\"tr\">Aynen</span>* — вот именно · *<span lang=\"tr\">Efsane</span>* — огонь · *<span lang=\"tr\">Helal olsun</span>* — красава"
+        },
+        {
+         "title": "За столом и в гостях",
+         "img": "kit/img/tr01-breakfast.webp",
+         "alt": "За столом и в гостях",
+         "credit": "Фото: Jorge Franganillo, CC BY",
+         "tip": "После домашней еды хозяйке говорят Eline sağlık.",
+         "text": "*<span lang=\"tr\">Eline sağlık</span>* — спасибо за еду · *<span lang=\"tr\">Kurt gibi acıktım</span>* — голоден как волк · *<span lang=\"tr\">Maşallah</span>* — какая красота"
+        },
+        {
+         "title": "В дороге",
+         "img": "kit/img/tr01-ferry.webp",
+         "alt": "В дороге",
+         "credit": "Фото: henribergius, CC BY-SA",
+         "tip": "Geldim geldim часто говорят, когда человек ещё в пути.",
+         "text": "*<span lang=\"tr\">Geldim geldim</span>* — уже иду · *<span lang=\"tr\">Dur bi</span>* — погоди · *<span lang=\"tr\">Ben kaçtım</span>* — я побежал"
+        },
+        {
+         "title": "В такси",
+         "img": "kit/img/tr01-taxi.webp",
+         "alt": "В такси",
+         "credit": "Фото: Aurélien Breeden, CC BY",
+         "tip": "Üstü kalsın — когда отдаёшь купюру и не ждёшь сдачу.",
+         "text": "*<span lang=\"tr\">Bi saniye</span>* — секунду · *<span lang=\"tr\">Üstü kalsın</span>* — сдачи не надо · *<span lang=\"tr\">Tamamdır</span>* — договорились"
+        },
+        {
+         "title": "Тому, кто работает",
+         "img": "kit/img/tr01-simit.webp",
+         "alt": "Тому, кто работает",
+         "credit": "Фото: Capitan Giona, CC BY-SA",
+         "tip": "Kolay gelsin говорят продавцу, мастеру, курьеру — всем, кто работает.",
+         "text": "*<span lang=\"tr\">Kolay gelsin</span>* — бог в помощь · *<span lang=\"tr\">Eline sağlık</span>* — спасибо за работу · *<span lang=\"tr\">Eyvallah</span>* — спасибо"
+        }
+       ]
+      }
+     ],
+     "note": "Фото со свободными лицензиями Creative Commons из Openverse, автор указан под каждым снимком."
+    },
+    {
      "type": "quiz",
      "id": "check",
      "bg": "a",
      "mode": "list",
      "title": "Проверь себя",
      "optLang": "tr",
-     "lead": "Пять ситуаций. Выбери, что сказал бы турок.",
+     "lead": "Восемь ситуаций. Выбери, что сказал бы турок.",
      "questions": [
       {
        "q": "Друг принёс тебе чай. Как сказать «спасибо» по-дружески?",
@@ -302,6 +497,36 @@ window.KIT = {
        ],
        "answer": 1,
        "explain": "*Helal olsun* — «красава, молодец». Boş ver значит «не бери в голову»."
+      },
+      {
+       "q": "Ты платишь таксисту и не хочешь ждать сдачу. Что сказать?",
+       "options": [
+        "Üstü kalsın",
+        "Son fiyat?",
+        "Geçmiş olsun"
+       ],
+       "answer": 0,
+       "explain": "*Üstü kalsın* — «сдачи не надо». Son fiyat? спрашивают, когда торгуются."
+      },
+      {
+       "q": "Мастер чинит у соседей кран. Что ему сказать, проходя мимо?",
+       "options": [
+        "Afiyet olsun",
+        "Kolay gelsin",
+        "Ben kaçtım"
+       ],
+       "answer": 1,
+       "explain": "*Kolay gelsin* — «бог в помощь», так говорят любому, кто работает."
+      },
+      {
+       "q": "Друг сказал «Sağ ol!». Как ответить «не за что»?",
+       "options": [
+        "Ne demek",
+        "Yok artık",
+        "Kazık"
+       ],
+       "answer": 0,
+       "explain": "*Ne demek* — «не за что». Yok artık значит «да ну, не может быть!»."
       }
      ],
      "bands": [
@@ -311,22 +536,17 @@ window.KIT = {
        "text": "Пройдись по фразам ещё раз и вернись к проверке завтра."
       },
       {
-       "min": 3,
+       "min": 5,
        "title": "Хорошо",
        "text": "Большинство фраз уже твои. Повтори те, где ошибся."
       },
       {
-       "min": 5,
-       "title": "Все пять верно",
+       "min": 8,
+       "title": "Все восемь верно",
        "text": "Теперь попробуй сказать каждую фразу вслух в своей ситуации."
       }
      ]
-    }
-   ]
-  },
-  {
-   "before": "#about",
-   "blocks": [
+    },
     {
      "type": "platform",
      "id": "notion",

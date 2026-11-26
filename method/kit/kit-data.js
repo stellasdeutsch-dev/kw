@@ -61,6 +61,74 @@ window.KIT = {
      }
     },
     {
+     "type": "media",
+     "id": "methods",
+     "title": "Шесть приёмов, на которых держится план",
+     "lead": "Пять из ролика и шестой — ритм. Под каждым приёмом дни плана, где он используется.",
+     "groups": [
+      {
+       "title": "Приёмы",
+       "shape": "wide",
+       "items": [
+        {
+         "title": "Учить фразы целиком",
+         "sub": "Дни 1, 3, 5, 23 плана",
+         "text": "«Could you…?» сразу запоминается как просьба.",
+         "tip": "Записывай не «help», а «Could you help me?»: так фраза сразу готова к разговору.",
+         "img": "kit/img/en06-ph-phrases.webp",
+         "alt": "Учить фразы целиком",
+         "credit": "Фото: LMRitchie, CC BY"
+        },
+        {
+         "title": "Повторять за диктором",
+         "sub": "Дни 2, 9, 19, 26 плана",
+         "text": "Вслух, с той же скоростью и интонацией.",
+         "tip": "Пауза после фразы, повтори вслух, сравни. Можно записать себя на телефон.",
+         "img": "kit/img/en06-ph-shadow.webp",
+         "alt": "Повторять за диктором",
+         "credit": "Фото: WordRidden, CC BY"
+        },
+        {
+         "title": "Английские субтитры",
+         "sub": "Дни 4, 15, 20 плана",
+         "text": "Сначала с ними, потом без них.",
+         "tip": "Сначала серия с английскими субтитрами, потом та же сцена без них.",
+         "img": "kit/img/en06-ph-subs.webp",
+         "alt": "Английские субтитры",
+         "credit": "Фото: Luke Wisley, CC BY"
+        },
+        {
+         "title": "Свой словарь",
+         "sub": "Дни 1, 6, 24, 27 плана",
+         "text": "Слова из своей работы, хобби и сериалов.",
+         "tip": "Каждое слово — в своей фразе, звучание проверь в Cambridge Dictionary.",
+         "img": "kit/img/en06-ph-cards.webp",
+         "alt": "Свой словарь",
+         "credit": "Фото: k4dordy, CC BY"
+        },
+        {
+         "title": "Говорить с первой недели",
+         "sub": "Дни 13, 25, 29 плана",
+         "text": "С репетитором, в клубе или вслух с собой.",
+         "tip": "Голосовое на минуту тоже считается: главное — говорить вслух.",
+         "img": "kit/img/en06-ph-talk.webp",
+         "alt": "Говорить с первой недели",
+         "credit": "Фото: matusfi, CC BY-SA"
+        },
+        {
+         "title": "15 минут каждый день",
+         "sub": "Все 30 дней",
+         "text": "Короткое занятие без пропусков лучше трёх часов раз в неделю.",
+         "tip": "Поставь таймер на 15 минут и одно и то же время: после завтрака или в дороге.",
+         "img": "kit/img/en06-ph-timer.webp",
+         "alt": "Кухонный таймер",
+         "credit": "Фото: AndyRobertsPhotos, CC BY"
+        }
+       ]
+      }
+     ]
+    },
+    {
      "type": "plan",
      "id": "days",
      "title": "30 дней по 15 минут",
@@ -74,7 +142,7 @@ window.KIT = {
         {
          "day": "1",
          "title": "Заведи карточки",
-         "text": "10 слов о себе и своём дне в Anki: каждое слово во фразе",
+         "text": "10 слов о себе и своём дне в Anki, каждое во фразе. Пример: «I get up at seven», а не просто «get up»",
          "min": "15 мин",
          "href": "https://apps.ankiweb.net/",
          "linkText": "Anki"
@@ -90,7 +158,7 @@ window.KIT = {
         {
          "day": "3",
          "title": "Present Simple о себе",
-         "text": "I work, I live, I like: 10 фраз о своей жизни вслух",
+         "text": "I work, I live, I like: 10 фраз о своей жизни вслух. Пример: «I work in a bank. I live with my sister.»",
          "min": "15 мин"
         },
         {
@@ -104,7 +172,7 @@ window.KIT = {
         {
          "day": "5",
          "title": "Фразы-просьбы",
-         "text": "Could you…? Can I…? I'd like… — по три своих примера",
+         "text": "Could you…? Can I…? I'd like… — по три своих примера. Пример: «Could you help me?», «I'd like a coffee, please.»",
          "min": "15 мин"
         },
         {
@@ -118,7 +186,7 @@ window.KIT = {
         {
          "day": "7",
          "title": "Повторение",
-         "text": "Все карточки недели и голосовое о себе на одну минуту",
+         "text": "Все карточки недели и голосовое о себе на одну минуту: имя, работа, что любишь",
          "min": "15 мин"
         }
        ]
@@ -131,7 +199,7 @@ window.KIT = {
         {
          "day": "8",
          "title": "Past Simple",
-         "text": "went, saw, bought: что ты делал вчера, 10 фраз",
+         "text": "went, saw, bought: что ты делал вчера, 10 фраз. Пример: «Yesterday I went to work and bought some bread.»",
          "min": "15 мин"
         },
         {
@@ -145,7 +213,7 @@ window.KIT = {
         {
          "day": "10",
          "title": "Неправильные глаголы",
-         "text": "10 самых частых: go – went – gone и другие, в карточки",
+         "text": "10 самых частых в карточки: go – went – gone, see – saw – seen, do – did – done и другие",
          "min": "15 мин",
          "href": "https://apps.ankiweb.net/",
          "linkText": "Anki"
@@ -161,7 +229,7 @@ window.KIT = {
         {
          "day": "12",
          "title": "Вопросы",
-         "text": "Did you…? Have you ever…? — составь 10 вопросов другу",
+         "text": "Did you…? Have you ever…? — составь 10 вопросов другу. Пример: «Did you watch the match?», «Have you ever been to London?»",
          "min": "15 мин"
         },
         {
@@ -202,19 +270,19 @@ window.KIT = {
         {
          "day": "17",
          "title": "Present Perfect",
-         "text": "I've been, I've never, have you ever: опыт без времени",
+         "text": "I've been, I've never, have you ever: опыт без точного времени. Пример: «I've never tried sushi.»",
          "min": "15 мин"
         },
         {
          "day": "18",
          "title": "Будущее",
-         "text": "will и going to: планы на неделю вслух",
+         "text": "will и going to: планы на неделю вслух. Пример: «I'm going to visit my parents. I think it will rain.»",
          "min": "15 мин"
         },
         {
          "day": "19",
          "title": "Произношение",
-         "text": "Один звук, которого нет в русском: th, w или r",
+         "text": "Один звук, которого нет в русском: th, w или r. Слова для разминки: think, weather, right",
          "min": "15 мин",
          "href": "https://www.youtube.com/@rachelsenglish",
          "linkText": "Rachel's English"
@@ -249,13 +317,13 @@ window.KIT = {
         {
          "day": "23",
          "title": "Начала фраз",
-         "text": "I'm looking for…, I'm about to…, I used to… — по три примера",
+         "text": "I'm looking for…, I'm about to…, I used to… — по три примера. Пример: «I used to play football.»",
          "min": "15 мин"
         },
         {
          "day": "24",
          "title": "Письмо",
-         "text": "Напиши 5 предложений о своём дне и проверь слова в словаре",
+         "text": "Напиши 5 предложений о своём дне и проверь слова в словаре. Пример: «Today I had a long meeting.»",
          "min": "15 мин",
          "href": "https://dictionary.cambridge.org/",
          "linkText": "Cambridge Dictionary"
@@ -263,7 +331,7 @@ window.KIT = {
         {
          "day": "25",
          "title": "Разговор",
-         "text": "10 минут разговора на тему недели",
+         "text": "10 минут разговора на тему недели: работа, планы, сериал",
          "min": "15 мин"
         },
         {
@@ -301,13 +369,182 @@ window.KIT = {
        ]
       }
      ],
-     "note": "Ресурсы бесплатные или с бесплатной частью. Полный список из 40 ресурсов по уровням — в материале LIBRARY."
-    }
-   ]
-  },
-  {
-   "before": "#platform",
-   "blocks": [
+     "note": "Ресурсы бесплатные или с бесплатной частью. Полный список из 60 ресурсов по уровням — в материале БИБЛИОТЕКА."
+    },
+    {
+     "type": "media",
+     "id": "tools",
+     "title": "9 бесплатных инструментов плана",
+     "search": "Найти инструмент",
+     "lead": "Всё, на что ведут ссылки в плане. У каждого указаны дни, когда он нужен, и как им пользоваться.",
+     "groups": [
+      {
+       "title": "Слушать",
+       "shape": "sq",
+       "lead": "Медленная речь и короткие выпуски с текстом.",
+       "items": [
+        {
+         "title": "6 Minute English",
+         "lang": "en",
+         "sub": "Подкаст BBC · дни 9, 22",
+         "text": "Выпуск на шесть минут о новой теме и шести словах. На сайте есть текст выпуска.",
+         "tip": "Первый раз на слух, второй раз с текстом.",
+         "level": "A2–B1",
+         "levels": [
+          "A2",
+          "B1"
+         ],
+         "img": "kit/img/en06-bbc6.webp",
+         "href": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english",
+         "go": "Открыть",
+         "price": "Бесплатно"
+        },
+        {
+         "title": "The English We Speak",
+         "lang": "en",
+         "sub": "BBC Learning English · день 16",
+         "text": "Короткие выпуски, каждый про одно разговорное выражение.",
+         "tip": "Сразу придумай с выражением три своих примера.",
+         "level": "B1",
+         "levels": [
+          "B1"
+         ],
+         "img": "kit/img/en06-tews.webp",
+         "href": "https://www.bbc.co.uk/learningenglish/english/features/the-english-we-speak",
+         "go": "Открыть",
+         "price": "Бесплатно"
+        },
+        {
+         "title": "Peppa Pig",
+         "lang": "en",
+         "sub": "Официальный канал · день 4",
+         "text": "Серии по пять минут, медленная чёткая британская речь.",
+         "tip": "Одну серию смотри дважды и повторяй фразы героев.",
+         "level": "A1",
+         "levels": [
+          "A1"
+         ],
+         "img": "kit/img/en06-peppa.webp",
+         "href": "https://www.youtube.com/@PeppaPigOfficial",
+         "go": "Открыть",
+         "price": "Бесплатно"
+        }
+       ]
+      },
+      {
+       "title": "Смотреть и повторять",
+       "shape": "sq",
+       "lead": "Ютуб-каналы с уроками, произношением и разбором сериалов.",
+       "items": [
+        {
+         "title": "English with Lucy",
+         "lang": "en",
+         "sub": "Ютуб-канал · день 2",
+         "text": "Уроки британского английского: фразы, грамматика, произношение.",
+         "tip": "Ставь паузу после фразы и повторяй вслух.",
+         "level": "A2–B1",
+         "levels": [
+          "A2",
+          "B1"
+         ],
+         "img": "kit/img/en06-lucy.webp",
+         "href": "https://www.youtube.com/@EnglishwithLucy",
+         "go": "Открыть",
+         "price": "Бесплатно"
+        },
+        {
+         "title": "Rachel's English",
+         "lang": "en",
+         "sub": "Ютуб-канал · день 19",
+         "text": "Американское произношение: звуки, ритм и связная речь.",
+         "tip": "Записывай себя и сравнивай с образцом.",
+         "level": "A2–B1",
+         "levels": [
+          "A2",
+          "B1"
+         ],
+         "img": "kit/img/en06-rachel.webp",
+         "href": "https://www.youtube.com/@rachelsenglish",
+         "go": "Открыть",
+         "price": "Бесплатно"
+        },
+        {
+         "title": "Learn English with TV Series",
+         "lang": "en",
+         "sub": "Ютуб-канал · день 15",
+         "text": "Разбор сцен из сериалов и фильмов: что говорят и почему.",
+         "tip": "Сначала разбор, потом сцена без субтитров.",
+         "level": "B1",
+         "levels": [
+          "B1"
+         ],
+         "img": "kit/img/en06-tvs.webp",
+         "href": "https://www.youtube.com/@LearnEnglishWithTVSeries",
+         "go": "Открыть",
+         "price": "Бесплатно"
+        }
+       ]
+      },
+      {
+       "title": "Слова и словарь",
+       "shape": "sq",
+       "lead": "Свой словарь, звучание слова и живые примеры.",
+       "items": [
+        {
+         "title": "Anki",
+         "lang": "en",
+         "sub": "Карточки · дни 1, 10, 27",
+         "text": "Карточки с интервальными повторениями: трудные слова показываются чаще. На iOS приложение платное, на компьютере и Android бесплатно.",
+         "tip": "Добавляй целые фразы, а не отдельные слова.",
+         "level": "A1–B1",
+         "levels": [
+          "A1",
+          "A2",
+          "B1"
+         ],
+         "img": "kit/img/en06-anki.webp",
+         "href": "https://apps.ankiweb.net/",
+         "go": "Открыть",
+         "price": "Бесплатно, на iOS платно"
+        },
+        {
+         "title": "Cambridge Dictionary",
+         "lang": "en",
+         "sub": "Словарь · дни 6, 24",
+         "text": "Значение, примеры и озвучка в британском и американском вариантах.",
+         "tip": "Смотри не только перевод, но и примеры.",
+         "level": "A1–B1",
+         "levels": [
+          "A1",
+          "A2",
+          "B1"
+         ],
+         "img": "kit/img/en06-dict.webp",
+         "href": "https://dictionary.cambridge.org/",
+         "go": "Открыть",
+         "price": "Бесплатно"
+        },
+        {
+         "title": "YouGlish",
+         "lang": "en",
+         "sub": "Произношение · день 11",
+         "text": "Вводишь слово и слышишь его в живых видео на YouTube.",
+         "tip": "Послушай слово в трёх разных видео и повтори.",
+         "level": "A2–B1",
+         "levels": [
+          "A2",
+          "B1"
+         ],
+         "img": "kit/img/en06-yg.webp",
+         "href": "https://youglish.com/",
+         "go": "Открыть",
+         "price": "Бесплатно"
+        }
+       ]
+      }
+     ],
+     "note": "Логотипы и аватарки принадлежат владельцам ресурсов и показаны, чтобы их было легко узнать."
+    },
     {
      "type": "platform",
      "id": "notion",

@@ -5,10 +5,88 @@ window.KIT = {
    "after": "#about",
    "blocks": [
     {
+     "type": "media",
+     "id": "scenes",
+     "title": "Семь ситуаций поездки",
+     "lead": "Фото места, пять готовых фраз и подсказка. Слова к ним — в списке ниже.",
+     "groups": [
+      {
+       "title": "Ситуации",
+       "shape": "wide",
+       "items": [
+        {
+         "title": "Аэропорт",
+         "sub": "регистрация, посадка, багаж · 5 фраз",
+         "text": "<b lang=\"en\">Where is the check-in desk?</b> — Где стойка регистрации?<br><b lang=\"en\">Is the flight delayed?</b> — Рейс задерживается?<br><b lang=\"en\">Window or aisle seat?</b> — Место у окна или у прохода?<br><b lang=\"en\">Here is my boarding pass.</b> — Вот мой посадочный.<br><b lang=\"en\">Where is baggage claim?</b> — Где выдача багажа?",
+         "tip": "На табло: arrivals — прилёт, departures — вылет, delayed — задержан.",
+         "img": "kit/img/en12-airport.webp",
+         "alt": "Аэропорт",
+         "credit": "Фото: Hyougushi, CC BY-SA"
+        },
+        {
+         "title": "Отель",
+         "sub": "заселение и номер · 5 фраз",
+         "text": "<b lang=\"en\">I have a booking.</b> — У меня бронь.<br><b lang=\"en\">Is breakfast included?</b> — Завтрак включён?<br><b lang=\"en\">What time is check out?</b> — Во сколько выселение?<br><b lang=\"en\">What is the Wi-Fi password?</b> — Какой пароль от вайфая?<br><b lang=\"en\">The air conditioning doesn't work.</b> — Кондиционер не работает.",
+         "tip": "Назови фамилию, на которую бронь: The booking is under Ivanova.",
+         "img": "kit/img/en12-hotel.webp",
+         "alt": "Отель",
+         "credit": "Фото: wwarby, CC BY"
+        },
+        {
+         "title": "Кафе и ресторан",
+         "sub": "заказ и счёт · 5 фраз",
+         "text": "<b lang=\"en\">A table for two, please.</b> — Столик на двоих, пожалуйста.<br><b lang=\"en\">Can I see the menu?</b> — Можно меню?<br><b lang=\"en\">Is it spicy?</b> — Это острое?<br><b lang=\"en\">I'm vegetarian.</b> — Я вегетарианец.<br><b lang=\"en\">Can I have the bill, please?</b> — Можно счёт, пожалуйста?",
+         "tip": "В США счёт — check, в Британии — bill. Поймут оба слова.",
+         "img": "kit/img/en12-cafe.webp",
+         "alt": "Кафе и ресторан",
+         "credit": "Фото: Elite Ayrshire Business Circle, CC BY"
+        },
+        {
+         "title": "Магазин",
+         "sub": "цена, размер, примерка · 5 фраз",
+         "text": "<b lang=\"en\">How much is it?</b> — Сколько стоит?<br><b lang=\"en\">Can I try it on?</b> — Можно примерить?<br><b lang=\"en\">Do you have a smaller size?</b> — Есть размер поменьше?<br><b lang=\"en\">Is there a discount?</b> — Есть скидка?<br><b lang=\"en\">Can I have a receipt?</b> — Можно чек?",
+         "tip": "Просто смотришь — скажи продавцу: I'm just looking, thanks.",
+         "img": "kit/img/en12-shop.webp",
+         "alt": "Магазин",
+         "credit": "Фото: My name's axel, CC BY-SA"
+        },
+        {
+         "title": "Город и транспорт",
+         "sub": "дорога, билеты, остановки · 5 фраз",
+         "text": "<b lang=\"en\">How do I get to the museum?</b> — Как добраться до музея?<br><b lang=\"en\">Is it far?</b> — Это далеко?<br><b lang=\"en\">One ticket to the centre, please.</b> — Один билет до центра, пожалуйста.<br><b lang=\"en\">Which platform?</b> — С какой платформы?<br><b lang=\"en\">Turn left at the traffic lights.</b> — На светофоре поверните налево.",
+         "tip": "В Лондоне метро — the Underground или the Tube, в Нью-Йорке — the subway.",
+         "img": "kit/img/en12-city.webp",
+         "alt": "Город и транспорт",
+         "credit": "Фото: vitalyzator, CC BY"
+        },
+        {
+         "title": "Здоровье и помощь",
+         "sub": "аптека, врач, если потерялся · 5 фраз",
+         "text": "<b lang=\"en\">I need a doctor.</b> — Мне нужен врач.<br><b lang=\"en\">I have a headache.</b> — У меня болит голова.<br><b lang=\"en\">Do you have painkillers?</b> — У вас есть обезболивающее?<br><b lang=\"en\">I'm lost.</b> — Я заблудился.<br><b lang=\"en\">Sorry, I don't understand. Slowly, please.</b> — Простите, я не понимаю. Помедленнее, пожалуйста.",
+         "tip": "Аптека в Британии — chemist или pharmacy, в США — pharmacy или drugstore.",
+         "img": "kit/img/en12-pharmacy.webp",
+         "alt": "Здоровье и помощь",
+         "credit": "Фото: ell brown, CC BY"
+        },
+        {
+         "title": "Время и числа",
+         "sub": "расписание, часы, дни · 5 фраз",
+         "text": "<b lang=\"en\">What time does it open?</b> — Во сколько открывается?<br><b lang=\"en\">It's ten o'clock.</b> — Сейчас десять часов.<br><b lang=\"en\">How long does it take?</b> — Сколько туда добираться?<br><b lang=\"en\">About twenty minutes.</b> — Примерно двадцать минут.<br><b lang=\"en\">See you tomorrow morning.</b> — Увидимся завтра утром.",
+         "tip": "Время в расписаниях часто 24-часовое: 18:30 — eighteen thirty.",
+         "img": "kit/img/en12-time.webp",
+         "alt": "Время и числа",
+         "credit": "Фото: Richard Allaway, CC BY"
+        }
+       ]
+      }
+     ],
+     "note": "Фото с Openverse по свободным лицензиям Creative Commons, автор указан на карточке."
+    },
+    {
      "type": "table",
      "id": "words",
-     "title": "100 слов для поездки",
-     "lead": "Тот же список, что в ролике. Значок звука читает слово голосом браузера.",
+     "title": "100 слов для поездки и 50 бонусом",
+     "lead": "Первые пять тем — тот же список, что в ролике. Темы с пометкой «Бонус» — 50 слов сверх него. Значок звука читает слово голосом браузера.",
      "cols": [
       {
        "key": "en",
@@ -445,6 +523,242 @@ window.KIT = {
          "ru": "хорошего дня"
         }
        ]
+      },
+      {
+       "title": "Бонус: аэропорт и самолёт",
+       "sub": "10 слов",
+       "rows": [
+        {
+         "en": "suitcase",
+         "ru": "чемодан"
+        },
+        {
+         "en": "carry-on bag",
+         "ru": "ручная кладь"
+        },
+        {
+         "en": "check-in desk",
+         "ru": "стойка регистрации"
+        },
+        {
+         "en": "security",
+         "ru": "досмотр"
+        },
+        {
+         "en": "passport control",
+         "ru": "паспортный контроль"
+        },
+        {
+         "en": "customs",
+         "ru": "таможня"
+        },
+        {
+         "en": "seat",
+         "ru": "место"
+        },
+        {
+         "en": "window seat",
+         "ru": "место у окна"
+        },
+        {
+         "en": "aisle seat",
+         "ru": "место у прохода"
+        },
+        {
+         "en": "baggage claim",
+         "ru": "выдача багажа"
+        }
+       ]
+      },
+      {
+       "title": "Бонус: отель",
+       "sub": "8 слов",
+       "rows": [
+        {
+         "en": "reception",
+         "ru": "ресепшен, стойка администратора"
+        },
+        {
+         "en": "single room",
+         "ru": "одноместный номер"
+        },
+        {
+         "en": "double room",
+         "ru": "номер с двуспальной кроватью"
+        },
+        {
+         "en": "breakfast included",
+         "ru": "завтрак включён"
+        },
+        {
+         "en": "air conditioning",
+         "ru": "кондиционер"
+        },
+        {
+         "en": "blanket",
+         "ru": "одеяло"
+        },
+        {
+         "en": "pillow",
+         "ru": "подушка"
+        },
+        {
+         "en": "safe",
+         "ru": "сейф"
+        }
+       ]
+      },
+      {
+       "title": "Бонус: еда",
+       "sub": "10 слов",
+       "rows": [
+        {
+         "en": "starter",
+         "ru": "закуска"
+        },
+        {
+         "en": "main course",
+         "ru": "основное блюдо"
+        },
+        {
+         "en": "dessert",
+         "ru": "десерт"
+        },
+        {
+         "en": "juice",
+         "ru": "сок"
+        },
+        {
+         "en": "beer",
+         "ru": "пиво"
+        },
+        {
+         "en": "wine",
+         "ru": "вино"
+        },
+        {
+         "en": "meat",
+         "ru": "мясо"
+        },
+        {
+         "en": "salad",
+         "ru": "салат"
+        },
+        {
+         "en": "spicy",
+         "ru": "острый"
+        },
+        {
+         "en": "vegetarian",
+         "ru": "вегетарианский"
+        }
+       ]
+      },
+      {
+       "title": "Бонус: транспорт",
+       "sub": "10 слов",
+       "rows": [
+        {
+         "en": "train",
+         "ru": "поезд"
+        },
+        {
+         "en": "platform",
+         "ru": "платформа"
+        },
+        {
+         "en": "underground / metro",
+         "ru": "метро"
+        },
+        {
+         "en": "single ticket",
+         "ru": "билет в одну сторону"
+        },
+        {
+         "en": "return ticket",
+         "ru": "билет туда и обратно"
+        },
+        {
+         "en": "timetable",
+         "ru": "расписание"
+        },
+        {
+         "en": "next stop",
+         "ru": "следующая остановка"
+        },
+        {
+         "en": "car rental",
+         "ru": "прокат машин"
+        },
+        {
+         "en": "traffic lights",
+         "ru": "светофор"
+        },
+        {
+         "en": "crossroads",
+         "ru": "перекрёсток"
+        }
+       ]
+      },
+      {
+       "title": "Бонус: здоровье и помощь",
+       "sub": "6 слов",
+       "rows": [
+        {
+         "en": "doctor",
+         "ru": "врач"
+        },
+        {
+         "en": "hospital",
+         "ru": "больница"
+        },
+        {
+         "en": "police",
+         "ru": "полиция"
+        },
+        {
+         "en": "headache",
+         "ru": "головная боль"
+        },
+        {
+         "en": "painkiller",
+         "ru": "обезболивающее"
+        },
+        {
+         "en": "insurance",
+         "ru": "страховка"
+        }
+       ]
+      },
+      {
+       "title": "Бонус: покупки",
+       "sub": "6 слов",
+       "rows": [
+        {
+         "en": "discount",
+         "ru": "скидка"
+        },
+        {
+         "en": "sale",
+         "ru": "распродажа"
+        },
+        {
+         "en": "fitting room",
+         "ru": "примерочная"
+        },
+        {
+         "en": "souvenir",
+         "ru": "сувенир"
+        },
+        {
+         "en": "bag",
+         "ru": "пакет, сумка"
+        },
+        {
+         "en": "ATM",
+         "ru": "банкомат"
+        }
+       ]
       }
      ],
      "numbered": true,
@@ -453,75 +767,12 @@ window.KIT = {
      "compact": true
     },
     {
-     "type": "cards",
-     "id": "scenes",
-     "cols": 3,
-     "title": "Слова в готовых фразах",
-     "lead": "Шесть ситуаций, в которые попадаешь в первый же день поездки.",
-     "items": [
-      {
-       "title": "Аэропорт",
-       "badge": "Airport",
-       "list": [
-        "<b lang=\"en\">Where is gate 12?</b> — Где выход 12?",
-        "<b lang=\"en\">Is the flight delayed?</b> — Рейс задерживается?",
-        "<b lang=\"en\">Here is my boarding pass.</b> — Вот мой посадочный."
-       ]
-      },
-      {
-       "title": "Отель",
-       "badge": "Hotel",
-       "list": [
-        "<b lang=\"en\">I have a booking.</b> — У меня бронь.",
-        "<b lang=\"en\">What time is check out?</b> — Во сколько выселение?",
-        "<b lang=\"en\">What is the Wi-Fi password?</b> — Какой пароль от вайфая?"
-       ]
-      },
-      {
-       "title": "Кафе",
-       "badge": "Café",
-       "list": [
-        "<b lang=\"en\">A table for two, please.</b> — Столик на двоих, пожалуйста.",
-        "<b lang=\"en\">Can I have the bill?</b> — Можно счёт?",
-        "<b lang=\"en\">Can I pay by card?</b> — Можно картой?"
-       ]
-      },
-      {
-       "title": "Магазин",
-       "badge": "Shop",
-       "list": [
-        "<b lang=\"en\">How much is it?</b> — Сколько стоит?",
-        "<b lang=\"en\">Do you have a smaller size?</b> — Есть размер поменьше?",
-        "<b lang=\"en\">Can I have a receipt?</b> — Можно чек?"
-       ]
-      },
-      {
-       "title": "Город",
-       "badge": "City",
-       "list": [
-        "<b lang=\"en\">How do I get to the museum?</b> — Как добраться до музея?",
-        "<b lang=\"en\">Is it far?</b> — Это далеко?",
-        "<b lang=\"en\">Turn left at the corner.</b> — На углу поверните налево."
-       ]
-      },
-      {
-       "title": "Если не понял",
-       "badge": "Help",
-       "list": [
-        "<b lang=\"en\">Sorry, I don't understand.</b> — Простите, я не понимаю.",
-        "<b lang=\"en\">Slowly, please.</b> — Помедленнее, пожалуйста.",
-        "<b lang=\"en\">Can you help me?</b> — Вы можете помочь?"
-       ]
-      }
-     ]
-    },
-    {
      "type": "quiz",
      "id": "test",
      "mode": "list",
      "title": "Проверь себя",
      "optLang": "en",
-     "lead": "Пять вопросов по списку.",
+     "lead": "Семь вопросов по списку.",
      "questions": [
       {
        "q": "«посадочный талон»",
@@ -572,6 +823,26 @@ window.KIT = {
        ],
        "answer": 0,
        "explain": "*straight on* — прямо."
+      },
+      {
+       "q": "«выдача багажа»",
+       "options": [
+        "baggage claim",
+        "check-in desk",
+        "customs"
+       ],
+       "answer": 0,
+       "explain": "*baggage claim*. check-in desk — стойка регистрации, customs — таможня."
+      },
+      {
+       "q": "«билет туда и обратно» по-британски:",
+       "options": [
+        "single ticket",
+        "return ticket",
+        "timetable"
+       ],
+       "answer": 1,
+       "explain": "*return ticket*. single — в одну сторону."
       }
      ],
      "bands": [
@@ -581,17 +852,12 @@ window.KIT = {
        "text": "Пройди список ещё раз, по одной теме в день."
       },
       {
-       "min": 4,
+       "min": 6,
        "title": "Готов к поездке",
        "text": "Слова на месте. Теперь — вслух, в аэропорту и в кафе."
       }
      ]
-    }
-   ]
-  },
-  {
-   "before": "#platform",
-   "blocks": [
+    },
     {
      "type": "platform",
      "id": "notion",

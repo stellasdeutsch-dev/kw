@@ -111,6 +111,133 @@ window.KIT = {
      "note": "Вопрос — частица mi отдельным словом. Её гласная тоже подстраивается: mı, mi, mu, mü."
     },
     {
+     "type": "media",
+     "id": "life",
+     "title": "Времена в жизни: ещё 24 примера",
+     "lead": "Каждое время в своей ситуации: три новых примера и слова-подсказки, по которым время узнаётся в речи. Выбери уровень, чтобы оставить только свои времена.",
+     "groups": [
+      {
+       "title": "Восемь времён",
+       "shape": "wide",
+       "items": [
+        {
+         "title": "Şimdiki zaman",
+         "lang": "tr",
+         "sub": "Сейчас и ближайший план · -(ı)yor",
+         "level": "A1",
+         "levels": [
+          "A1"
+         ],
+         "img": "kit/img/tr02-now.webp",
+         "alt": "Стакан турецкого чая на столе",
+         "credit": "Фото: alazaat, CC BY",
+         "tip": "Подсказки: şu an, şimdi, bugün. С yarın — уже решённый план.",
+         "text": "<b lang=\"tr\">Şu an otobüsteyim, eve gid*iyorum*.</b> — Сейчас я в автобусе, еду домой.<br><b lang=\"tr\">Ali telefonla konuş*uyor*.</b> — Али говорит по телефону.<br><b lang=\"tr\">Yarın Ankara'ya gid*iyoruz*.</b> — Завтра мы едем в Анкару."
+        },
+        {
+         "title": "Geniş zaman",
+         "lang": "tr",
+         "sub": "Привычки, факты, просьбы · -r",
+         "level": "A2",
+         "levels": [
+          "A2"
+         ],
+         "img": "kit/img/tr02-habit.webp",
+         "alt": "Рыбаки на Галатском мосту",
+         "credit": "Фото: Albert Skibinski, CC BY",
+         "tip": "Подсказки: her gün, her sabah, genellikle, bazen. Вежливая просьба: …ar mısın?",
+         "text": "<b lang=\"tr\">Balıkçılar her sabah buraya gel*ir*.</b> — Рыбаки каждое утро приходят сюда.<br><b lang=\"tr\">Ben kahveyi şekersiz iç*erim*.</b> — Я пью кофе без сахара.<br><b lang=\"tr\">Pencereyi aç*ar mısın*?</b> — Откроешь окно?"
+        },
+        {
+         "title": "Geçmiş zaman",
+         "lang": "tr",
+         "sub": "Прошлое, которое видел сам · -dı",
+         "level": "A1",
+         "levels": [
+          "A1"
+         ],
+         "img": "kit/img/tr02-past.webp",
+         "alt": "Цветные дома в районе Балат",
+         "credit": "Фото: Antoloji, CC BY-SA",
+         "tip": "Подсказки: dün, geçen hafta, geçen yıl, iki gün önce (два дня назад).",
+         "text": "<b lang=\"tr\">Dün Balat'ta çok fotoğraf çek*tim*.</b> — Вчера в Балате я много фотографировал.<br><b lang=\"tr\">Geçen yıl İstanbul'a gel*dik*.</b> — В прошлом году мы приехали в Стамбул.<br><b lang=\"tr\">Film saat kaçta bit*ti*?</b> — Во сколько закончился фильм?"
+        },
+        {
+         "title": "Belirsiz geçmiş",
+         "lang": "tr",
+         "sub": "Узнал или видишь результат · -mış",
+         "level": "A2",
+         "levels": [
+          "A2"
+         ],
+         "img": "kit/img/tr02-heard.webp",
+         "alt": "Заснеженные деревья у дома в Стамбуле",
+         "credit": "Фото: ustung, CC BY",
+         "tip": "На -mış рассказывают новости с чужих слов и сказки: Bir varmış, bir yokmuş…",
+         "text": "<b lang=\"tr\">Gece kar yağ*mış*!</b> — Оказывается, ночью выпал снег!<br><b lang=\"tr\">Telefonumu evde unut*muşum*.</b> — Оказывается, я забыл телефон дома.<br><b lang=\"tr\">Duydun mu? Mağaza kapan*mış*.</b> — Слышал? Магазин, говорят, закрылся."
+        },
+        {
+         "title": "Gelecek zaman",
+         "lang": "tr",
+         "sub": "Планы, обещания, прогнозы · -acak",
+         "level": "A2",
+         "levels": [
+          "A2"
+         ],
+         "img": "kit/img/tr02-future.webp",
+         "alt": "Воздушный шар над Каппадокией на рассвете",
+         "credit": "Фото: Rab ., CC BY",
+         "tip": "Подсказки: yarın, haftaya, gelecek yıl, iki gün sonra (через два дня).",
+         "text": "<b lang=\"tr\">Yarın Kapadokya'ya gid*eceğiz*.</b> — Завтра мы поедем в Каппадокию.<br><b lang=\"tr\">Sana yardım ed*eceğim*, söz!</b> — Я тебе помогу, обещаю!<br><b lang=\"tr\">Yarın hava soğuk ol*acak*.</b> — Завтра будет холодно."
+        },
+        {
+         "title": "Gereklilik kipi",
+         "lang": "tr",
+         "sub": "Надо, должен, совет · -malı",
+         "level": "B1",
+         "levels": [
+          "B1"
+         ],
+         "img": "kit/img/tr02-must.webp",
+         "alt": "Стол с тетрадью и пеналом",
+         "credit": "Фото: n_sapiens, CC BY-SA",
+         "tip": "В разговоре чаще говорят lazım: gitmem lazım — мне надо идти.",
+         "text": "<b lang=\"tr\">Bu kitabı oku*malısın*.</b> — Тебе стоит прочитать эту книгу.<br><b lang=\"tr\">Saat yedide evde ol*malıyım*.</b> — В семь я должен быть дома.<br><b lang=\"tr\">Burada sigara iç*memelisiniz*.</b> — Здесь вам нельзя курить."
+        },
+        {
+         "title": "Şart kipi",
+         "lang": "tr",
+         "sub": "Если: реальное условие · -rsa",
+         "level": "B1",
+         "levels": [
+          "B1"
+         ],
+         "img": "kit/img/tr02-if.webp",
+         "alt": "Человек с зонтом под дождём",
+         "credit": "Фото: @Tuncay, CC BY",
+         "tip": "Вторая часть фразы обычно в geniş zaman или в будущем: gelirsen görürsün.",
+         "text": "<b lang=\"tr\">Yağmur yağ*arsa* evde kalırız.</b> — Если пойдёт дождь, останемся дома.<br><b lang=\"tr\">Erken kalk*arsan* otobüsü yakalarsın.</b> — Если встанешь рано, успеешь на автобус.<br><b lang=\"tr\">İst*ersen* birlikte gidelim.</b> — Если хочешь, пойдём вместе."
+        },
+        {
+         "title": "Dilek kipi",
+         "lang": "tr",
+         "sub": "«Вот бы…»: мечта или сожаление · -sa",
+         "level": "B1",
+         "levels": [
+          "B1"
+         ],
+         "img": "kit/img/tr02-wish.webp",
+         "alt": "Травертины Памуккале на закате",
+         "credit": "Фото: eleephotography, CC BY",
+         "tip": "Keşke усиливает мечту. Ne yapsam? — «что бы мне сделать?», совет самому себе.",
+         "text": "<b lang=\"tr\">Keşke şimdi Pamukkale'de ol*sam*!</b> — Вот бы сейчас оказаться в Памуккале!<br><b lang=\"tr\">Keşke yarın tatil ol*sa*.</b> — Вот бы завтра был выходной.<br><b lang=\"tr\">Bu akşam ne pişir*sem*?</b> — Что бы мне приготовить сегодня вечером?"
+        }
+       ]
+      }
+     ],
+     "note": "Фото со свободными лицензиями Creative Commons из Openverse, автор указан под каждым снимком."
+    },
+    {
      "type": "forms",
      "id": "conj",
      "title": "Спряжение по лицам",
@@ -979,12 +1106,7 @@ window.KIT = {
        "note": ""
       }
      ]
-    }
-   ]
-  },
-  {
-   "before": "#author",
-   "blocks": [
+    },
     {
      "type": "platform",
      "id": "notion",

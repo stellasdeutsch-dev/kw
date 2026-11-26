@@ -5,194 +5,360 @@ window.KIT = {
    "before": "#rules",
    "blocks": [
     {
-     "type": "cards",
+     "type": "media",
      "id": "games",
-     "title": "12 игр для английского",
-     "filter": true,
-     "groupBy": "cat",
-     "lead": "Шесть из ролика отмечены, ещё шесть добавлены. Уровни — оценка, цены могут меняться: проверь на сайте игры.",
-     "items": [
+     "title": "18 игр для английского",
+     "search": "Найти игру",
+     "lead": "Шесть из ролика, ещё шесть к ним и шесть бонусных. Настоящие скриншоты игр и иконки приложений. Уровни — оценка, цены могут меняться: проверь на сайте игры.",
+     "groups": [
       {
-       "title": "Wordle",
-       "text": "Угадай слово из 5 букв за 6 попыток. Одно слово в день.",
-       "level": "B1–C1",
-       "levels": [
-        "B1",
-        "B2",
-        "C1"
-       ],
-       "price": "Бесплатно",
-       "href": "https://www.nytimes.com/games/wordle/index.html",
-       "badge": "Из ролика",
-       "go": "Играть",
-       "cat": "Слово в день"
+       "title": "Игры в браузере",
+       "lead": "Открываются по ссылке, ничего не нужно ставить. Большинство — одна головоломка в день.",
+       "shape": "wide",
+       "items": [
+        {
+         "title": "Wordle",
+         "lang": "en",
+         "level": "B1–C1",
+         "levels": [
+          "B1",
+          "B2",
+          "C1"
+         ],
+         "price": "Бесплатно",
+         "text": "Угадай слово из 5 букв за 6 попыток. Одно слово в день.",
+         "tip": "Каждое новое слово из попыток проверь в словаре и скажи вслух.",
+         "sub": "Из ролика · Слово в день",
+         "img": "kit/img/en13-s-wordle.webp",
+         "alt": "Wordle: скриншот игры",
+         "href": "https://www.nytimes.com/games/wordle/index.html",
+         "go": "Играть"
+        },
+        {
+         "title": "Freerice",
+         "lang": "en",
+         "level": "A2–C1",
+         "levels": [
+          "A2",
+          "B1",
+          "B2",
+          "C1"
+         ],
+         "price": "Бесплатно",
+         "text": "Викторина на значения слов: подбираешь синоним, уровень растёт сам.",
+         "tip": "Выбери категорию English Vocabulary: сложность подстроится сама.",
+         "sub": "Слово в день",
+         "img": "kit/img/en13-s-freerice.webp",
+         "alt": "Freerice: скриншот игры",
+         "href": "https://freerice.com/",
+         "go": "Играть"
+        },
+        {
+         "title": "LyricsTraining",
+         "lang": "en",
+         "level": "A1–C1",
+         "levels": [
+          "A1",
+          "A2",
+          "B1",
+          "B2",
+          "C1"
+         ],
+         "price": "Бесплатно, есть платное",
+         "text": "Вписываешь пропущенные слова в песню, пока она играет. Сейчас сервис называется LingoClip.",
+         "tip": "Начни с режима для начинающих и песни, которую знаешь.",
+         "sub": "Приложения",
+         "img": "kit/img/en13-s-lyrics.webp",
+         "alt": "LyricsTraining: скриншот игры",
+         "href": "https://www.lyricstraining.com/",
+         "go": "Играть"
+        },
+        {
+         "title": "Quordle",
+         "lang": "en",
+         "level": "B2–C1",
+         "levels": [
+          "B2",
+          "C1"
+         ],
+         "price": "Бесплатно",
+         "text": "Как Wordle, но четыре слова одновременно и 9 попыток.",
+         "tip": "Играй после Wordle, когда одно слово в день станет легко.",
+         "sub": "Слово в день",
+         "img": "kit/img/en13-s-quordle.webp",
+         "alt": "Quordle: скриншот игры",
+         "href": "https://www.merriam-webster.com/games/quordle/",
+         "go": "Играть"
+        },
+        {
+         "title": "Spelling Bee",
+         "lang": "en",
+         "level": "B2–C1",
+         "levels": [
+          "B2",
+          "C1"
+         ],
+         "price": "Бесплатно, есть платное",
+         "text": "Составь как можно больше слов из семи букв.",
+         "tip": "Выписывай найденные длинные слова: это готовый список для карточек.",
+         "sub": "Слово в день",
+         "img": "kit/img/en13-s-bee.webp",
+         "alt": "Spelling Bee: скриншот игры",
+         "href": "https://www.nytimes.com/puzzles/spelling-bee",
+         "go": "Играть"
+        },
+        {
+         "title": "The Mini Crossword",
+         "lang": "en",
+         "level": "B1–C1",
+         "levels": [
+          "B1",
+          "B2",
+          "C1"
+         ],
+         "price": "Бесплатно",
+         "text": "Маленький кроссворд на пару минут каждый день.",
+         "tip": "Пять минут с утра: подсказки учат синонимам.",
+         "sub": "Слово в день",
+         "img": "kit/img/en13-nytxw.webp",
+         "alt": "Логотип The New York Times Crossword",
+         "href": "https://www.nytimes.com/crosswords/game/mini",
+         "go": "Играть",
+         "fit": "contain"
+        },
+        {
+         "title": "Connections",
+         "lang": "en",
+         "level": "B2–C1",
+         "levels": [
+          "B2",
+          "C1"
+         ],
+         "price": "Бесплатно",
+         "text": "Раздели 16 слов на четыре группы по смыслу. Можно ошибиться четыре раза.",
+         "tip": "Ищи сначала самую очевидную группу, потом остальные.",
+         "sub": "Слово в день",
+         "img": "kit/img/en13-s-connections.webp",
+         "alt": "Connections: скриншот игры",
+         "href": "https://www.nytimes.com/games/connections",
+         "go": "Играть",
+         "bonus": true
+        },
+        {
+         "title": "Contexto",
+         "lang": "en",
+         "level": "B2–C1",
+         "levels": [
+          "B2",
+          "C1"
+         ],
+         "price": "Бесплатно, есть платное",
+         "text": "Угадай тайное слово: после каждой попытки видно, насколько близко ты по смыслу.",
+         "tip": "Начинай с общих слов: «food», «place», «animal».",
+         "sub": "Слово в день",
+         "img": "kit/img/en13-s-contexto.webp",
+         "alt": "Contexto: скриншот игры",
+         "href": "https://contexto.me/",
+         "go": "Играть",
+         "bonus": true
+        },
+        {
+         "title": "Waffle",
+         "lang": "en",
+         "level": "B1–C1",
+         "levels": [
+          "B1",
+          "B2",
+          "C1"
+         ],
+         "price": "Бесплатно",
+         "text": "Меняй буквы местами, чтобы собрать шесть слов в сетке. На всё 15 ходов.",
+         "tip": "Сначала собери слова по зелёным буквам.",
+         "sub": "Слово в день",
+         "img": "kit/img/en13-s-waffle.webp",
+         "alt": "Waffle: скриншот игры",
+         "href": "https://wafflegame.net/",
+         "go": "Играть",
+         "bonus": true
+        },
+        {
+         "title": "skribbl.io",
+         "lang": "en",
+         "level": "A2–C1",
+         "levels": [
+          "A2",
+          "B1",
+          "B2",
+          "C1"
+         ],
+         "price": "Бесплатно",
+         "text": "Один рисует слово, остальные угадывают в чате. Играть можно с друзьями по ссылке.",
+         "tip": "Создай закрытую комнату и позови друзей, которые тоже учат английский.",
+         "sub": "С друзьями",
+         "img": "kit/img/en13-s-skribbl.webp",
+         "alt": "skribbl.io: скриншот игры",
+         "href": "https://skribbl.io/",
+         "go": "Играть",
+         "bonus": true
+        }
+       ]
       },
       {
-       "title": "Duolingo",
-       "text": "Мини-уроки в виде игры: серии дней, очки и лиги.",
-       "level": "A1–B1",
-       "levels": [
-        "A1",
-        "A2",
-        "B1"
-       ],
-       "price": "Бесплатно, есть платное",
-       "href": "https://www.duolingo.com/",
-       "badge": "Из ролика",
-       "go": "Играть",
-       "cat": "Приложения"
-      },
-      {
-       "title": "Wordscapes",
-       "text": "Собирай слова из набора букв, как в кроссворде.",
-       "level": "A2–B2",
-       "levels": [
-        "A2",
-        "B1",
-        "B2"
-       ],
-       "price": "Бесплатно, есть платное",
-       "href": "https://www.wordscapes.com/",
-       "badge": "Из ролика",
-       "go": "Играть",
-       "cat": "Приложения"
-      },
-      {
-       "title": "Heads Up!",
-       "text": "Объясняешь слово друзьям — они угадывают. Отличная практика речи.",
-       "level": "B1–C1",
-       "levels": [
-        "B1",
-        "B2",
-        "C1"
-       ],
-       "price": "Платно",
-       "href": "https://apps.apple.com/app/heads-up/id623592465",
-       "badge": "Из ролика",
-       "go": "Играть",
-       "cat": "С друзьями"
-      },
-      {
-       "title": "Words With Friends",
-       "text": "Игра в слова с друзьями онлайн, похожа на Scrabble.",
-       "level": "B1–C1",
-       "levels": [
-        "B1",
-        "B2",
-        "C1"
-       ],
-       "price": "Бесплатно, есть платное",
-       "href": "https://www.zynga.com/games/words-with-friends-2/",
-       "badge": "Из ролика",
-       "go": "Играть",
-       "cat": "С друзьями"
-      },
-      {
-       "title": "Scrabble GO",
-       "text": "Классический скрэббл в телефоне.",
-       "level": "B2–C1",
-       "levels": [
-        "B2",
-        "C1"
-       ],
-       "price": "Бесплатно, есть платное",
-       "href": "https://www.scrabblego.com/",
-       "badge": "Из ролика",
-       "go": "Играть",
-       "cat": "С друзьями"
-      },
-      {
-       "title": "Freerice",
-       "text": "Викторина на значения слов: подбираешь синоним, уровень растёт сам.",
-       "level": "A2–C1",
-       "levels": [
-        "A2",
-        "B1",
-        "B2",
-        "C1"
-       ],
-       "price": "Бесплатно",
-       "href": "https://freerice.com/",
-       "badge": null,
-       "go": "Играть",
-       "cat": "Слово в день"
-      },
-      {
-       "title": "LyricsTraining",
-       "text": "Вписываешь пропущенные слова в песню, пока она играет.",
-       "level": "A1–C1",
-       "levels": [
-        "A1",
-        "A2",
-        "B1",
-        "B2",
-        "C1"
-       ],
-       "price": "Бесплатно, есть платное",
-       "href": "https://www.lyricstraining.com/",
-       "badge": null,
-       "go": "Играть",
-       "cat": "Приложения"
-      },
-      {
-       "title": "Quordle",
-       "text": "Как Wordle, но четыре слова одновременно и 9 попыток.",
-       "level": "B2–C1",
-       "levels": [
-        "B2",
-        "C1"
-       ],
-       "price": "Бесплатно",
-       "href": "https://www.merriam-webster.com/games/quordle/",
-       "badge": null,
-       "go": "Играть",
-       "cat": "Слово в день"
-      },
-      {
-       "title": "Spelling Bee",
-       "text": "Составь как можно больше слов из семи букв.",
-       "level": "B2–C1",
-       "levels": [
-        "B2",
-        "C1"
-       ],
-       "price": "Бесплатно, есть платное",
-       "href": "https://www.nytimes.com/puzzles/spelling-bee",
-       "badge": null,
-       "go": "Играть",
-       "cat": "Слово в день"
-      },
-      {
-       "title": "The Mini Crossword",
-       "text": "Маленький кроссворд на пару минут каждый день.",
-       "level": "B1–C1",
-       "levels": [
-        "B1",
-        "B2",
-        "C1"
-       ],
-       "price": "Бесплатно",
-       "href": "https://www.nytimes.com/crosswords/game/mini",
-       "badge": null,
-       "go": "Играть",
-       "cat": "Слово в день"
-      },
-      {
-       "title": "Codenames",
-       "text": "Командная игра на ассоциации: даёшь подсказку одним словом.",
-       "level": "B1–C1",
-       "levels": [
-        "B1",
-        "B2",
-        "C1"
-       ],
-       "price": "Бесплатно онлайн",
-       "href": "https://codenames.game/",
-       "badge": null,
-       "go": "Играть",
-       "cat": "С друзьями"
+       "title": "Приложения и игры с друзьями",
+       "lead": "В телефоне: слова каждый день и игры, где нужно говорить.",
+       "shape": "sq",
+       "items": [
+        {
+         "title": "Duolingo",
+         "lang": "en",
+         "level": "A1–B1",
+         "levels": [
+          "A1",
+          "A2",
+          "B1"
+         ],
+         "price": "Бесплатно, есть платное",
+         "text": "Мини-уроки в виде игры: серии дней, очки и лиги.",
+         "tip": "Как привычка на 10 минут, но не как единственный курс.",
+         "sub": "Из ролика · Приложения",
+         "img": "kit/img/en13-duolingo.webp",
+         "alt": "Duolingo: иконка приложения",
+         "href": "https://www.duolingo.com/",
+         "go": "Играть"
+        },
+        {
+         "title": "Wordscapes",
+         "lang": "en",
+         "level": "A2–B2",
+         "levels": [
+          "A2",
+          "B1",
+          "B2"
+         ],
+         "price": "Бесплатно, есть платное",
+         "text": "Собирай слова из набора букв, как в кроссворде.",
+         "tip": "Незнакомые слова-бонусы записывай в карточки.",
+         "sub": "Из ролика · Приложения",
+         "img": "kit/img/en13-wordscapes.webp",
+         "alt": "Wordscapes: иконка приложения",
+         "href": "https://www.wordscapes.com/",
+         "go": "Играть"
+        },
+        {
+         "title": "Heads Up!",
+         "lang": "en",
+         "level": "B1–C1",
+         "levels": [
+          "B1",
+          "B2",
+          "C1"
+         ],
+         "price": "Платно",
+         "text": "Объясняешь слово друзьям — они угадывают. Отличная практика речи.",
+         "tip": "Объясняй только по-английски, без жестов и перевода.",
+         "sub": "Из ролика · С друзьями",
+         "img": "kit/img/en13-headsup.webp",
+         "alt": "Heads Up!: иконка приложения",
+         "href": "https://apps.apple.com/app/heads-up/id623592465",
+         "go": "Играть"
+        },
+        {
+         "title": "Words With Friends",
+         "lang": "en",
+         "level": "B1–C1",
+         "levels": [
+          "B1",
+          "B2",
+          "C1"
+         ],
+         "price": "Бесплатно, есть платное",
+         "text": "Игра в слова с друзьями онлайн, похожа на Scrabble.",
+         "tip": "Проверяй значение каждого слова, которое поставил соперник.",
+         "sub": "Из ролика · С друзьями",
+         "img": "kit/img/en13-wwf.webp",
+         "alt": "Words With Friends: иконка приложения",
+         "href": "https://www.zynga.com/games/words-with-friends-2/",
+         "go": "Играть"
+        },
+        {
+         "title": "Scrabble GO",
+         "lang": "en",
+         "level": "B2–C1",
+         "levels": [
+          "B2",
+          "C1"
+         ],
+         "price": "Бесплатно, есть платное",
+         "text": "Классический скрэббл в телефоне.",
+         "tip": "Сначала играй с ботом, потом с людьми.",
+         "sub": "Из ролика · С друзьями",
+         "img": "kit/img/en13-scrabblego.webp",
+         "alt": "Scrabble GO: иконка приложения",
+         "href": "https://www.scrabblego.com/",
+         "go": "Играть"
+        },
+        {
+         "title": "Codenames",
+         "lang": "en",
+         "level": "B1–C1",
+         "levels": [
+          "B1",
+          "B2",
+          "C1"
+         ],
+         "price": "Бесплатно онлайн",
+         "text": "Командная игра на ассоциации: даёшь подсказку одним словом.",
+         "tip": "Подсказка одним словом тренирует синонимы и ассоциации.",
+         "sub": "С друзьями",
+         "img": "kit/img/en13-codenames.webp",
+         "alt": "Codenames: иконка приложения",
+         "href": "https://codenames.game/",
+         "go": "Играть"
+        },
+        {
+         "title": "Drops",
+         "lang": "en",
+         "level": "A1–B1",
+         "levels": [
+          "A1",
+          "A2",
+          "B1"
+         ],
+         "price": "Бесплатно, есть платное",
+         "text": "Слова в картинках короткими игровыми сессиями. Подходит с нуля.",
+         "tip": "Пять минут в день по одной теме: еда, город, работа.",
+         "sub": "Приложения",
+         "img": "kit/img/en13-drops.webp",
+         "alt": "Drops: иконка приложения",
+         "href": "https://languagedrops.com/",
+         "go": "Играть",
+         "bonus": true
+        },
+        {
+         "title": "Kahoot!",
+         "lang": "en",
+         "level": "A1–C1",
+         "levels": [
+          "A1",
+          "A2",
+          "B1",
+          "B2",
+          "C1"
+         ],
+         "price": "Бесплатно, есть платное",
+         "text": "Викторины на время: есть готовые квизы по английскому, можно играть с друзьями по коду.",
+         "tip": "Ищи готовые квизы по запросу «English vocabulary» и своей теме.",
+         "sub": "С друзьями",
+         "img": "kit/img/en13-kahoot.webp",
+         "alt": "Kahoot!: иконка приложения",
+         "href": "https://kahoot.com/",
+         "go": "Играть",
+         "bonus": true
+        }
+       ]
       }
-     ]
+     ],
+     "note": "Скриншоты сняты с сайтов игр, иконки — из App Store. Названия и логотипы принадлежат их владельцам. Часть игр New York Times требует бесплатный аккаунт для сохранения статистики."
     },
     {
      "type": "compare",
@@ -233,12 +399,7 @@ window.KIT = {
        ]
       ]
      }
-    }
-   ]
-  },
-  {
-   "before": "#platform",
-   "blocks": [
+    },
     {
      "type": "platform",
      "id": "notion",

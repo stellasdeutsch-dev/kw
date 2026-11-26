@@ -366,3 +366,18 @@
   .k-m-tall .k-mimg { flex: none; width: 92px; aspect-ratio: 2 / 3; }
   .k-m-tall .k-card-x { display: block; }
 }
+
+/* ---------- collapse: вкладки по разделам и «Показать ещё» ---------- */
+.k-utabs { margin: 0 0 18px; }
+.kit:not(.k-filtering) .k-utab-off { display: none !important; }
+.kit:not(.k-filtering) .k-unit:not(.is-open) .k-lim { display: none !important; }
+.kit.k-filtering .k-utabs, .kit.k-filtering .k-more { display: none; }
+.kit.k-tabbed:not(.k-filtering) .k-unit > h3.k-h3, .kit.k-tabbed:not(.k-filtering) .k-mgroup > h3.k-h3 { display: none; }
+.k-more { display: flex; margin: 18px auto 0; }
+.k-unit.is-open .k-more { margin-top: 22px; }
+.k-lvchips { align-items: center; gap: 6px; }
+.k-lvlabel { font: 600 14px/1 var(--k-font-b); color: var(--k-muted); margin-right: 4px; }
+.k-lvchips .k-chip { min-height: 34px; padding: 7px 12px; font-size: 13px; }
+.k-utabs .k-chip { font-size: 15px; min-height: 44px; padding: 11px 18px; }
+.k-mtools { margin-bottom: 18px; }
+.k-mbody .k-sayrow { align-items: flex-start; } .k-mbody .k-sayrow .k-say { flex: none; margin-top: 0; }

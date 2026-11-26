@@ -7,8 +7,8 @@ window.KIT = {
     {
      "type": "table",
      "id": "words",
-     "title": "100 слов для Стамбула",
-     "lead": "Тот же список, что в ролике. Значок звука читает слово голосом браузера.",
+     "title": "100 слов для Стамбула и 50 бонусных",
+     "lead": "Тот же список, что в ролике, и ещё 50 слов. Значок звука читает слово голосом браузера.",
      "cols": [
       {
        "key": "tr",
@@ -445,76 +445,352 @@ window.KIT = {
          "ru": "говорить"
         }
        ]
+      },
+      {
+       "title": "Бонус: еда и сладости",
+       "sub": "10 слов",
+       "rows": [
+        {
+         "tr": "kebap",
+         "ru": "кебаб"
+        },
+        {
+         "tr": "köfte",
+         "ru": "котлетки, кёфте"
+        },
+        {
+         "tr": "balık",
+         "ru": "рыба"
+        },
+        {
+         "tr": "döner",
+         "ru": "дёнер"
+        },
+        {
+         "tr": "çorba",
+         "ru": "суп"
+        },
+        {
+         "tr": "ayran",
+         "ru": "айран"
+        },
+        {
+         "tr": "meyve suyu",
+         "ru": "сок"
+        },
+        {
+         "tr": "baklava",
+         "ru": "пахлава"
+        },
+        {
+         "tr": "lokum",
+         "ru": "лукум"
+        },
+        {
+         "tr": "dondurma",
+         "ru": "мороженое"
+        }
+       ]
+      },
+      {
+       "title": "Бонус: что посмотреть",
+       "sub": "10 слов",
+       "rows": [
+        {
+         "tr": "cami",
+         "ru": "мечеть"
+        },
+        {
+         "tr": "saray",
+         "ru": "дворец"
+        },
+        {
+         "tr": "kule",
+         "ru": "башня"
+        },
+        {
+         "tr": "köprü",
+         "ru": "мост"
+        },
+        {
+         "tr": "çarşı",
+         "ru": "торговые ряды, базар"
+        },
+        {
+         "tr": "müze",
+         "ru": "музей"
+        },
+        {
+         "tr": "meydan",
+         "ru": "площадь"
+        },
+        {
+         "tr": "sahil",
+         "ru": "набережная, берег"
+        },
+        {
+         "tr": "ada",
+         "ru": "остров"
+        },
+        {
+         "tr": "deniz",
+         "ru": "море"
+        }
+       ]
+      },
+      {
+       "title": "Бонус: отель и покупки",
+       "sub": "10 слов",
+       "rows": [
+        {
+         "tr": "otel",
+         "ru": "отель"
+        },
+        {
+         "tr": "oda",
+         "ru": "комната, номер"
+        },
+        {
+         "tr": "anahtar",
+         "ru": "ключ"
+        },
+        {
+         "tr": "havlu",
+         "ru": "полотенце"
+        },
+        {
+         "tr": "rezervasyon",
+         "ru": "бронь"
+        },
+        {
+         "tr": "indirim",
+         "ru": "скидка"
+        },
+        {
+         "tr": "kredi kartı",
+         "ru": "кредитная карта"
+        },
+        {
+         "tr": "poşet",
+         "ru": "пакет"
+        },
+        {
+         "tr": "beden",
+         "ru": "размер (одежды)"
+        },
+        {
+         "tr": "fiş",
+         "ru": "чек"
+        }
+       ]
+      },
+      {
+       "title": "Бонус: люди вокруг",
+       "sub": "10 слов",
+       "rows": [
+        {
+         "tr": "arkadaş",
+         "ru": "друг"
+        },
+        {
+         "tr": "abi",
+         "ru": "старший брат; так обращаются к мужчине"
+        },
+        {
+         "tr": "abla",
+         "ru": "старшая сестра; так обращаются к женщине"
+        },
+        {
+         "tr": "amca",
+         "ru": "дядя; так обращаются к пожилому мужчине"
+        },
+        {
+         "tr": "teyze",
+         "ru": "тётя; так обращаются к пожилой женщине"
+        },
+        {
+         "tr": "garson",
+         "ru": "официант"
+        },
+        {
+         "tr": "şoför",
+         "ru": "водитель"
+        },
+        {
+         "tr": "satıcı",
+         "ru": "продавец"
+        },
+        {
+         "tr": "komşu",
+         "ru": "сосед"
+        },
+        {
+         "tr": "turist",
+         "ru": "турист"
+        }
+       ]
+      },
+      {
+       "title": "Бонус: полезные слова",
+       "sub": "10 слов",
+       "rows": [
+        {
+         "tr": "güzel",
+         "ru": "красивый, хороший"
+        },
+        {
+         "tr": "büyük",
+         "ru": "большой"
+        },
+        {
+         "tr": "küçük",
+         "ru": "маленький"
+        },
+        {
+         "tr": "sıcak",
+         "ru": "горячий, жаркий"
+        },
+        {
+         "tr": "soğuk",
+         "ru": "холодный"
+        },
+        {
+         "tr": "açık",
+         "ru": "открыто"
+        },
+        {
+         "tr": "kapalı",
+         "ru": "закрыто"
+        },
+        {
+         "tr": "boş",
+         "ru": "свободный, пустой"
+        },
+        {
+         "tr": "dolu",
+         "ru": "занятый, полный"
+        },
+        {
+         "tr": "yavaş",
+         "ru": "медленно"
+        }
+       ]
       }
      ],
      "numbered": true,
      "speak": "tr",
      "search": "Найти слово",
-     "compact": true
+     "compact": true,
+     "note": "Слова 1–100 — из ролика, 101–150 — бонус: еда, что посмотреть, отель, люди и полезные слова."
     },
     {
-     "type": "cards",
+     "type": "media",
      "id": "scenes",
-     "cols": 3,
      "title": "Слова в готовых фразах",
-     "lead": "Шесть ситуаций, в которые попадаешь в первый же день.",
-     "items": [
+     "search": "Найти фразу",
+     "lead": "Одиннадцать тем с фото Стамбула и 33 фраз, которые пригодятся в первый же день. Под заголовком — главные слова темы.",
+     "groups": [
       {
-       "title": "Кафе",
-       "badge": "Kafe",
-       "lang": "tr",
-       "list": [
-        "<b lang=\"tr\">Bir çay, lütfen.</b> — Один чай, пожалуйста.",
-        "<b lang=\"tr\">Hesap, lütfen.</b> — Счёт, пожалуйста.",
-        "<b lang=\"tr\">Ne kadar?</b> — Сколько стоит?"
-       ]
-      },
-      {
-       "title": "Дорога",
-       "badge": "Yol",
-       "list": [
-        "<b lang=\"tr\">Metro nerede?</b> — Где метро?",
-        "<b lang=\"tr\">Sağa mı, sola mı?</b> — Направо или налево?",
-        "<b lang=\"tr\">Uzak mı?</b> — Далеко?"
-       ]
-      },
-      {
-       "title": "Рынок",
-       "badge": "Pazar",
-       "list": [
-        "<b lang=\"tr\">Bir kilo zeytin, lütfen.</b> — Килограмм оливок, пожалуйста.",
-        "<b lang=\"tr\">Çok pahalı!</b> — Очень дорого!",
-        "<b lang=\"tr\">Taze mi?</b> — Свежее?"
-       ]
-      },
-      {
-       "title": "Паром и такси",
-       "badge": "Vapur",
-       "list": [
-        "<b lang=\"tr\">İskele nerede?</b> — Где пристань?",
-        "<b lang=\"tr\">Bir bilet, lütfen.</b> — Один билет, пожалуйста.",
-        "<b lang=\"tr\">Bu adrese, lütfen.</b> — По этому адресу, пожалуйста."
-       ]
-      },
-      {
-       "title": "Если не понял",
-       "badge": "Pardon",
-       "list": [
-        "<b lang=\"tr\">Anlamadım.</b> — Я не понял.",
-        "<b lang=\"tr\">Bilmiyorum.</b> — Я не знаю.",
-        "<b lang=\"tr\">Affedersiniz!</b> — Извините!"
-       ]
-      },
-      {
-       "title": "Вежливость",
-       "badge": "Nezaket",
-       "list": [
-        "<b lang=\"tr\">Teşekkürler!</b> — Спасибо!",
-        "<b lang=\"tr\">Rica ederim.</b> — Не за что.",
-        "<b lang=\"tr\">Kolay gelsin!</b> — Удачной работы! (продавцу, водителю)"
+       "title": "Темы",
+       "shape": "wide",
+       "items": [
+        {
+         "title": "Приветствия и вежливость",
+         "sub": "merhaba, hoş geldiniz, teşekkürler",
+         "img": "kit/img/tr12-hello.webp",
+         "alt": "Чайная Чынаралты в Стамбуле",
+         "credit": "Фото: Kutlusafa, CC BY",
+         "text": "<b lang=\"tr\">Hoş geldiniz! — Hoş bulduk!</b> — Добро пожаловать! — Спасибо!<br><b lang=\"tr\">Teşekkürler! — Rica ederim.</b> — Спасибо! — Не за что.<br><b lang=\"tr\">Kolay gelsin!</b> — Удачной работы! (продавцу, водителю)"
+        },
+        {
+         "title": "Кафе",
+         "sub": "çay, kahve, hesap, menü",
+         "img": "kit/img/tr12-cafe.webp",
+         "alt": "Стакан турецкого чая",
+         "credit": "Фото: alazaat, CC BY",
+         "text": "<b lang=\"tr\">Bir çay, lütfen.</b> — Один чай, пожалуйста.<br><b lang=\"tr\">Hesap, lütfen.</b> — Счёт, пожалуйста.<br><b lang=\"tr\">Afiyet olsun!</b> — Приятного аппетита!"
+        },
+        {
+         "title": "Рынок",
+         "sub": "zeytin, peynir, taze, pahalı",
+         "img": "kit/img/tr12-market.webp",
+         "alt": "Оливки на рыночном прилавке",
+         "credit": "Фото: E4024, CC BY-SA",
+         "text": "<b lang=\"tr\">Bir kilo zeytin, lütfen.</b> — Килограмм оливок, пожалуйста.<br><b lang=\"tr\">Çok pahalı!</b> — Очень дорого!<br><b lang=\"tr\">Taze mi?</b> — Свежее?"
+        },
+        {
+         "title": "Город и дорога",
+         "sub": "sokak, metro, sağa, sola, düz",
+         "img": "kit/img/tr12-street.webp",
+         "alt": "Ностальгический трамвай на улице Истикляль",
+         "credit": "Фото: d0rian, CC BY",
+         "text": "<b lang=\"tr\">Metro nerede?</b> — Где метро?<br><b lang=\"tr\">Sağa mı, sola mı?</b> — Направо или налево?<br><b lang=\"tr\">Uzak mı?</b> — Далеко?"
+        },
+        {
+         "title": "Паром и такси",
+         "sub": "vapur, iskele, bilet, taksi",
+         "img": "kit/img/tr12-ferry.webp",
+         "alt": "Пристань Эминёню и паром",
+         "credit": "Фото: Edgardo W. Olivera, CC BY",
+         "text": "<b lang=\"tr\">İskele nerede?</b> — Где пристань?<br><b lang=\"tr\">Bir bilet, lütfen.</b> — Один билет, пожалуйста.<br><b lang=\"tr\">Bu adrese, lütfen.</b> — По этому адресу, пожалуйста."
+        },
+        {
+         "title": "Время и вопросы",
+         "sub": "saat, dakika, yarın, ne zaman?",
+         "img": "kit/img/tr12-time.webp",
+         "alt": "Часы на вокзале Сиркеджи",
+         "credit": "Фото: shankar s., CC BY",
+         "text": "<b lang=\"tr\">Saat kaç?</b> — Который час?<br><b lang=\"tr\">Anlamadım.</b> — Я не понял.<br><b lang=\"tr\">Affedersiniz, eczane nerede?</b> — Извините, где аптека?"
+        },
+        {
+         "title": "Еда",
+         "sub": "kebap, döner, çorba, ayran",
+         "img": "kit/img/tr12-food.webp",
+         "alt": "Тарелка дёнера с картошкой",
+         "credit": "Фото: albertjyi, CC BY",
+         "text": "<b lang=\"tr\">Bir döner, lütfen.</b> — Один дёнер, пожалуйста.<br><b lang=\"tr\">Acı mı?</b> — Это острое?<br><b lang=\"tr\">Çok lezzetli!</b> — Очень вкусно!",
+         "bonus": true
+        },
+        {
+         "title": "Что посмотреть",
+         "sub": "cami, saray, müze, köprü",
+         "img": "kit/img/tr12-sights.webp",
+         "alt": "Купол Голубой мечети изнутри",
+         "credit": "Фото: Ninara, CC BY",
+         "text": "<b lang=\"tr\">Müze bugün açık mı?</b> — Музей сегодня открыт?<br><b lang=\"tr\">Köprü uzak mı?</b> — Мост далеко?<br><b lang=\"tr\">Ne güzel bir cami!</b> — Какая красивая мечеть!",
+         "bonus": true
+        },
+        {
+         "title": "Отель и покупки",
+         "sub": "otel, oda, anahtar, indirim",
+         "img": "kit/img/tr12-hotel.webp",
+         "alt": "Номер в отеле",
+         "credit": "Фото: Sean MacEntee, CC BY",
+         "text": "<b lang=\"tr\">Boş odanız var mı?</b> — У вас есть свободный номер?<br><b lang=\"tr\">İndirim var mı?</b> — Есть скидка?<br><b lang=\"tr\">Kartla ödeyebilir miyim?</b> — Можно оплатить картой?",
+         "bonus": true
+        },
+        {
+         "title": "Люди вокруг",
+         "sub": "abi, abla, teyze, garson",
+         "img": "kit/img/tr12-people.webp",
+         "alt": "Трое поваров в стамбульском ресторане",
+         "credit": "Фото: John Picken, CC BY",
+         "text": "<b lang=\"tr\">Abi, bu otobüs Taksim'e gidiyor mu?</b> — Брат, этот автобус идёт до Таксима?<br><b lang=\"tr\">Buyurun teyze, oturun.</b> — Садитесь, пожалуйста (пожилой женщине).<br><b lang=\"tr\">Bu benim arkadaşım.</b> — Это мой друг.",
+         "bonus": true
+        },
+        {
+         "title": "Полезные слова",
+         "sub": "açık, kapalı, boş, dolu",
+         "img": "kit/img/tr12-open.webp",
+         "alt": "Старинная лавка лукума Хаджи Бекир",
+         "credit": "Фото: rg-fotos, CC BY-SA",
+         "text": "<b lang=\"tr\">Açık mı, kapalı mı?</b> — Открыто или закрыто?<br><b lang=\"tr\">Bu masa boş mu?</b> — Этот стол свободен?<br><b lang=\"tr\">Yavaş, lütfen.</b> — Помедленнее, пожалуйста.",
+         "bonus": true
+        }
        ]
       }
-     ]
+     ],
+     "note": "Фото со свободными лицензиями Creative Commons из Openverse, автор указан под каждым снимком."
     },
     {
      "type": "quiz",
@@ -587,12 +863,7 @@ window.KIT = {
        "text": "Город уже говорит на твоём языке. Теперь — вслух, в кафе и на рынке."
       }
      ]
-    }
-   ]
-  },
-  {
-   "before": "#platform",
-   "blocks": [
+    },
     {
      "type": "platform",
      "id": "notion",

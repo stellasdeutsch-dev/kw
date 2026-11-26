@@ -176,7 +176,7 @@
     var nav = b.groups.length > 1 ? '<nav class="k-chips k-rv" aria-label="Разделы">' + b.groups.map(function (g, i) {
       return '<a class="k-chip" href="#' + b.id + '-g' + i + '">' + esc(g.title) + ' <small>' + g.items.length + '</small></a>'; }).join('') + '</nav>' : '';
     var tools = '<div class="k-mtools k-rv">' + (b.search ? '<label class="k-search">' + ic('search') + '<input type="search" data-msearch="' + b.id + '" placeholder="' + esc(b.search) + '" aria-label="' + esc(b.search) + '"></label>' : '') +
-      (lv.length > 1 ? '<div class="k-chips" role="group" aria-label="Фильтр по уровню"><button type="button" class="k-chip is-on" data-mlv="">Все уровни</button>' +
+      (lv.length > 1 ? '<div class="k-chips k-lvchips" role="group" aria-label="Фильтр по уровню"><span class="k-lvlabel">Уровень:</span><button type="button" class="k-chip is-on" data-mlv="">Все</button>' +
         lv.map(function (l) { return '<button type="button" class="k-chip" data-mlv="' + l + '">' + l + '</button>'; }).join('') + '</div>' : '') + '</div>';
     var body = b.groups.map(function (g, gi) {
       return '<div class="k-mgroup" id="' + b.id + '-g' + gi + '">' + (b.groups.length > 1 ? '<h3 class="k-h3 k-rv">' + esc(g.title) + ' <small>' + g.items.length + '</small></h3>' : '') +
@@ -188,7 +188,11 @@
             '<div class="k-mimg' + (it.fit === 'contain' ? ' is-contain' : '') + '">' + (it.img ? '<img src="' + esc(it.img) + '" alt="' + esc(plain(it.alt || it.title)) + '" loading="lazy" decoding="async">' : '<span class="k-mph">' + esc(plain(it.title).slice(0, 1)) + '</span>') + '</div>' +
             '<div class="k-mbody"><div class="k-card-top">' + (it.level ? '<span class="k-lv">' + esc(it.level) + '</span>' : '') +
             (it.price ? '<span class="k-price">' + esc(it.price) + '</span>' : '') + (it.bonus ? '<span class="k-badge">Бонус</span>' : '') + '</div>' +
-            '<h4 class="k-card-t"' + (it.lang ? ' lang="' + it.lang + '"' : '') + '>' + rich(it.title) + '</h4>' +
+            (function () {
+              var t = '<h4 class="k-card-t"' + (it.lang ? ' lang="' + it.lang + '"' : '') + '>' + rich(it.title) + '</h4>';
+              var sayText = it.say || (it.lang && !it.href && it.say !== false ? String(it.title).replace(/<[^>]+>/g, '') : '');
+              return sayText ? '<div class="k-sayrow">' + t + speakBtn(sayText, it.lang === 'tr' ? 'tr-TR' : it.lang === 'en' ? 'en-GB' : K.lang) + '</div>' : t;
+            })() +
             (it.sub ? '<p class="k-card-sub">' + rich(it.sub) + '</p>' : '') + (it.text ? '<p class="k-card-x">' + rich(it.text) + '</p>' : '') +
             (it.tip ? '<p class="k-mtip">' + ic('yes') + '<span>' + rich(it.tip) + '</span></p>' : '') +
             (it.href ? '<span class="k-card-go">' + esc(it.go || 'Открыть') + ic(/^https?:/.test(it.href) ? 'link' : 'arrow') + '</span>' : '') +
@@ -221,6 +225,94 @@
       '<dialog class="k-lightbox" aria-label="Скриншот платформы"><button type="button" class="k-lb-x" data-lbclose aria-label="Закрыть">' + IC.no + '</button><img alt=""><p></p></dialog>';
   };
 
+
+  /* ---------- collapse: groups become tabs, long lists show the first items + «Показать ещё», so the page stays short ---------- */
+  function collapse() {
+    [].forEach.call(document.querySelectorAll('.kit'), function (sec) {
+      if (/k-s-(platform|quiz|forms|compare|text)/.test(sec.className)) return;
+      var units = [], list = null, itemSel = null, lim = 6;
+      function wrapPairs(box, nextSel) { // h3 + following block -> .k-unit
+        [].slice.call(box.children).forEach(function (h) {
+          if (!h.matches('h3.k-h3')) return;
+          var nx = h.nextElementSibling; if (!nx || !nx.matches(nextSel)) return;
+          var u = document.createElement('div'); u.className = 'k-unit';
+          box.insertBefore(u, h); u.appendChild(h); u.appendChild(nx);
+        });
+        return [].slice.call(box.querySelectorAll(':scope > .k-unit'));
+      }
+      if ((list = sec.querySelector('[data-media]'))) { units = [].slice.call(list.querySelectorAll('.k-mgroup')); itemSel = '.k-mcard'; lim = 6; }
+      else if ((list = sec.querySelector('[data-list]'))) { units = wrapPairs(list, '.k-tablewrap'); itemSel = 'tbody tr'; lim = 10; }
+      else if ((list = sec.querySelector('[data-cards]'))) { units = wrapPairs(list, '.k-cards'); itemSel = '.k-card'; lim = 6; }
+      else if ((list = sec.querySelector('.k-plan'))) { units = [].slice.call(list.querySelectorAll('.k-week')); itemSel = '.k-day'; lim = 99; if (units.length < 3) units = []; }
+      else if ((list = sec.querySelector('.k-levels'))) { units = []; itemSel = '.k-level'; lim = 99; }
+      if (!list) return;
+      if (!units.length) { list.classList.add('k-unit'); units = [list]; }
+      units.forEach(function (u) { u.classList.add('k-unit'); });
+      // limit per unit
+      units.forEach(function (u) {
+        var items = [].slice.call(u.querySelectorAll(itemSel));
+        var l = (u.querySelector('.k-m-tall') ? 8 : lim);
+        if (items.length <= l + 2) return;
+        items.forEach(function (it, i) { if (i >= l) it.classList.add('k-lim'); });
+        var rest = items.length - l;
+        var btn = document.createElement('button'); btn.type = 'button'; btn.className = 'k-btn2 k-more';
+        btn.innerHTML = '<span>Показать ещё ' + rest + '</span>';
+        btn.addEventListener('click', function () {
+          var open = u.classList.toggle('is-open');
+          btn.querySelector('span').textContent = open ? 'Свернуть' : 'Показать ещё ' + rest;
+          if (!open) u.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+        });
+        u.appendChild(btn);
+      });
+      // tabs
+      if (units.length >= 2) {
+        var oldNav = sec.querySelector('nav.k-chips[aria-label="Разделы"]'); if (oldNav) oldNav.remove();
+        var bar = document.createElement('div'); bar.className = 'k-chips k-utabs'; bar.setAttribute('role', 'tablist'); bar.setAttribute('aria-label', 'Разделы');
+        units.forEach(function (u, i) {
+          var h = u.querySelector('h3, .k-week-h h3'); var t = h ? h.cloneNode(true) : null;
+          if (t) [].forEach.call(t.querySelectorAll('small'), function (x) { x.remove(); });
+          var n = u.querySelectorAll(itemSel).length;
+          var b = document.createElement('button'); b.type = 'button'; b.className = 'k-chip' + (i ? '' : ' is-on'); b.setAttribute('role', 'tab'); b.setAttribute('aria-selected', i ? 'false' : 'true');
+          b.innerHTML = esc(t ? t.textContent.trim() : 'Раздел ' + (i + 1)) + (n > 1 ? ' <small>' + n + '</small>' : '');
+          b.addEventListener('click', function () {
+            units.forEach(function (x, k) { x.classList.toggle('k-utab-off', k !== i); });
+            [].forEach.call(bar.children, function (x, k) { x.classList.toggle('is-on', k === i); x.setAttribute('aria-selected', k === i); });
+          });
+          bar.appendChild(b);
+          u._showTab = function () { b.click(); };
+          if (i) u.classList.add('k-utab-off');
+        });
+        sec.classList.add('k-tabbed');
+        var anchor = sec.querySelector('.k-mtools') || list;
+        anchor.parentNode.insertBefore(bar, anchor);
+      }
+      // while searching or filtering by level: show everything that matches
+      function upd() {
+        var q = [].some.call(sec.querySelectorAll('input[type=search]'), function (i) { return i.value.trim(); });
+        var lv = [].some.call(sec.querySelectorAll('.k-chip.is-on[data-lv], .k-chip.is-on[data-mlv]'), function (c) { return c.getAttribute('data-lv') || c.getAttribute('data-mlv'); });
+        sec.classList.toggle('k-filtering', !!(q || lv));
+      }
+      sec.addEventListener('input', upd);
+      sec.addEventListener('click', function (e) { if (e.target.closest('[data-lv], [data-mlv]')) setTimeout(upd, 0); });
+    });
+  }
+
+  // a link to a group (#<id>-gN, or any element inside a tab) opens that tab first
+  function openHash(hash, scroll) {
+    if (!hash || hash.length < 2) return false;
+    var el = document.getElementById(decodeURIComponent(hash.slice(1)));
+    var u = el && (el._showTab ? el : el.closest && el.closest('.k-unit'));
+    if (!u || !u._showTab) return false;
+    u._showTab();
+    if (scroll) u.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+    return true;
+  }
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href^="#"]');
+    if (a && openHash(a.getAttribute('href'), true)) { e.preventDefault(); history.replaceState(null, '', a.getAttribute('href')); }
+  });
+  window.addEventListener('hashchange', function () { openHash(location.hash, true); });
+
   /* ---------- mount ---------- */
   function section(b) {
     var el = document.createElement('section');
@@ -239,7 +331,9 @@
       else if (m.after) ref.parentNode.insertBefore(frag, ref.nextSibling);
       else ref.appendChild(frag);
     });
+    collapse();
     wire();
+    if (location.hash) setTimeout(function () { openHash(location.hash, true); }, 50);
   }
 
   function wire() {

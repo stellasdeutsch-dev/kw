@@ -7,10 +7,10 @@ window.KIT = {
     {
      "type": "forms",
      "id": "forms",
-     "title": "10 глаголов: 3 времени × 4 формы",
+     "title": "10 глаголов и 5 бонусом: 3 времени × 4 формы",
      "lang": "en-GB",
      "speak": true,
-     "lead": "Выбери глагол. «Да» и «Нет» — от лица I, вопросы — от you, как в ролике. Значок звука читает фразу.",
+     "lead": "Выбери глагол. «Да» и «Нет» — от лица I, вопросы — от you, как в ролике. Последние пять с пометкой «бонус» — сверх ролика. Значок звука читает фразу.",
      "verbs": [
       {
        "inf": "go",
@@ -861,8 +861,603 @@ window.KIT = {
          ]
         }
        ]
+      },
+      {
+       "inf": "eat",
+       "ru": "бонус",
+       "note": "<b lang=\"en\">eat – ate</b> · есть, кушать · бонус",
+       "tenses": [
+        {
+         "name": "Present Simple",
+         "ru": "обычно",
+         "rows": [
+          [
+           "Да",
+           "I *eat* lunch at home",
+           "Я обедаю дома"
+          ],
+          [
+           "Нет",
+           "I *don't eat* lunch at home",
+           "Я не обедаю дома"
+          ],
+          [
+           "Вопрос",
+           "*Do* you *eat* lunch at home?",
+           "Ты обедаешь дома?"
+          ],
+          [
+           "Нет + вопрос",
+           "*Don't* you *eat* lunch at home?",
+           "Разве ты не обедаешь дома?"
+          ]
+         ]
+        },
+        {
+         "name": "Past Simple",
+         "ru": "в прошлом",
+         "rows": [
+          [
+           "Да",
+           "I *ate* lunch at home",
+           "Я обедал дома"
+          ],
+          [
+           "Нет",
+           "I *didn't eat* lunch at home",
+           "Я не обедал дома"
+          ],
+          [
+           "Вопрос",
+           "*Did* you *eat* lunch at home?",
+           "Ты обедал дома?"
+          ],
+          [
+           "Нет + вопрос",
+           "*Didn't* you *eat* lunch at home?",
+           "Разве ты не обедал дома?"
+          ]
+         ]
+        },
+        {
+         "name": "Future Simple",
+         "ru": "в будущем",
+         "rows": [
+          [
+           "Да",
+           "I*'ll eat* lunch at home",
+           "Я пообедаю дома"
+          ],
+          [
+           "Нет",
+           "I *won't eat* lunch at home",
+           "Я не пообедаю дома"
+          ],
+          [
+           "Вопрос",
+           "*Will* you *eat* lunch at home?",
+           "Ты пообедаешь дома?"
+          ],
+          [
+           "Нет + вопрос",
+           "*Won't* you *eat* lunch at home?",
+           "Разве ты не пообедаешь дома?"
+          ]
+         ]
+        }
+       ]
+      },
+      {
+       "inf": "buy",
+       "ru": "бонус",
+       "note": "<b lang=\"en\">buy – bought</b> · покупать · бонус",
+       "tenses": [
+        {
+         "name": "Present Simple",
+         "ru": "обычно",
+         "rows": [
+          [
+           "Да",
+           "I *buy* bread",
+           "Я покупаю хлеб"
+          ],
+          [
+           "Нет",
+           "I *don't buy* bread",
+           "Я не покупаю хлеб"
+          ],
+          [
+           "Вопрос",
+           "*Do* you *buy* bread?",
+           "Ты покупаешь хлеб?"
+          ],
+          [
+           "Нет + вопрос",
+           "*Don't* you *buy* bread?",
+           "Разве ты не покупаешь хлеб?"
+          ]
+         ]
+        },
+        {
+         "name": "Past Simple",
+         "ru": "в прошлом",
+         "rows": [
+          [
+           "Да",
+           "I *bought* bread",
+           "Я купил хлеб"
+          ],
+          [
+           "Нет",
+           "I *didn't buy* bread",
+           "Я не купил хлеб"
+          ],
+          [
+           "Вопрос",
+           "*Did* you *buy* bread?",
+           "Ты купил хлеб?"
+          ],
+          [
+           "Нет + вопрос",
+           "*Didn't* you *buy* bread?",
+           "Разве ты не купил хлеб?"
+          ]
+         ]
+        },
+        {
+         "name": "Future Simple",
+         "ru": "в будущем",
+         "rows": [
+          [
+           "Да",
+           "I*'ll buy* bread",
+           "Я куплю хлеб"
+          ],
+          [
+           "Нет",
+           "I *won't buy* bread",
+           "Я не куплю хлеб"
+          ],
+          [
+           "Вопрос",
+           "*Will* you *buy* bread?",
+           "Ты купишь хлеб?"
+          ],
+          [
+           "Нет + вопрос",
+           "*Won't* you *buy* bread?",
+           "Разве ты не купишь хлеб?"
+          ]
+         ]
+        }
+       ]
+      },
+      {
+       "inf": "work",
+       "ru": "бонус",
+       "note": "<b lang=\"en\">work – worked</b> · работать · бонус",
+       "tenses": [
+        {
+         "name": "Present Simple",
+         "ru": "обычно",
+         "rows": [
+          [
+           "Да",
+           "I *work* late",
+           "Я работаю допоздна"
+          ],
+          [
+           "Нет",
+           "I *don't work* late",
+           "Я не работаю допоздна"
+          ],
+          [
+           "Вопрос",
+           "*Do* you *work* late?",
+           "Ты работаешь допоздна?"
+          ],
+          [
+           "Нет + вопрос",
+           "*Don't* you *work* late?",
+           "Разве ты не работаешь допоздна?"
+          ]
+         ]
+        },
+        {
+         "name": "Past Simple",
+         "ru": "в прошлом",
+         "rows": [
+          [
+           "Да",
+           "I *worked* late",
+           "Я работал допоздна"
+          ],
+          [
+           "Нет",
+           "I *didn't work* late",
+           "Я не работал допоздна"
+          ],
+          [
+           "Вопрос",
+           "*Did* you *work* late?",
+           "Ты работал допоздна?"
+          ],
+          [
+           "Нет + вопрос",
+           "*Didn't* you *work* late?",
+           "Разве ты не работал допоздна?"
+          ]
+         ]
+        },
+        {
+         "name": "Future Simple",
+         "ru": "в будущем",
+         "rows": [
+          [
+           "Да",
+           "I*'ll work* late",
+           "Я буду работать допоздна"
+          ],
+          [
+           "Нет",
+           "I *won't work* late",
+           "Я не буду работать допоздна"
+          ],
+          [
+           "Вопрос",
+           "*Will* you *work* late?",
+           "Ты будешь работать допоздна?"
+          ],
+          [
+           "Нет + вопрос",
+           "*Won't* you *work* late?",
+           "Разве ты не будешь работать допоздна?"
+          ]
+         ]
+        }
+       ]
+      },
+      {
+       "inf": "call",
+       "ru": "бонус",
+       "note": "<b lang=\"en\">call – called</b> · звонить · бонус",
+       "tenses": [
+        {
+         "name": "Present Simple",
+         "ru": "обычно",
+         "rows": [
+          [
+           "Да",
+           "I *call* my mum",
+           "Я звоню маме"
+          ],
+          [
+           "Нет",
+           "I *don't call* my mum",
+           "Я не звоню маме"
+          ],
+          [
+           "Вопрос",
+           "*Do* you *call* your mum?",
+           "Ты звонишь маме?"
+          ],
+          [
+           "Нет + вопрос",
+           "*Don't* you *call* your mum?",
+           "Разве ты не звонишь маме?"
+          ]
+         ]
+        },
+        {
+         "name": "Past Simple",
+         "ru": "в прошлом",
+         "rows": [
+          [
+           "Да",
+           "I *called* my mum",
+           "Я звонил маме"
+          ],
+          [
+           "Нет",
+           "I *didn't call* my mum",
+           "Я не звонил маме"
+          ],
+          [
+           "Вопрос",
+           "*Did* you *call* your mum?",
+           "Ты звонил маме?"
+          ],
+          [
+           "Нет + вопрос",
+           "*Didn't* you *call* your mum?",
+           "Разве ты не звонил маме?"
+          ]
+         ]
+        },
+        {
+         "name": "Future Simple",
+         "ru": "в будущем",
+         "rows": [
+          [
+           "Да",
+           "I*'ll call* my mum",
+           "Я позвоню маме"
+          ],
+          [
+           "Нет",
+           "I *won't call* my mum",
+           "Я не позвоню маме"
+          ],
+          [
+           "Вопрос",
+           "*Will* you *call* your mum?",
+           "Ты позвонишь маме?"
+          ],
+          [
+           "Нет + вопрос",
+           "*Won't* you *call* your mum?",
+           "Разве ты не позвонишь маме?"
+          ]
+         ]
+        }
+       ]
+      },
+      {
+       "inf": "speak",
+       "ru": "бонус",
+       "note": "<b lang=\"en\">speak – spoke</b> · говорить (на языке) · бонус",
+       "tenses": [
+        {
+         "name": "Present Simple",
+         "ru": "обычно",
+         "rows": [
+          [
+           "Да",
+           "I *speak* English",
+           "Я говорю по-английски"
+          ],
+          [
+           "Нет",
+           "I *don't speak* English",
+           "Я не говорю по-английски"
+          ],
+          [
+           "Вопрос",
+           "*Do* you *speak* English?",
+           "Ты говоришь по-английски?"
+          ],
+          [
+           "Нет + вопрос",
+           "*Don't* you *speak* English?",
+           "Разве ты не говоришь по-английски?"
+          ]
+         ]
+        },
+        {
+         "name": "Past Simple",
+         "ru": "в прошлом",
+         "rows": [
+          [
+           "Да",
+           "I *spoke* English",
+           "Я говорил по-английски"
+          ],
+          [
+           "Нет",
+           "I *didn't speak* English",
+           "Я не говорил по-английски"
+          ],
+          [
+           "Вопрос",
+           "*Did* you *speak* English?",
+           "Ты говорил по-английски?"
+          ],
+          [
+           "Нет + вопрос",
+           "*Didn't* you *speak* English?",
+           "Разве ты не говорил по-английски?"
+          ]
+         ]
+        },
+        {
+         "name": "Future Simple",
+         "ru": "в будущем",
+         "rows": [
+          [
+           "Да",
+           "I*'ll speak* English",
+           "Я буду говорить по-английски"
+          ],
+          [
+           "Нет",
+           "I *won't speak* English",
+           "Я не буду говорить по-английски"
+          ],
+          [
+           "Вопрос",
+           "*Will* you *speak* English?",
+           "Ты будешь говорить по-английски?"
+          ],
+          [
+           "Нет + вопрос",
+           "*Won't* you *speak* English?",
+           "Разве ты не будешь говорить по-английски?"
+          ]
+         ]
+        }
+       ]
       }
      ]
+    },
+    {
+     "type": "media",
+     "id": "life",
+     "title": "Глаголы в жизни",
+     "lead": "15 глаголов на фото: одна фраза: обычно, вчера и завтра. Остальные формы — в таблицах выше.",
+     "groups": [
+      {
+       "title": "Глаголы",
+       "shape": "wide",
+       "items": [
+        {
+         "title": "go – went",
+         "lang": "en",
+         "sub": "идти, ходить",
+         "text": "<b>Обычно</b> <span lang=\"en\">I <b class=\"k-mark\">go</b> to work.</span> — Я хожу на работу.<br><b>Вчера</b> <span lang=\"en\">I <b class=\"k-mark\">went</b> to work.</span> — Я ходил на работу.<br><b>Завтра</b> <span lang=\"en\">I<b class=\"k-mark\">'ll go</b> to work.</span> — Я пойду на работу.",
+         "tip": "Нет в прошлом: I didn't go to work, а не didn't went.",
+         "img": "kit/img/en04-go.webp",
+         "alt": "go: идти, ходить",
+         "credit": "Фото: MTAPhotos, CC BY"
+        },
+        {
+         "title": "have – had",
+         "lang": "en",
+         "sub": "иметь; есть (еду)",
+         "text": "<b>Обычно</b> <span lang=\"en\">I <b class=\"k-mark\">have</b> breakfast.</span> — Я завтракаю.<br><b>Вчера</b> <span lang=\"en\">I <b class=\"k-mark\">had</b> breakfast.</span> — Я завтракал.<br><b>Завтра</b> <span lang=\"en\">I<b class=\"k-mark\">'ll have</b> breakfast.</span> — Я позавтракаю.",
+         "tip": "Нет в прошлом: I didn't have breakfast, а не didn't had.",
+         "img": "kit/img/en04-have.webp",
+         "alt": "have: иметь; есть (еду)",
+         "credit": "Фото: Håkan Dahlström, CC BY"
+        },
+        {
+         "title": "do – did",
+         "lang": "en",
+         "sub": "делать",
+         "text": "<b>Обычно</b> <span lang=\"en\">I <b class=\"k-mark\">do</b> my homework.</span> — Я делаю домашку.<br><b>Вчера</b> <span lang=\"en\">I <b class=\"k-mark\">did</b> my homework.</span> — Я делал домашку.<br><b>Завтра</b> <span lang=\"en\">I<b class=\"k-mark\">'ll do</b> my homework.</span> — Я сделаю домашку.",
+         "tip": "Нет в прошлом: I didn't do my homework, а не didn't did.",
+         "img": "kit/img/en04-do.webp",
+         "alt": "do: делать",
+         "credit": "Фото: CollegeDegrees360, CC BY-SA"
+        },
+        {
+         "title": "make – made",
+         "lang": "en",
+         "sub": "делать, готовить",
+         "text": "<b>Обычно</b> <span lang=\"en\">I <b class=\"k-mark\">make</b> dinner.</span> — Я готовлю ужин.<br><b>Вчера</b> <span lang=\"en\">I <b class=\"k-mark\">made</b> dinner.</span> — Я готовил ужин.<br><b>Завтра</b> <span lang=\"en\">I<b class=\"k-mark\">'ll make</b> dinner.</span> — Я приготовлю ужин.",
+         "tip": "Нет в прошлом: I didn't make dinner, а не didn't made.",
+         "img": "kit/img/en04-make.webp",
+         "alt": "make: делать, готовить",
+         "credit": "Фото: andyarthur, CC BY"
+        },
+        {
+         "title": "get – got",
+         "lang": "en",
+         "sub": "получать; get up — вставать",
+         "text": "<b>Обычно</b> <span lang=\"en\">I <b class=\"k-mark\">get</b> up early.</span> — Я встаю рано.<br><b>Вчера</b> <span lang=\"en\">I <b class=\"k-mark\">got</b> up early.</span> — Я вставал рано.<br><b>Завтра</b> <span lang=\"en\">I<b class=\"k-mark\">'ll get</b> up early.</span> — Я встану рано.",
+         "tip": "Нет в прошлом: I didn't get up early, а не didn't got.",
+         "img": "kit/img/en04-get.webp",
+         "alt": "get: получать; get up — вставать",
+         "credit": "Фото: orsorama, CC BY"
+        },
+        {
+         "title": "take – took",
+         "lang": "en",
+         "sub": "брать; ехать на транспорте",
+         "text": "<b>Обычно</b> <span lang=\"en\">I <b class=\"k-mark\">take</b> the bus.</span> — Я езжу на автобусе.<br><b>Вчера</b> <span lang=\"en\">I <b class=\"k-mark\">took</b> the bus.</span> — Я ехал на автобусе.<br><b>Завтра</b> <span lang=\"en\">I<b class=\"k-mark\">'ll take</b> the bus.</span> — Я поеду на автобусе.",
+         "tip": "Нет в прошлом: I didn't take the bus, а не didn't took.",
+         "img": "kit/img/en04-take.webp",
+         "alt": "take: брать; ехать на транспорте",
+         "credit": "Фото: detsang, CC BY"
+        },
+        {
+         "title": "come – came",
+         "lang": "en",
+         "sub": "приходить",
+         "text": "<b>Обычно</b> <span lang=\"en\">I <b class=\"k-mark\">come</b> home late.</span> — Я прихожу домой поздно.<br><b>Вчера</b> <span lang=\"en\">I <b class=\"k-mark\">came</b> home late.</span> — Я пришёл домой поздно.<br><b>Завтра</b> <span lang=\"en\">I<b class=\"k-mark\">'ll come</b> home late.</span> — Я приду домой поздно.",
+         "tip": "Нет в прошлом: I didn't come home late, а не didn't came.",
+         "img": "kit/img/en04-come.webp",
+         "alt": "come: приходить",
+         "credit": "Фото: ShebleyCL, CC BY"
+        },
+        {
+         "title": "see – saw",
+         "lang": "en",
+         "sub": "видеть",
+         "text": "<b>Обычно</b> <span lang=\"en\">I <b class=\"k-mark\">see</b> my friends.</span> — Я вижусь с друзьями.<br><b>Вчера</b> <span lang=\"en\">I <b class=\"k-mark\">saw</b> my friends.</span> — Я виделся с друзьями.<br><b>Завтра</b> <span lang=\"en\">I<b class=\"k-mark\">'ll see</b> my friends.</span> — Я увижусь с друзьями.",
+         "tip": "Нет в прошлом: I didn't see my friends, а не didn't saw.",
+         "img": "kit/img/en04-see.webp",
+         "alt": "see: видеть",
+         "credit": "Фото: ozmafan, CC BY"
+        },
+        {
+         "title": "want – wanted",
+         "lang": "en",
+         "sub": "хотеть",
+         "text": "<b>Обычно</b> <span lang=\"en\">I <b class=\"k-mark\">want</b> to talk.</span> — Я хочу поговорить.<br><b>Вчера</b> <span lang=\"en\">I <b class=\"k-mark\">wanted</b> to talk.</span> — Я хотел поговорить.<br><b>Завтра</b> <span lang=\"en\">I<b class=\"k-mark\">'ll want</b> to talk.</span> — Я захочу поговорить.",
+         "tip": "Нет в прошлом: I didn't want to talk, без -ed.",
+         "img": "kit/img/en04-want.webp",
+         "alt": "want: хотеть",
+         "credit": "Фото: matusfi, CC BY-SA"
+        },
+        {
+         "title": "know – knew",
+         "lang": "en",
+         "sub": "знать",
+         "text": "<b>Обычно</b> <span lang=\"en\">I <b class=\"k-mark\">know</b> the answer.</span> — Я знаю ответ.<br><b>Вчера</b> <span lang=\"en\">I <b class=\"k-mark\">knew</b> the answer.</span> — Я знал ответ.<br><b>Завтра</b> <span lang=\"en\">I<b class=\"k-mark\">'ll know</b> the answer.</span> — Я буду знать ответ.",
+         "tip": "Нет в прошлом: I didn't know the answer, а не didn't knew.",
+         "img": "kit/img/en04-know.webp",
+         "alt": "know: знать",
+         "credit": "Фото: www.audio-luci-store.it, CC BY"
+        },
+        {
+         "title": "eat – ate",
+         "lang": "en",
+         "sub": "есть, кушать",
+         "text": "<b>Обычно</b> <span lang=\"en\">I <b class=\"k-mark\">eat</b> lunch at home.</span> — Я обедаю дома.<br><b>Вчера</b> <span lang=\"en\">I <b class=\"k-mark\">ate</b> lunch at home.</span> — Я обедал дома.<br><b>Завтра</b> <span lang=\"en\">I<b class=\"k-mark\">'ll eat</b> lunch at home.</span> — Я пообедаю дома.",
+         "tip": "Нет в прошлом: I didn't eat lunch at home, а не didn't ate.",
+         "img": "kit/img/en04-eat.webp",
+         "alt": "eat: есть, кушать",
+         "credit": "Фото: Martin Cathrae, CC BY-SA",
+         "bonus": true
+        },
+        {
+         "title": "buy – bought",
+         "lang": "en",
+         "sub": "покупать",
+         "text": "<b>Обычно</b> <span lang=\"en\">I <b class=\"k-mark\">buy</b> bread.</span> — Я покупаю хлеб.<br><b>Вчера</b> <span lang=\"en\">I <b class=\"k-mark\">bought</b> bread.</span> — Я купил хлеб.<br><b>Завтра</b> <span lang=\"en\">I<b class=\"k-mark\">'ll buy</b> bread.</span> — Я куплю хлеб.",
+         "tip": "Нет в прошлом: I didn't buy bread, а не didn't bought.",
+         "img": "kit/img/en04-buy.webp",
+         "alt": "buy: покупать",
+         "credit": "Фото: snowpea&bokchoi, CC BY",
+         "bonus": true
+        },
+        {
+         "title": "work – worked",
+         "lang": "en",
+         "sub": "работать",
+         "text": "<b>Обычно</b> <span lang=\"en\">I <b class=\"k-mark\">work</b> late.</span> — Я работаю допоздна.<br><b>Вчера</b> <span lang=\"en\">I <b class=\"k-mark\">worked</b> late.</span> — Я работал допоздна.<br><b>Завтра</b> <span lang=\"en\">I<b class=\"k-mark\">'ll work</b> late.</span> — Я буду работать допоздна.",
+         "tip": "Нет в прошлом: I didn't work late, без -ed.",
+         "img": "kit/img/en04-work.webp",
+         "alt": "work: работать",
+         "credit": "Фото: bark, CC BY",
+         "bonus": true
+        },
+        {
+         "title": "call – called",
+         "lang": "en",
+         "sub": "звонить",
+         "text": "<b>Обычно</b> <span lang=\"en\">I <b class=\"k-mark\">call</b> my mum.</span> — Я звоню маме.<br><b>Вчера</b> <span lang=\"en\">I <b class=\"k-mark\">called</b> my mum.</span> — Я звонил маме.<br><b>Завтра</b> <span lang=\"en\">I<b class=\"k-mark\">'ll call</b> my mum.</span> — Я позвоню маме.",
+         "tip": "Нет в прошлом: I didn't call my mum, без -ed.",
+         "img": "kit/img/en04-call.webp",
+         "alt": "call: звонить",
+         "credit": "Фото: NEC Corporation of America, CC BY",
+         "bonus": true
+        },
+        {
+         "title": "speak – spoke",
+         "lang": "en",
+         "sub": "говорить (на языке)",
+         "text": "<b>Обычно</b> <span lang=\"en\">I <b class=\"k-mark\">speak</b> English.</span> — Я говорю по-английски.<br><b>Вчера</b> <span lang=\"en\">I <b class=\"k-mark\">spoke</b> English.</span> — Я говорил по-английски.<br><b>Завтра</b> <span lang=\"en\">I<b class=\"k-mark\">'ll speak</b> English.</span> — Я буду говорить по-английски.",
+         "tip": "Нет в прошлом: I didn't speak English, а не didn't spoke.",
+         "img": "kit/img/en04-speak.webp",
+         "alt": "speak: говорить (на языке)",
+         "credit": "Фото: joguldi, CC BY",
+         "bonus": true
+        }
+       ]
+      }
+     ],
+     "note": "Фото с Openverse по свободным лицензиям Creative Commons, автор указан на карточке."
     },
     {
      "type": "compare",
@@ -984,12 +1579,7 @@ window.KIT = {
        "text": "Схема работает. Возьми любой новый глагол и собери его 12 форм сам."
       }
      ]
-    }
-   ]
-  },
-  {
-   "before": "section.wide:has(+ #quiz)",
-   "blocks": [
+    },
     {
      "type": "platform",
      "id": "notion",

@@ -166,6 +166,60 @@
       (b.links ? '<div class="k-links k-rv">' + b.links.map(function (l) { return a(l.href, l.text, 'k-btn' + (l.ghost ? '2' : '')); }).join('') + '</div>' : '');
   };
 
+
+  /* ---------- media: cards with a real logo / cover / poster / avatar, groups, level filter, search ---------- */
+  R.media = function (b) {
+    var lv = [];
+    b.groups.forEach(function (g) { g.items.forEach(function (it) { (it.levels || []).forEach(function (l) { if (lv.indexOf(l) < 0) lv.push(l); }); }); });
+    lv.sort();
+    var total = b.groups.reduce(function (n, g) { return n + g.items.length; }, 0);
+    var nav = b.groups.length > 1 ? '<nav class="k-chips k-rv" aria-label="Разделы">' + b.groups.map(function (g, i) {
+      return '<a class="k-chip" href="#' + b.id + '-g' + i + '">' + esc(g.title) + ' <small>' + g.items.length + '</small></a>'; }).join('') + '</nav>' : '';
+    var tools = '<div class="k-mtools k-rv">' + (b.search ? '<label class="k-search">' + ic('search') + '<input type="search" data-msearch="' + b.id + '" placeholder="' + esc(b.search) + '" aria-label="' + esc(b.search) + '"></label>' : '') +
+      (lv.length > 1 ? '<div class="k-chips" role="group" aria-label="Фильтр по уровню"><button type="button" class="k-chip is-on" data-mlv="">Все уровни</button>' +
+        lv.map(function (l) { return '<button type="button" class="k-chip" data-mlv="' + l + '">' + l + '</button>'; }).join('') + '</div>' : '') + '</div>';
+    var body = b.groups.map(function (g, gi) {
+      return '<div class="k-mgroup" id="' + b.id + '-g' + gi + '">' + (b.groups.length > 1 ? '<h3 class="k-h3 k-rv">' + esc(g.title) + ' <small>' + g.items.length + '</small></h3>' : '') +
+        (g.lead ? '<p class="k-mlead k-rv">' + rich(g.lead) + '</p>' : '') +
+        '<div class="k-mgrid k-m-' + (g.shape || 'sq') + '">' + g.items.map(function (it, i) {
+          var tag = it.href ? 'a' : 'article';
+          var attr = it.href ? ' href="' + esc(it.href) + '"' + (/^https?:/.test(it.href) ? ' target="_blank" rel="noopener"' : '') : '';
+          return '<' + tag + ' class="k-mcard k-rv' + (it.href ? ' is-link' : '') + (it.bonus ? ' is-bonus' : '') + '"' + attr + ' style="--i:' + (i % 6) + '" data-lv="' + esc((it.levels || []).join(' ')) + '">' +
+            '<div class="k-mimg' + (it.fit === 'contain' ? ' is-contain' : '') + '">' + (it.img ? '<img src="' + esc(it.img) + '" alt="' + esc(plain(it.alt || it.title)) + '" loading="lazy" decoding="async">' : '<span class="k-mph">' + esc(plain(it.title).slice(0, 1)) + '</span>') + '</div>' +
+            '<div class="k-mbody"><div class="k-card-top">' + (it.level ? '<span class="k-lv">' + esc(it.level) + '</span>' : '') +
+            (it.price ? '<span class="k-price">' + esc(it.price) + '</span>' : '') + (it.bonus ? '<span class="k-badge">Бонус</span>' : '') + '</div>' +
+            '<h4 class="k-card-t"' + (it.lang ? ' lang="' + it.lang + '"' : '') + '>' + rich(it.title) + '</h4>' +
+            (it.sub ? '<p class="k-card-sub">' + rich(it.sub) + '</p>' : '') + (it.text ? '<p class="k-card-x">' + rich(it.text) + '</p>' : '') +
+            (it.tip ? '<p class="k-mtip">' + ic('yes') + '<span>' + rich(it.tip) + '</span></p>' : '') +
+            (it.href ? '<span class="k-card-go">' + esc(it.go || 'Открыть') + ic(/^https?:/.test(it.href) ? 'link' : 'arrow') + '</span>' : '') + '</div></' + tag + '>';
+        }).join('') + '</div></div>';
+    }).join('');
+    return head(b) + nav + tools + '<div data-media="' + b.id + '">' + body + '<p class="k-empty" hidden>Ничего не нашлось. Попробуй другое слово или уровень.</p></div>' +
+      (b.note ? '<p class="k-note k-rv">' + rich(b.note) + '</p>' : '');
+  };
+
+  /* ---------- platform: real screenshots of the course in Notion, tabs + frame + lightbox ---------- */
+  R.platform = function (b) {
+    var tabs = b.shots.map(function (s, i) {
+      return '<button type="button" class="k-ptab' + (i ? '' : ' is-on') + '" data-pshot="' + i + '" aria-pressed="' + (i ? 'false' : 'true') + '">' +
+        '<span class="k-ptab-n">' + (i + 1) + '</span><span class="k-ptab-tx"><b>' + esc(s.title) + '</b><span>' + rich(s.text) + '</span></span></button>';
+    }).join('');
+    var imgs = b.shots.map(function (s, i) {
+      return '<img class="k-pimg' + (i ? '' : ' is-on') + '" src="' + esc(s.img) + '" alt="' + esc(s.alt || s.title) + '" width="1600" height="' + (s.h || 900) + '"' + (i ? ' loading="lazy"' : '') + ' decoding="async">';
+    }).join('');
+    var facts = b.facts ? '<ul class="k-pfacts k-rv">' + b.facts.map(function (f) { return '<li><b class="k-count" data-to="' + esc(f[0]) + '">' + esc(f[0]) + '</b><span>' + rich(f[1]) + '</span></li>'; }).join('') + '</ul>' : '';
+    var author = b.author ? '<div class="k-pauthor k-rv">' + (b.author.img ? '<img src="' + esc(b.author.img) + '" alt="' + esc(b.author.name) + '" loading="lazy" decoding="async">' : '') +
+      '<p><b>' + esc(b.author.name) + '</b>' + rich(b.author.text) + '</p></div>' : '';
+    return head(b) + facts +
+      '<div class="k-pf" data-platform>' +
+        '<div class="k-pframe k-rv"><div class="k-pbar"><i></i><i></i><i></i><span>' + esc(b.url || 'notion.site') + '</span></div>' +
+          '<button type="button" class="k-pview" data-pzoom aria-label="Открыть скриншот крупно">' + imgs + '<span class="k-pzoom">' + ic('search') + '<span>Крупно</span></span></button></div>' +
+        '<div class="k-ptabs k-rv" role="group" aria-label="Экраны платформы">' + tabs + '</div>' +
+      '</div>' + author +
+      (b.cta ? '<div class="k-links k-pcta k-rv">' + a(b.cta.href, b.cta.text, 'k-btn') + (b.cta.note ? '<span class="k-pnote">' + rich(b.cta.note) + '</span>' : '') + '</div>' : '') +
+      '<dialog class="k-lightbox" aria-label="Скриншот платформы"><button type="button" class="k-lb-x" data-lbclose aria-label="Закрыть">' + IC.no + '</button><img alt=""><p></p></dialog>';
+  };
+
   /* ---------- mount ---------- */
   function section(b) {
     var el = document.createElement('section');
@@ -254,6 +308,67 @@
           });
         });
       });
+    });
+
+    // media: level chips + search
+    [].forEach.call(document.querySelectorAll('.kit.k-s-media'), function (sec) {
+      var box = sec.querySelector('[data-media]'), inp = sec.querySelector('[data-msearch]'), chips = sec.querySelectorAll('[data-mlv]'), lv = '';
+      function apply() {
+        var q = inp ? inp.value.trim().toLocaleLowerCase('ru') : '', shown = 0;
+        [].forEach.call(box.querySelectorAll('.k-mcard'), function (c) {
+          var ok = (!lv || (' ' + c.getAttribute('data-lv') + ' ').indexOf(' ' + lv + ' ') >= 0) && (!q || c.textContent.toLocaleLowerCase('ru').indexOf(q) >= 0);
+          c.hidden = !ok; if (ok) shown++;
+        });
+        [].forEach.call(box.querySelectorAll('.k-mgroup'), function (g) { g.hidden = !g.querySelector('.k-mcard:not([hidden])'); });
+        box.querySelector('.k-empty').hidden = shown > 0;
+      }
+      [].forEach.call(chips, function (c) { c.addEventListener('click', function () { lv = c.getAttribute('data-mlv'); [].forEach.call(chips, function (x) { x.classList.toggle('is-on', x === c); }); apply(); }); });
+      if (inp) inp.addEventListener('input', apply);
+    });
+    // counters
+    if (!reduce && 'IntersectionObserver' in window) {
+      var co = new IntersectionObserver(function (es) {
+        es.forEach(function (e) {
+          if (!e.isIntersecting) return; co.unobserve(e.target);
+          var el = e.target, raw = el.getAttribute('data-to'), m = raw.match(/^(\D*)(\d+)(.*)$/);
+          if (!m) return; var to = +m[2], t0 = null;
+          function step(t) { t0 = t0 || t; var k = Math.min(1, (t - t0) / 1100); el.textContent = m[1] + Math.round(to * (1 - Math.pow(1 - k, 3))) + m[3]; if (k < 1) requestAnimationFrame(step); }
+          requestAnimationFrame(step);
+        });
+      }, { threshold: .6 });
+      [].forEach.call(document.querySelectorAll('.kit .k-count'), function (el) { co.observe(el); });
+    }
+    // platform: tabs, autoplay until the user touches it, lightbox
+    [].forEach.call(document.querySelectorAll('.kit [data-platform]'), function (pf) {
+      var tabs = pf.querySelectorAll('[data-pshot]'), imgs = pf.querySelectorAll('.k-pimg'), cur = 0, timer = null;
+      var sec = pf.closest('.kit'), dlg = sec.querySelector('.k-lightbox');
+      function show(i) {
+        cur = i;
+        [].forEach.call(tabs, function (t, k) { t.classList.toggle('is-on', k === i); t.setAttribute('aria-pressed', k === i); });
+        [].forEach.call(imgs, function (im, k) { im.classList.toggle('is-on', k === i); });
+      }
+      function stop() { if (timer) { clearInterval(timer); timer = null; } }
+      [].forEach.call(tabs, function (t, k) { t.addEventListener('click', function () { stop(); show(k); }); });
+      if (!reduce && 'IntersectionObserver' in window) {
+        new IntersectionObserver(function (es) {
+          es.forEach(function (e) {
+            if (e.isIntersecting && timer === null && !pf.dataset.touched) timer = setInterval(function () { show((cur + 1) % tabs.length); }, 4200);
+            else if (!e.isIntersecting) stop();
+          });
+        }, { threshold: .35 }).observe(pf);
+        pf.addEventListener('pointerdown', function () { pf.dataset.touched = '1'; stop(); });
+      }
+      pf.querySelector('[data-pzoom]').addEventListener('click', function () {
+        pf.dataset.touched = '1'; stop();
+        if (!dlg || !dlg.showModal) { window.open(imgs[cur].src, '_blank'); return; }
+        dlg.querySelector('img').src = imgs[cur].src; dlg.querySelector('img').alt = imgs[cur].alt;
+        dlg.querySelector('p').textContent = tabs[cur].querySelector('b').textContent;
+        dlg.showModal();
+      });
+      if (dlg) {
+        dlg.querySelector('[data-lbclose]').addEventListener('click', function () { dlg.close(); });
+        dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); });
+      }
     });
     // quizzes
     [].forEach.call(document.querySelectorAll('.kit [data-quiz]'), quiz);

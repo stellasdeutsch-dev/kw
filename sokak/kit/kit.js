@@ -222,7 +222,7 @@
         '<div class="k-ptabs k-rv" role="group" aria-label="Экраны платформы">' + tabs + '</div>' +
       '</div>' + author +
       (b.cta ? '<div class="k-links k-pcta k-rv">' + a(b.cta.href, b.cta.text, 'k-btn') + (b.cta.note ? '<span class="k-pnote">' + rich(b.cta.note) + '</span>' : '') + '</div>' : '') +
-      '<dialog class="k-lightbox" aria-label="Скриншот платформы"><button type="button" class="k-lb-x" data-lbclose aria-label="Закрыть">' + IC.no + '</button><img alt=""><p></p></dialog>';
+      '<dialog class="k-lightbox" aria-label="Скриншот платформы"><button type="button" class="k-lb-x" data-lbclose aria-label="Закрыть">' + IC.no + '</button><p></p></dialog>';
   };
 
 
@@ -456,7 +456,8 @@
       pf.querySelector('[data-pzoom]').addEventListener('click', function () {
         pf.dataset.touched = '1'; stop();
         if (!dlg || !dlg.showModal) { window.open(imgs[cur].src, '_blank'); return; }
-        dlg.querySelector('img').src = imgs[cur].src; dlg.querySelector('img').alt = imgs[cur].alt;
+        var lbImg = dlg.querySelector('img') || dlg.insertBefore(document.createElement('img'), dlg.querySelector('p'));
+        lbImg.src = imgs[cur].src; lbImg.alt = imgs[cur].alt;
         dlg.querySelector('p').textContent = tabs[cur].querySelector('b').textContent;
         dlg.showModal();
       });

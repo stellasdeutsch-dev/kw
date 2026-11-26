@@ -1670,7 +1670,9 @@ window.KIT = {
      "cta": {
       "href": "https://app.lava.top/products/2c950aa0-d8be-4317-8f39-0f9b4016f5da",
       "text": "Купить Dias English за 30 €",
-      "note": "Один раз, доступ навсегда"
+      "note": "Один раз, доступ навсегда",
+      "wa": "https://wa.me/message/IX7YNJVXVIL4I1",
+      "waText": "Написать Диасу в WhatsApp"
      }
     }
    ]

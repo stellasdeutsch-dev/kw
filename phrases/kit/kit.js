@@ -13,6 +13,7 @@
     clock: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M12 7v5l3.2 2" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>',
     arrow: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
     back: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H5m5-5-5 5 5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+    wa: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2a8.8 8.8 0 0 0-7.6 13.2L3.3 20.7l4.4-1.1A8.8 8.8 0 1 0 12 3.2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8.3c.3-.6.6-.6.9-.6h.6c.2 0 .4.1.5.4l.7 1.7c.1.2 0 .4-.1.6l-.5.6c-.1.1-.1.3 0 .5.5.9 1.2 1.6 2.1 2.1.2.1.4.1.5 0l.6-.6c.2-.2.4-.2.6-.1l1.6.8c.2.1.3.3.3.5v.6c0 .4-.4 1.1-1.4 1.2-1 .1-2.6-.3-4.3-1.9C9.4 12.4 8.9 10.9 8.9 10c0-.8.1-1.3.1-1.7z" fill="currentColor"/></svg>',
     redo: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12a7.5 7.5 0 1 0 2.2-5.3M4.5 4v3.6h3.6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>'
   };
   function ic(n, c) { return '<span class="k-ic ' + (c || '') + '">' + IC[n] + '</span>'; }
@@ -221,7 +222,9 @@
           '<button type="button" class="k-pview" data-pzoom aria-label="Открыть скриншот крупно">' + imgs + '<span class="k-pzoom">' + ic('search') + '<span>Крупно</span></span></button></div>' +
         '<div class="k-ptabs k-rv" role="group" aria-label="Экраны платформы">' + tabs + '</div>' +
       '</div>' + author +
-      (b.cta ? '<div class="k-links k-pcta k-rv">' + a(b.cta.href, b.cta.text, 'k-btn') + (b.cta.note ? '<span class="k-pnote">' + rich(b.cta.note) + '</span>' : '') + '</div>' : '') +
+      (b.cta ? '<div class="k-links k-pcta k-rv">' + a(b.cta.href, b.cta.text, 'k-btn') +
+        (b.cta.wa ? '<a class="k-btn2 k-wa" href="' + esc(b.cta.wa) + '" target="_blank" rel="noopener">' + ic('wa') + '<span>' + esc(b.cta.waText || 'WhatsApp') + '</span></a>' : '') +
+        (b.cta.note ? '<span class="k-pnote">' + rich(b.cta.note) + '</span>' : '') + '</div>' : '') +
       '<dialog class="k-lightbox" aria-label="Скриншот платформы"><button type="button" class="k-lb-x" data-lbclose aria-label="Закрыть">' + IC.no + '</button><p></p></dialog>';
   };
 

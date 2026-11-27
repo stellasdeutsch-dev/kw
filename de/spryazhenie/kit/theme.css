@@ -1,0 +1,30 @@
+/* Тема блоков материала для дизайна 08 (Stellas, SOLARA): бумага, чёрный, Rubik 900, салатовые и фиолетовые акценты. */
+.kit {
+  --k-wrap: 1160px; --k-pad: clamp(56px, 8vw, 104px);
+  --k-font-h: "Rubik", system-ui, sans-serif; --k-font-b: "Onest", system-ui, sans-serif; --k-h-weight: 900; --k-h-ls: -.02em; --k-h-size: clamp(32px, 4.6vw, 58px);
+  --k-ink: #0B0B0B; --k-muted: #55565a; --k-bg-a: transparent; --k-bg-b: transparent; --k-card: #EDEDEA; --k-card-b: #EDEDEA;
+  --k-line: rgba(11, 11, 11, .9); --k-accent: #7700FF; --k-accent-ink: #fff; --k-accent-soft: rgba(198, 245, 60, .55);
+  --k-mark: #7700FF; --k-tl: #0B0B0B; --k-link: #0B0B0B; --k-r: 22px; --k-r-s: 16px; --k-btn-r: 999px;
+  --k-shadow: none; --k-shadow-h: 8px 8px 0 #0B0B0B; --k-yes: #2f9c63; --k-no: #FA0586; --k-th: rgba(198, 245, 60, .5);
+  --k-btn-bg: #0B0B0B; --k-btn-ink: #fff;
+}
+.kit .k-head { text-align: left; max-width: none; margin-left: 0; }
+.kit .k-h2 { line-height: 1.04; }
+.kit .k-chips { justify-content: flex-start; }
+.kit .k-chip { border: 2px solid #0B0B0B; background: #EDEDEA; }
+.kit .k-chip:hover { background: #C6F53C; color: #0B0B0B; border-color: #0B0B0B; }
+.kit .k-chip.is-on, .kit .k-chip.is-on:hover { background: #0B0B0B; color: #fff; border-color: #0B0B0B; }
+.kit .k-search { border: 2px solid #0B0B0B; margin-left: 0; }
+.kit .k-mtools { align-items: flex-start; }
+.kit .k-tablewrap, .kit .k-card, .kit .k-mcard, .kit .k-week, .kit .k-cmp, .kit .k-level, .kit .k-q, .kit .k-pfacts li, .kit .k-ptab, .kit .k-pframe, .kit .k-pauthor { border: 2px solid #0B0B0B; }
+.kit .k-mcard:hover, .kit .k-card:hover { border-color: #0B0B0B; box-shadow: 8px 8px 0 #0B0B0B; }
+.kit .k-table tbody tr:hover { background: rgba(255, 232, 26, .45); }
+.kit .k-btn:hover { background: #7700FF; }
+.kit .k-ptab.is-on { box-shadow: inset 0 0 0 1px #0B0B0B; }
+.kit .k-pframe { box-shadow: 12px 12px 0 #0B0B0B; }
+.kit .k-note { text-align: left; margin-left: 0; }
+.kit .k-badge { background: #FA0586; color: #fff; }
+.kit .k-lv { background: #C6F53C; color: #0B0B0B; }
+.kit .k-ptab-n { background: #fff; background-image: none; border: 2px solid #0B0B0B; color: #0B0B0B; }
+.kit .k-ptab.is-on .k-ptab-n { background: #0B0B0B; color: #fff; }
+.kit .k-wa:hover { background: #229ED9; border-color: #229ED9; color: #fff; }

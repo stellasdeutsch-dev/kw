@@ -1,30 +1,190 @@
-/* Тема блоков материала для дизайна 08 (Stellas, SOLARA): бумага, чёрный, Rubik 900, салатовые и фиолетовые акценты. */
+/* Тема блоков материала для дизайна 13 (Lassen): каждый блок — светло-серая скруглённая панель, внутри белые карточки с тонкой рамкой,
+   Manrope 800 в заголовках (выделенная часть серая), немецкий моноширинным JetBrains Mono, синие кнопки, тёмно-синие активные чипы,
+   подписи под блоком — бежевая плашка-подсказка. На телефоне плотнее: таблицы — компактные карточки, мелкие карточки в 2 колонки,
+   вкладки платформы в 2 колонки с описанием только у открытой. */
 .kit {
-  --k-wrap: 1160px; --k-pad: clamp(56px, 8vw, 104px);
-  --k-font-h: "Rubik", system-ui, sans-serif; --k-font-b: "Onest", system-ui, sans-serif; --k-h-weight: 900; --k-h-ls: -.02em; --k-h-size: clamp(32px, 4.6vw, 58px);
-  --k-ink: #0B0B0B; --k-muted: #55565a; --k-bg-a: transparent; --k-bg-b: transparent; --k-card: #EDEDEA; --k-card-b: #EDEDEA;
-  --k-line: rgba(11, 11, 11, .9); --k-accent: #7700FF; --k-accent-ink: #fff; --k-accent-soft: rgba(198, 245, 60, .55);
-  --k-mark: #7700FF; --k-tl: #0B0B0B; --k-link: #0B0B0B; --k-r: 22px; --k-r-s: 16px; --k-btn-r: 999px;
-  --k-shadow: none; --k-shadow-h: 8px 8px 0 #0B0B0B; --k-yes: #2f9c63; --k-no: #FA0586; --k-th: rgba(198, 245, 60, .5);
-  --k-btn-bg: #0B0B0B; --k-btn-ink: #fff;
+  --k-wrap: 1104px; --k-pad: 6px;
+  --k-font-h: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; --k-font-b: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --k-h-weight: 800; --k-h-ls: -.035em; --k-h-size: clamp(27px, 4.4vw, 48px);
+  --k-ink: #0b0c0e; --k-muted: #646a72; --k-bg-a: transparent; --k-bg-b: transparent; --k-card: #fff; --k-card-b: #fff;
+  --k-line: #e6e7ea; --k-accent: #1d6df5; --k-accent-ink: #fff; --k-accent-soft: #e8f0ff;
+  --k-mark: #0b0c0e; --k-tl: #0b0c0e; --k-link: #1d6df5; --k-r: 16px; --k-r-s: 12px; --k-btn-r: 999px;
+  --k-shadow: 0 1px 2px rgba(16, 18, 22, .05), 0 1px 1px rgba(16, 18, 22, .03); --k-shadow-h: 0 4px 14px rgba(16, 18, 22, .08), 0 1px 3px rgba(16, 18, 22, .04);
+  --k-yes: #12a06a; --k-no: #e0484d; --k-th: #f8f8f9;
+  --k-btn-bg: #1d6df5; --k-btn-ink: #fff; --k-btn-shadow: none;
+  font-size: 15.5px;
 }
-.kit .k-head { text-align: left; max-width: none; margin-left: 0; }
-.kit .k-h2 { line-height: 1.04; }
-.kit .k-chips { justify-content: flex-start; }
-.kit .k-chip { border: 2px solid #0B0B0B; background: #EDEDEA; }
-.kit .k-chip:hover { background: #C6F53C; color: #0B0B0B; border-color: #0B0B0B; }
-.kit .k-chip.is-on, .kit .k-chip.is-on:hover { background: #0B0B0B; color: #fff; border-color: #0B0B0B; }
-.kit .k-search { border: 2px solid #0B0B0B; margin-left: 0; }
-.kit .k-mtools { align-items: flex-start; }
-.kit .k-tablewrap, .kit .k-card, .kit .k-mcard, .kit .k-week, .kit .k-cmp, .kit .k-level, .kit .k-q, .kit .k-pfacts li, .kit .k-ptab, .kit .k-pframe, .kit .k-pauthor { border: 2px solid #0B0B0B; }
-.kit .k-mcard:hover, .kit .k-card:hover { border-color: #0B0B0B; box-shadow: 8px 8px 0 #0B0B0B; }
-.kit .k-table tbody tr:hover { background: rgba(255, 232, 26, .45); }
-.kit .k-btn:hover { background: #7700FF; }
-.kit .k-ptab.is-on { box-shadow: inset 0 0 0 1px #0B0B0B; }
-.kit .k-pframe { box-shadow: 12px 12px 0 #0B0B0B; }
-.kit .k-note { text-align: left; margin-left: 0; }
-.kit .k-badge { background: #FA0586; color: #fff; }
-.kit .k-lv { background: #C6F53C; color: #0B0B0B; }
-.kit .k-ptab-n { background: #fff; background-image: none; border: 2px solid #0B0B0B; color: #0B0B0B; }
-.kit .k-ptab.is-on .k-ptab-n { background: #0B0B0B; color: #fff; }
-.kit .k-wa:hover { background: #229ED9; border-color: #229ED9; color: #fff; }
+.kit > .k-wrap { width: min(var(--k-wrap), calc(100% - 28px)); background: #f2f2f4; border-radius: 28px; padding: 30px 14px; }
+@media (min-width: 760px) { .kit { --k-pad: 10px; } .kit > .k-wrap { width: min(var(--k-wrap), calc(100% - 56px)); padding: 56px 40px; border-radius: 34px; } }
+@media (min-width: 1100px) { .kit > .k-wrap { padding: 64px 56px; } }
+.kit .k-h2 { line-height: 1.06; }
+.kit .k-h2 .k-mark, .kit .k-h2 b, .kit .k-h2 em { color: #858b94; font-style: normal; font-weight: 800; background: none; padding: 0; }
+.kit .k-h3 { font-weight: 800; letter-spacing: -.025em; }
+.kit .k-card-t, .kit .k-tense-h { font-weight: 800; letter-spacing: -.02em; }
+.kit .k-lead { font-size: clamp(15px, 1.4vw, 18px); color: #646a72; max-width: 62ch; margin-inline: auto; }
+.kit .k-head { margin-bottom: clamp(20px, 3vw, 34px); }
+.kit .k-mark { background: #fff4b8; color: #0b0c0e; padding: 0 3px; margin: 0 -2px; border-radius: 4px; font-weight: 800; }
+/* немецкий — моноширинным, как формы в таблице образца */
+.kit .k-table .k-tl, .kit .k-form dd .k-tl, .kit .k-opt span[lang="de"] { font-family: "JetBrains Mono", ui-monospace, Menlo, monospace; font-weight: 600; font-size: .93em; letter-spacing: -.01em; }
+.kit .k-table th { background: #f8f8f9; color: #858b94; font-size: 11.5px; letter-spacing: .02em; }
+.kit .k-table tbody tr:hover { background: #f5f8ff; }
+.kit .k-chip { border: 1px solid #d8dade; background: #fff; font-weight: 700; box-shadow: 0 1px 2px rgba(16, 18, 22, .05); }
+.kit .k-chip:hover { border-color: #858b94; color: #0b0c0e; }
+.kit .k-chip.is-on, .kit .k-chip.is-on:hover { background: #0f1421; border-color: #0f1421; color: #fff; }
+.kit .k-search { border: 1px solid #d8dade; background: #fff; }
+.kit .k-search:hover, .kit .k-search:focus-within { border-color: #1d6df5; }
+.kit .k-btn { font-weight: 700; font-size: 15px; min-height: 48px; padding: 0 22px; }
+.kit .k-btn:hover { background: #1454ce; transform: translateY(-1px); box-shadow: none; }
+.kit .k-btn2 { background: #fff; border: 1px solid #d8dade; color: #0b0c0e; font-weight: 700; font-size: 15px; min-height: 46px; padding: 0 20px; box-shadow: 0 1px 2px rgba(16, 18, 22, .05); }
+.kit .k-btn2:hover { border-color: #858b94; color: #0b0c0e; }
+.kit .k-badge { background: #ffe873; color: #3d3410; }
+.kit .k-lv { background: #e8f0ff; color: #0f4bb3; font-family: "JetBrains Mono", ui-monospace, monospace; font-weight: 600; }
+.kit .k-card-sub { color: #1d6df5; }
+.kit .k-card:hover, .kit .k-mcard:hover, .kit .k-level:hover { border-color: #d8dade; }
+.kit .k-day-d { color: #1d6df5; font-family: "JetBrains Mono", ui-monospace, monospace; font-weight: 600; font-size: 13px; }
+.kit .k-week-n, .kit .k-level-code { background: #0f1421; color: #fff; border-radius: 10px; font-family: "JetBrains Mono", ui-monospace, monospace; font-weight: 600; letter-spacing: 0; }
+.kit .k-say { border-color: #d8dade; color: #1d6df5; }
+.kit .k-say:hover, .kit .k-say.is-on { background: #1d6df5; border-color: #1d6df5; color: #fff; }
+.kit .k-opt { border: 1.5px solid #d8dade; background: #fff; }
+.kit .k-opt:hover { border-color: #858b94; background: #fff; }
+.kit .k-opt-l { border-radius: 7px; background: #f2f2f4; border: 0; font-family: "JetBrains Mono", ui-monospace, monospace; font-size: 12px; }
+.kit .k-opt.is-picked { border-color: #1d6df5; background: #e8f0ff; }
+.kit .k-opt.is-right { border-color: #12a06a; background: #e4f6ee; }
+.kit .k-opt.is-wrong { border-color: #e0484d; background: #fdecec; }
+.kit .k-bar { background: #e6e7ea; height: 4px; }
+.kit .k-bar i { background: #1d6df5; }
+.kit .k-pfacts b { color: #0b0c0e; font-weight: 800; letter-spacing: -.045em; }
+.kit .k-res-score { color: #1d6df5; font-weight: 800; letter-spacing: -.05em; }
+.kit .k-explain { background: #f2f2f4; border-radius: 12px; padding: 12px 14px; color: #33373f; }
+.kit .k-mimg { background: #f2f2f4; }
+/* подпись под блоком — плашка-подсказка, как «tip» образца */
+.kit .k-note:not(:empty) { background: #fdf0dc; color: #5d400c; text-align: left; padding: 12px 14px; border-radius: 12px; max-width: 760px; font-size: 14px; }
+.kit .k-note a { color: #3f2a05; }
+/* платформа */
+.kit .k-pframe { border: 1px solid #e6e7ea; border-radius: 16px; box-shadow: 0 14px 40px rgba(16, 18, 22, .10), 0 3px 10px rgba(16, 18, 22, .05); }
+.kit .k-pbar { background: #f8f8f9; }
+.kit .k-ptab { box-shadow: 0 1px 2px rgba(16, 18, 22, .05); }
+.kit .k-ptab:hover { border-color: #858b94; }
+.kit .k-ptab.is-on { background-image: none; background-color: #fff; box-shadow: inset 0 0 0 1.5px #1d6df5; border-color: #1d6df5; }
+.kit .k-ptab.is-on .k-ptab-n { background: #1d6df5; color: #fff; }
+.kit .k-ptab-n { border-radius: 8px; font-family: "JetBrains Mono", ui-monospace, monospace; font-weight: 600; }
+.kit .k-pnote { color: #646a72; }
+
+/* ---------- плотнее ---------- */
+@media (min-width: 1001px) {
+  .kit .k-m-wide { grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); }
+  .kit .k-m-sq, .kit .k-m-round { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+  .kit .k-quiz[data-mode="list"] { max-width: none; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; }
+  .kit .k-quiz[data-mode="list"] > :not(.k-q) { grid-column: 1 / -1; }
+}
+.kit .k-quiz[data-mode="list"] .k-opts { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+.kit .k-quiz[data-mode="list"] .k-q { padding: 18px 20px; }
+.kit .k-quiz[data-mode="list"] .k-q-h { margin-bottom: 12px; }
+
+@media (max-width: 720px) {
+  /* таблицы из 4+ колонок: первые две ячейки рядом, подпись над значением */
+  .kit .k-table tr:has(td:nth-child(4)) { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 12px; }
+  .kit .k-table tr:has(td:nth-child(4)) td { grid-column: 1 / -1; }
+  .kit .k-table tr:has(td:nth-child(4)) td.k-first, .kit .k-table tr:has(td:nth-child(4)) td.k-first + td { grid-column: auto; display: flex; flex-direction: column; gap: 2px; padding-bottom: 4px; }
+  .kit .k-table tr:has(td:nth-child(4)) td.k-first + td { font-size: 14px; }
+  .kit .k-table tr { padding: 10px 13px; margin-bottom: 7px; border-radius: 14px; }
+  .kit .k-table td { grid-template-columns: 78px 1fr auto; gap: 8px; padding: 3px 0; font-size: 14.5px; line-height: 1.4; }
+  /* слово и перевод понятны без подписи — подпись над ними не нужна */
+  .kit .k-table tr:has(td:nth-child(4)) td.k-first::before, .kit .k-table tr:has(td:nth-child(4)) td.k-first + td::before { display: none; }
+  .kit .k-table td::before { font-size: 11px; }
+  .kit .k-table td.k-first { font-size: 16px; padding-bottom: 5px; }
+  .kit .k-compact td { padding: 3px 0; }
+}
+@media (max-width: 600px) {
+  .kit .k-head { margin-bottom: 18px; }
+  .kit .k-h2 { font-size: 27px; }
+  .kit .k-lead { font-size: 14.5px; line-height: 1.5; }
+  .kit .k-h3 { margin: 22px 0 10px; font-size: 19px; }
+  .kit .k-chips { gap: 6px; margin-bottom: 14px; }
+  .kit .k-chip { min-height: 36px; padding: 8px 12px; font-size: 13px; }
+  .kit .k-note:not(:empty) { font-size: 13.5px; margin-top: 14px; }
+  .kit .k-btn { min-height: 44px; padding: 0 18px; font-size: 14.5px; }
+  .kit .k-btn2 { min-height: 42px; padding: 0 16px; font-size: 14.5px; }
+  /* мелкие карточки — в 2 колонки */
+  .kit .k-cards.k-cols-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .kit .k-cards.k-cols-3 .k-card { padding: 12px; gap: 5px; }
+  .kit .k-cards.k-cols-3 .k-card-t { font-size: 15px; }
+  .kit .k-cards.k-cols-3 .k-card-sub, .kit .k-cards.k-cols-3 .k-card-x, .kit .k-cards.k-cols-3 .k-card-ul { font-size: 13px; line-height: 1.4; }
+  .kit .k-cards.k-cols-3 .k-card-ul { padding-left: 14px; }
+  .kit .k-cards .k-card { padding: 14px; }
+  /* карточки с фото: квадратная миниатюра рядом с заголовком, текст на всю ширину карточки */
+  .kit .k-m-wide .k-mcard { display: grid; grid-template-columns: 72px minmax(0, 1fr); column-gap: 12px; row-gap: 4px; padding: 12px; align-items: start; align-content: start; }
+  .kit .k-m-wide .k-mimg { grid-column: 1; grid-row: 1 / span 3; width: 72px; height: 72px; aspect-ratio: auto; border-radius: 12px; }
+  .kit .k-m-wide .k-mbody { display: contents; }
+  .kit .k-m-wide .k-mbody > * { grid-column: 2; min-width: 0; }
+  .kit .k-m-wide .k-mbody > .k-card-x, .kit .k-m-wide .k-mbody > .k-mtip, .kit .k-m-wide .k-mbody > .k-mcredit, .kit .k-m-wide .k-mbody > .k-card-go, .kit .k-m-wide .k-mbody > .k-card-ul { grid-column: 1 / -1; }
+  .kit .k-m-wide .k-mbody > .k-card-x { margin-top: 4px; }
+  .kit .k-mbody .k-card-x { font-size: 13px; line-height: 1.4; }
+  .kit .k-mtip { font-size: 12.5px; }
+  .kit .k-mgrid { gap: 8px; }
+  .kit .k-m-sq .k-mcard, .kit .k-m-round .k-mcard { padding: 12px; gap: 12px; }
+  /* план: строки дней плотнее */
+  .kit .k-week { padding: 14px; }
+  .kit .k-day { grid-template-columns: minmax(34px, auto) 1fr auto; gap: 8px; padding: 7px 4px; }
+  .kit .k-day .k-min { grid-column: auto; }
+  .kit .k-day-b b { font-size: 15px; }
+  .kit .k-day-b > span { font-size: 13px; }
+  /* уровни */
+  .kit .k-level { padding: 14px; }
+  .kit .k-level-h { gap: 12px; margin-bottom: 10px; }
+  .kit .k-level-code { width: 44px; height: 44px; font-size: 16px; }
+  .kit .k-level-b { gap: 10px; }
+  .kit .k-level-col ul { font-size: 14px; padding-left: 16px; }
+  .kit .k-level-col li { margin: 2px 0; }
+  /* спряжение: лица в две колонки */
+  .kit .k-panes { padding: 14px; }
+  .kit .k-tense { padding: 12px; }
+  .kit .k-tense dl { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 10px; }
+  .kit .k-form { grid-template-columns: 1fr; gap: 0; }
+  .kit .k-form dt { padding-top: 0; font-size: 11px; }
+  .kit .k-form dd .k-tl { font-size: 15px; }
+  .kit .k-form dd small { font-size: 12.5px; }
+  /* сравнение */
+  .kit .k-cmp { padding: 16px; }
+  .kit .k-cmp ul { gap: 10px; }
+  .kit .k-cmp li b { font-size: 15px; }
+  .kit .k-cmp li span { font-size: 13.5px; }
+  .kit .k-points li { padding: 11px 13px; font-size: 14.5px; }
+  /* квиз */
+  .kit .k-quiz { padding: 16px 14px; }
+  .kit .k-quiz[data-mode="list"] { padding: 0; gap: 10px; }
+  .kit .k-quiz[data-mode="list"] .k-opts { grid-template-columns: 1fr; gap: 6px; }
+  .kit .k-quiz[data-mode="list"] .k-q { padding: 14px; }
+  .kit .k-q-t { font-size: 16.5px; }
+  .kit .k-opt { min-height: 40px; padding: 7px 12px; font-size: 14.5px; }
+  .kit .k-quiz[data-mode="list"] .k-q-h { margin-bottom: 8px; }
+  .kit .k-opt-l { width: 26px; height: 26px; font-size: 12px; }
+  .kit .k-explain { font-size: 13.5px; }
+  /* платформа: факты 2×2, вкладки в 2 колонки, описание только у открытой */
+  .kit .k-pframe { border-radius: 12px; }
+  .kit .k-pfacts { gap: 8px; margin-bottom: 16px; }
+  .kit .k-pfacts li { padding: 11px 12px; }
+  .kit .k-pfacts b { font-size: 24px; }
+  .kit .k-pfacts span { font-size: 12.5px; }
+  .kit .k-ptabs { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
+  .kit .k-ptab { padding: 9px; gap: 8px; }
+  .kit .k-ptab.is-on { grid-column: 1 / -1; }
+  .kit .k-ptab:not(.is-on) .k-ptab-tx span { display: none; }
+  .kit .k-ptab-tx b { font-size: 13.5px; }
+  .kit .k-ptab-n { width: 24px; height: 24px; font-size: 12px; }
+  .kit .k-links { gap: 8px; }
+  .kit .k-pcta .k-pnote { flex-basis: 100%; text-align: center; font-size: 13px; }
+}
+/* планшет: широкие таблицы (6+ колонок) не сжимаются в узкие столбцы, а становятся карточками по две в ряд */
+@media (min-width: 721px) and (max-width: 1000px) {
+  .kit .k-tablewrap:has(td:nth-child(6)) { background: transparent; box-shadow: none; border: 0; border-radius: 0; overflow: visible; }
+  .kit .k-tablewrap:has(td:nth-child(6)) .k-table { display: block; }
+  .kit .k-tablewrap:has(td:nth-child(6)) thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .kit .k-tablewrap:has(td:nth-child(6)) tbody { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; align-items: start; }
+  .kit .k-tablewrap:has(td:nth-child(6)) tr { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 12px; background: #fff; border: 1px solid #e6e7ea; border-radius: 16px; padding: 14px 16px; }
+  .kit .k-tablewrap:has(td:nth-child(6)) td { grid-column: 1 / -1; display: grid; grid-template-columns: 64px 1fr auto; gap: 8px; padding: 3px 0; border: 0; font-size: 14.5px; line-height: 1.4; }
+  .kit .k-tablewrap:has(td:nth-child(6)) td::before { content: attr(data-label); font-size: 11px; font-weight: 600; color: var(--k-muted); padding-top: 3px; line-height: 1.3; }
+  .kit .k-tablewrap:has(td:nth-child(6)) td.k-n { display: none; }
+  .kit .k-tablewrap:has(td:nth-child(6)) td.k-first, .kit .k-tablewrap:has(td:nth-child(6)) td.k-first + td { grid-column: auto; display: flex; flex-direction: column; gap: 2px; padding-bottom: 5px; }
+  .kit .k-tablewrap:has(td:nth-child(6)) td.k-first { font-size: 16.5px; }
+}

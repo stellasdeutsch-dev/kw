@@ -1,30 +1,169 @@
-/* Тема блоков материала для дизайна 08 (Stellas, SOLARA): бумага, чёрный, Rubik 900, салатовые и фиолетовые акценты. */
+/* Тема блоков материала для дизайна 14 (Pronomen): тёплая бумага, белые карточки с мягкой тенью, Playfair Display в заголовках,
+   IBM Plex Mono для немецких слов, чёрные кнопки и активные чипы, пастельный мятный и розовый для отметок.
+   На телефоне плотнее: таблица из двух колонок — карточки по две в ряд, фото в карточках сбоку, вкладки платформы в две колонки. */
 .kit {
-  --k-wrap: 1160px; --k-pad: clamp(56px, 8vw, 104px);
-  --k-font-h: "Rubik", system-ui, sans-serif; --k-font-b: "Onest", system-ui, sans-serif; --k-h-weight: 900; --k-h-ls: -.02em; --k-h-size: clamp(32px, 4.6vw, 58px);
-  --k-ink: #0B0B0B; --k-muted: #55565a; --k-bg-a: transparent; --k-bg-b: transparent; --k-card: #EDEDEA; --k-card-b: #EDEDEA;
-  --k-line: rgba(11, 11, 11, .9); --k-accent: #7700FF; --k-accent-ink: #fff; --k-accent-soft: rgba(198, 245, 60, .55);
-  --k-mark: #7700FF; --k-tl: #0B0B0B; --k-link: #0B0B0B; --k-r: 22px; --k-r-s: 16px; --k-btn-r: 999px;
-  --k-shadow: none; --k-shadow-h: 8px 8px 0 #0B0B0B; --k-yes: #2f9c63; --k-no: #FA0586; --k-th: rgba(198, 245, 60, .5);
-  --k-btn-bg: #0B0B0B; --k-btn-ink: #fff;
+  --k-wrap: 1076px; --k-pad: clamp(40px, 6vw, 80px);
+  --k-font-h: "Playfair Display", Georgia, serif; --k-font-b: Inter, -apple-system, "Segoe UI", sans-serif;
+  --k-h-weight: 400; --k-h-ls: -.012em; --k-h-size: clamp(29px, 5.6vw, 50px);
+  --k-ink: #16130f; --k-muted: #7c746a; --k-bg-a: #f7f5f1; --k-bg-b: #f1eee8; --k-card: #fff; --k-card-b: #fff;
+  --k-line: #e5e0d7; --k-accent: #16130f; --k-accent-ink: #fff; --k-accent-soft: #f4efe6;
+  --k-mark: #2f7d55; --k-tl: #16130f; --k-link: #2f7d55; --k-r: 16px; --k-r-s: 11px; --k-btn-r: 999px;
+  --k-shadow: 0 1px 2px rgba(30, 24, 16, .05), 0 4px 14px rgba(30, 24, 16, .045); --k-shadow-h: 0 2px 6px rgba(30, 24, 16, .07), 0 14px 34px rgba(30, 24, 16, .08);
+  --k-yes: #2f7d55; --k-no: #c0392f; --k-th: #faf8f4;
 }
-.kit .k-head { text-align: left; max-width: none; margin-left: 0; }
-.kit .k-h2 { line-height: 1.04; }
-.kit .k-chips { justify-content: flex-start; }
-.kit .k-chip { border: 2px solid #0B0B0B; background: #EDEDEA; }
-.kit .k-chip:hover { background: #C6F53C; color: #0B0B0B; border-color: #0B0B0B; }
-.kit .k-chip.is-on, .kit .k-chip.is-on:hover { background: #0B0B0B; color: #fff; border-color: #0B0B0B; }
-.kit .k-search { border: 2px solid #0B0B0B; margin-left: 0; }
-.kit .k-mtools { align-items: flex-start; }
-.kit .k-tablewrap, .kit .k-card, .kit .k-mcard, .kit .k-week, .kit .k-cmp, .kit .k-level, .kit .k-q, .kit .k-pfacts li, .kit .k-ptab, .kit .k-pframe, .kit .k-pauthor { border: 2px solid #0B0B0B; }
-.kit .k-mcard:hover, .kit .k-card:hover { border-color: #0B0B0B; box-shadow: 8px 8px 0 #0B0B0B; }
-.kit .k-table tbody tr:hover { background: rgba(255, 232, 26, .45); }
-.kit .k-btn:hover { background: #7700FF; }
-.kit .k-ptab.is-on { box-shadow: inset 0 0 0 1px #0B0B0B; }
-.kit .k-pframe { box-shadow: 12px 12px 0 #0B0B0B; }
-.kit .k-note { text-align: left; margin-left: 0; }
-.kit .k-badge { background: #FA0586; color: #fff; }
-.kit .k-lv { background: #C6F53C; color: #0B0B0B; }
-.kit .k-ptab-n { background: #fff; background-image: none; border: 2px solid #0B0B0B; color: #0B0B0B; }
-.kit .k-ptab.is-on .k-ptab-n { background: #0B0B0B; color: #fff; }
+.kit .k-wrap { width: 100%; max-width: 1140px; padding-inline: 16px; }
+@media (min-width: 820px) { .kit .k-wrap { padding-inline: 32px; } }
+.kit .k-head { margin-bottom: clamp(20px, 3vw, 36px); }
+.kit .k-h2 { line-height: 1.08; }
+.kit .k-h2 .k-mark { font-style: italic; font-weight: 400; color: inherit; }
+.kit .k-lead { font-size: clamp(15.5px, 1.5vw, 17.5px); max-width: 60ch; margin-inline: auto; }
+.kit .k-h3 { font-weight: 400; font-size: clamp(20px, 2vw, 24px); }
+.kit .k-h3 small { font-family: "IBM Plex Mono", ui-monospace, monospace; font-weight: 500; font-size: 12.5px; }
+.kit .k-mark { font-weight: 600; }
+.kit .k-tl, .kit .k-card-t[lang="de"], .kit .k-form .k-tl { font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace; font-weight: 500; letter-spacing: -.01em; }
+
+/* фильтры, вкладки, поиск */
+.kit .k-chip { border: 1px solid transparent; background: #f1eee8; font-weight: 500; font-size: 13.5px; min-height: 36px; padding: 7px 13px; color: #453f37; }
+.kit .k-chip small { font-family: "IBM Plex Mono", ui-monospace, monospace; }
+.kit .k-chip:hover { border-color: #16130f; color: #16130f; background: #fff; }
+.kit .k-chip.is-on, .kit .k-chip.is-on:hover { background: #16130f; color: #fff; border-color: #16130f; }
+.kit .k-chips { gap: 6px; }
+.kit .k-search { background: #fff; border-color: #e5e0d7; min-height: 44px; }
+.kit .k-search:hover, .kit .k-search:focus-within { border-color: #16130f; }
+
+/* карточки и таблицы: белые с мягкой тенью, без рамок */
+.kit .k-tablewrap, .kit .k-card, .kit .k-mcard, .kit .k-week, .kit .k-cmp, .kit .k-level, .kit .k-panes, .kit .k-pfacts li, .kit .k-ptab, .kit .k-pframe,
+.kit .k-quiz[data-mode="list"] .k-q, .kit .k-quiz[data-mode="list"] .k-result, .kit .k-points li { border: 0; box-shadow: var(--k-shadow); background: #fff; }
+.kit .k-mcard, .kit .k-card, .kit .k-level, .kit .k-pfacts li { transition: transform .25s cubic-bezier(.22, .68, .28, 1), box-shadow .25s; }
+.kit .k-mcard:hover, .kit .k-card:hover, .kit .k-level:hover, .kit .k-pfacts li:hover { transform: translateY(-3px); box-shadow: var(--k-shadow-h); }
+.kit .k-table th { color: #a49b8f; font-family: "IBM Plex Mono", ui-monospace, monospace; font-weight: 500; font-size: 11.5px; letter-spacing: .03em; background: #faf8f4; }
+.kit .k-table tbody tr:hover { background: #faf6ee; }
+.kit .k-table td.k-n { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 12.5px; color: #a49b8f; }
+.kit .k-say { border: 1px solid #e5e0d7; color: #2f7d55; background: #fff; }
+.kit .k-say:hover, .kit .k-say.is-on { background: #96ddb4; border-color: #96ddb4; color: #144a2e; }
+.kit .k-badge { background: #f9d3e3; color: #7a2c4d; border-radius: 999px; font-family: "IBM Plex Mono", ui-monospace, monospace; font-weight: 500; font-size: 11px; }
+.kit .k-lv { background: #ded6f6; color: #3c3272; border-radius: 999px; }
+.kit .k-mimg { background: #f1eee8; }
+.kit .k-card-sub { color: #7c746a; }
+.kit .k-card-sub [lang="de"] { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: .95em; }
+.kit .k-mcredit { color: #a49b8f; }
+.kit .k-mtip .k-ic { color: #2f7d55; }
+
+/* сравнение «так нельзя / так правильно» */
+.kit .k-cmp-no { background: #fff; }
+.kit .k-cmp-no .k-h3 .k-ic, .kit .k-cmp-no .k-li-ic { color: #c0392f; }
+.kit .k-cmp-yes .k-h3 .k-ic, .kit .k-cmp-yes .k-li-ic { color: #2f7d55; }
+.kit .k-cmp li b { font-family: "IBM Plex Mono", ui-monospace, monospace; font-weight: 500; }
+
+/* формы глагола */
+.kit .k-panes { border-radius: 16px; }
+.kit .k-tense { background: #faf8f4; border-radius: 12px; }
+.kit .k-tense-h span { font-family: "Playfair Display", Georgia, serif; font-weight: 400; font-size: 20px; }
+.kit .k-tense-h small { font-family: "IBM Plex Mono", ui-monospace, monospace; }
+.kit .k-form dt { font-weight: 500; color: #a49b8f; }
+.kit .k-form dd .k-tl { font-size: 16px; }
+@media (max-width: 600px) {
+  .kit .k-panes { padding: 10px; }
+  .kit .k-tense-grid { gap: 10px; }
+  .kit .k-tense { padding: 12px; }
+  .kit .k-tense dl { gap: 8px; }
+  .kit .k-form { grid-template-columns: 50px 1fr; gap: 6px; }
+  .kit .k-form dt { font-size: 11px; line-height: 1.25; }
+  .kit .k-form dd .k-tl { font-size: 14.5px; line-height: 1.4; }
+  .kit .k-form dd small { font-size: 13px; }
+  .kit .k-form .k-say { width: 26px; height: 26px; margin-left: 4px; vertical-align: middle; }
+}
+
+/* кнопки */
+.kit .k-btn { background: #16130f; color: #fff; border: 0; font-weight: 600; }
+.kit .k-btn:hover { background: #3a332b; transform: none; box-shadow: none; }
+.kit .k-btn2 { border: 1px solid #d6cfc3; background: transparent; color: #16130f; font-weight: 600; }
+.kit .k-btn2:hover { background: #fff; border-color: #16130f; color: #16130f; }
+.kit .k-link { color: #2f7d55; }
+.kit .k-link:hover { color: #16130f; }
+
+/* тест */
+.kit .k-opt { border-color: transparent; background: #f1eee8; border-radius: 11px; }
+.kit .k-opt [lang="de"] { font-family: "IBM Plex Mono", ui-monospace, monospace; font-weight: 500; }
+.kit .k-opt:hover { background: #fff; border-color: #16130f; }
+.kit .k-opt-l { border-color: #d6cfc3; color: #7c746a; font-family: "IBM Plex Mono", ui-monospace, monospace; }
+.kit .k-q-n { font-family: "IBM Plex Mono", ui-monospace, monospace; color: #a49b8f; }
+.kit .k-res-score { font-family: "Playfair Display", Georgia, serif; font-weight: 400; }
+.kit .k-bar { background: #f1eee8; }
+.kit .k-bar i { background: #16130f; }
+
+/* платформа */
+.kit .k-pfacts b { font-family: "Playfair Display", Georgia, serif; font-weight: 400; color: #16130f; }
+.kit .k-pfacts li:nth-child(1) { background: #fdf3dd; } .kit .k-pfacts li:nth-child(2) { background: #e3f5ea; }
+.kit .k-pfacts li:nth-child(3) { background: #fce7ef; } .kit .k-pfacts li:nth-child(4) { background: #eee9fb; }
+.kit .k-ptab:hover { box-shadow: var(--k-shadow-h); background: #fff; }
+.kit .k-ptab.is-on { background-image: none; background-color: #16130f; color: #fff; }
+.kit .k-ptab.is-on .k-ptab-tx span { color: rgba(255, 255, 255, .72); }
+.kit .k-ptab-n { background-image: none; background-color: #f1eee8; color: #16130f; border-radius: 50%; font-family: "IBM Plex Mono", ui-monospace, monospace; }
+.kit .k-ptab.is-on .k-ptab-n { background: #fae39a; color: #16130f; }
+.kit .k-pzoom { background: #16130f; }
 .kit .k-wa:hover { background: #229ED9; border-color: #229ED9; color: #fff; }
+
+/* планшет и десктоп: тест списком в две колонки */
+@media (min-width: 760px) {
+  .kit .k-quiz[data-mode="list"] { max-width: none; grid-template-columns: 1fr 1fr; align-items: start; }
+  .kit .k-quiz[data-mode="list"] > :not(.k-q) { grid-column: 1 / -1; }
+}
+
+/* телефон: плотнее, кнопки по ширине текста */
+@media (max-width: 600px) {
+  .kit .k-head { margin-bottom: 18px; }
+  .kit .k-h2 { margin-bottom: 10px; }
+  .kit .k-h3 { margin: 22px 0 10px; }
+  .kit .k-chip { font-size: 13px; min-height: 34px; padding: 6px 11px; }
+  .kit .k-chips { margin-bottom: 14px; }
+  .kit .k-m-wide .k-mcard:not(:has(.k-mtip)) { flex-direction: row; align-items: stretch; gap: 0; }
+  .kit .k-m-wide .k-mcard:not(:has(.k-mtip)) .k-mimg { flex: none; width: 36%; aspect-ratio: auto; min-height: 100%; }
+  .kit .k-m-wide .k-mcard:not(:has(.k-mtip)) .k-mimg img { height: 100%; object-fit: cover; }
+  .kit .k-m-wide .k-mcard:has(.k-mtip) .k-mimg { aspect-ratio: 16 / 7; }
+  .kit .k-m-wide .k-mbody { padding: 10px 12px 12px; }
+  .kit .k-mbody .k-card-x, .kit .k-mtip { font-size: 13.8px; line-height: 1.5; }
+  .kit .k-mgrid { gap: 9px; }
+  .kit .k-m-sq .k-mcard, .kit .k-m-round .k-mcard { padding: 12px; gap: 12px; }
+  .kit .k-m-sq .k-mimg, .kit .k-m-round .k-mimg { width: 52px; height: 52px; }
+  .kit .k-quiz[data-mode="list"] { gap: 9px; }
+  .kit .k-quiz[data-mode="list"] .k-q { padding: 13px; }
+  .kit .k-q-h { margin-bottom: 9px; }
+  .kit .k-opts { gap: 6px; }
+  .kit .k-opt { min-height: 42px; padding: 7px 11px; }
+  .kit .k-card, .kit .k-cmp, .kit .k-week, .kit .k-level { padding: 14px; }
+  .kit .k-cards { gap: 9px; }
+  .kit .k-btn, .kit .k-btn2 { width: auto; }
+  .kit .k-cmp li { padding: 8px 0; }
+}
+
+/* телефон: таблица карточками; двухколоночная (слово + перевод) — по две карточки в ряд */
+@media (max-width: 720px) {
+  .kit .k-table tr { padding: 10px 13px 11px; margin-bottom: 8px; border: 0; box-shadow: var(--k-shadow); border-radius: 12px; }
+  .kit .k-table td { padding: 2px 0; grid-template-columns: 76px 1fr auto; gap: 8px; font-size: 14.5px; line-height: 1.42; }
+  .kit .k-table td::before { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 10.5px; font-weight: 500; padding-top: 3px; color: #a49b8f; }
+  .kit .k-table td.k-first { grid-template-columns: 1fr auto; font-size: 16.5px; padding-bottom: 3px; }
+  .kit .k-table td.k-first::before { display: none; }
+  .kit .k-tablewrap:has(.k-compact) { background: transparent; box-shadow: none; }
+  .kit .k-compact tbody { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; }
+  .kit .k-compact tr { margin: 0; padding: 9px 10px 10px; display: flex; flex-direction: column; }
+  .kit .k-compact td { display: block; padding: 0; font-size: 13.5px; line-height: 1.35; color: #7c746a; }
+  .kit .k-compact td::before, .kit .k-compact td.k-n { display: none; }
+  .kit .k-compact td.k-first { font-size: 14.5px; color: #16130f; padding-bottom: 3px; }
+  .kit .k-compact td.k-first .k-sayrow { display: flex; align-items: flex-start; justify-content: space-between; gap: 6px; }
+  .kit .k-compact td .k-say { width: 28px; height: 28px; flex: none; }
+  .kit .k-compact .k-cell { overflow-wrap: anywhere; hyphens: auto; }
+  .kit .k-unit > .k-more, .kit .k-more { margin-top: 10px; }
+}
+/* телефон: экраны платформы — вкладки в две колонки, открытая на всю ширину */
+@media (max-width: 480px) {
+  .kit .k-ptabs { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
+  .kit .k-ptab { padding: 8px 10px; gap: 8px; align-items: center; }
+  .kit .k-ptab.is-on { grid-column: 1 / -1; align-items: flex-start; padding: 10px 12px; }
+  .kit .k-ptab-n { width: 24px; height: 24px; font-size: 12px; }
+  .kit .k-ptab-tx b { font-size: 13.5px; line-height: 1.25; }
+  .kit .k-ptab-tx span { display: none; }
+  .kit .k-ptab.is-on .k-ptab-tx span { display: block; }
+  .kit .k-pfacts { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; }
+  .kit .k-pfacts li { padding: 12px; }
+}

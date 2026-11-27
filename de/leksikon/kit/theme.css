@@ -1,30 +1,127 @@
-/* Тема блоков материала для дизайна 08 (Stellas, SOLARA): бумага, чёрный, Rubik 900, салатовые и фиолетовые акценты. */
+/* Тема блоков материала для дизайна 12 (Fälle, по образцу akkusativ-dativ): Jost 500, светло-серые подложки,
+   белые карточки с тонкой линией и мягкой тенью, фиолетовый для выделений, оранжевый для кнопок, тёмные активные чипы. */
 .kit {
-  --k-wrap: 1160px; --k-pad: clamp(56px, 8vw, 104px);
-  --k-font-h: "Rubik", system-ui, sans-serif; --k-font-b: "Onest", system-ui, sans-serif; --k-h-weight: 900; --k-h-ls: -.02em; --k-h-size: clamp(32px, 4.6vw, 58px);
-  --k-ink: #0B0B0B; --k-muted: #55565a; --k-bg-a: transparent; --k-bg-b: transparent; --k-card: #EDEDEA; --k-card-b: #EDEDEA;
-  --k-line: rgba(11, 11, 11, .9); --k-accent: #7700FF; --k-accent-ink: #fff; --k-accent-soft: rgba(198, 245, 60, .55);
-  --k-mark: #7700FF; --k-tl: #0B0B0B; --k-link: #0B0B0B; --k-r: 22px; --k-r-s: 16px; --k-btn-r: 999px;
-  --k-shadow: none; --k-shadow-h: 8px 8px 0 #0B0B0B; --k-yes: #2f9c63; --k-no: #FA0586; --k-th: rgba(198, 245, 60, .5);
-  --k-btn-bg: #0B0B0B; --k-btn-ink: #fff;
+  --k-wrap: 1116px; --k-pad: clamp(44px, 6.4vw, 88px);
+  --k-font-h: Jost, "Avenir Next", system-ui, sans-serif; --k-font-b: Jost, "Avenir Next", system-ui, sans-serif;
+  --k-h-weight: 500; --k-h-ls: -.035em; --k-h-size: clamp(30px, 6.4vw, 54px);
+  --k-ink: #080808; --k-muted: #6f6f6f; --k-bg-a: #fff; --k-bg-b: #f5f5f5; --k-card: #fff; --k-card-b: #fff;
+  --k-line: rgba(8, 8, 8, .09); --k-accent: #6e56f8; --k-accent-ink: #fff; --k-accent-soft: #f1eeff;
+  --k-mark: #6e56f8; --k-tl: #080808; --k-link: #6e56f8; --k-r: 18px; --k-r-s: 12px; --k-btn-r: 10px;
+  --k-shadow: 0 1px 2px rgba(8, 8, 8, .04), 0 12px 32px -16px rgba(8, 8, 8, .16); --k-shadow-h: 0 18px 40px -18px rgba(8, 8, 8, .26);
+  --k-yes: #17a35a; --k-no: #fe4a23; --k-th: #fafafa; --k-btn-bg: #fe4a23; --k-btn-ink: #fff;
 }
-.kit .k-head { text-align: left; max-width: none; margin-left: 0; }
+.kit .k-wrap { width: 100%; max-width: 1180px; padding-inline: var(--pad, 16px); }
+.kit .k-head { margin-bottom: clamp(22px, 3.4vw, 40px); }
 .kit .k-h2 { line-height: 1.04; }
-.kit .k-chips { justify-content: flex-start; }
-.kit .k-chip { border: 2px solid #0B0B0B; background: #EDEDEA; }
-.kit .k-chip:hover { background: #C6F53C; color: #0B0B0B; border-color: #0B0B0B; }
-.kit .k-chip.is-on, .kit .k-chip.is-on:hover { background: #0B0B0B; color: #fff; border-color: #0B0B0B; }
-.kit .k-search { border: 2px solid #0B0B0B; margin-left: 0; }
-.kit .k-mtools { align-items: flex-start; }
-.kit .k-tablewrap, .kit .k-card, .kit .k-mcard, .kit .k-week, .kit .k-cmp, .kit .k-level, .kit .k-q, .kit .k-pfacts li, .kit .k-ptab, .kit .k-pframe, .kit .k-pauthor { border: 2px solid #0B0B0B; }
-.kit .k-mcard:hover, .kit .k-card:hover { border-color: #0B0B0B; box-shadow: 8px 8px 0 #0B0B0B; }
-.kit .k-table tbody tr:hover { background: rgba(255, 232, 26, .45); }
-.kit .k-btn:hover { background: #7700FF; }
-.kit .k-ptab.is-on { box-shadow: inset 0 0 0 1px #0B0B0B; }
-.kit .k-pframe { box-shadow: 12px 12px 0 #0B0B0B; }
-.kit .k-note { text-align: left; margin-left: 0; }
-.kit .k-badge { background: #FA0586; color: #fff; }
-.kit .k-lv { background: #C6F53C; color: #0B0B0B; }
-.kit .k-ptab-n { background: #fff; background-image: none; border: 2px solid #0B0B0B; color: #0B0B0B; }
-.kit .k-ptab.is-on .k-ptab-n { background: #0B0B0B; color: #fff; }
+.kit .k-h2 .k-mark { font-weight: 500; }
+.kit .k-lead { font-size: 17px; max-width: 46em; margin-inline: auto; }
+.kit .k-h3 { letter-spacing: -.025em; font-weight: 500; }
+.kit .k-mark { font-weight: 600; }
+
+/* фильтры, вкладки, поиск */
+.kit .k-chip { border: 0; box-shadow: inset 0 0 0 1px var(--k-line); background: #fff; font-weight: 500; min-height: 38px; padding: 8px 14px; border-radius: 999px; }
+.kit .k-chip:hover { box-shadow: inset 0 0 0 1px #080808; color: #080808; }
+.kit .k-chip.is-on, .kit .k-chip.is-on:hover { background: #080808; color: #fff; box-shadow: none; }
+.kit .k-search { border: 0; box-shadow: inset 0 0 0 1px var(--k-line); background: #fff; border-radius: 12px; }
+.kit .k-search:hover, .kit .k-search:focus-within { box-shadow: inset 0 0 0 1px #6e56f8; }
+
+/* карточки и таблицы */
+.kit .k-tablewrap, .kit .k-card, .kit .k-mcard, .kit .k-week, .kit .k-cmp, .kit .k-level, .kit .k-panes, .kit .k-pfacts li, .kit .k-ptab, .kit .k-pframe, .kit .k-pauthor,
+.kit .k-quiz, .kit .k-quiz[data-mode="list"] .k-q, .kit .k-quiz[data-mode="list"] .k-result, .kit .k-points li { border: 0; box-shadow: var(--k-shadow), inset 0 0 0 1px var(--k-line); }
+.kit .k-mcard, .kit .k-card, .kit .k-level { transition: transform .3s cubic-bezier(.2, .8, .2, 1), box-shadow .3s; }
+.kit .k-mcard:hover, .kit .k-card:hover, .kit .k-level:hover { transform: translateY(-3px); box-shadow: var(--k-shadow-h), inset 0 0 0 1px rgba(8, 8, 8, .16); }
+.kit.k-bg-a .k-card, .kit.k-bg-a .k-mcard, .kit.k-bg-a .k-week, .kit.k-bg-a .k-level { background: #f5f5f5; box-shadow: inset 0 0 0 1px var(--k-line); }
+.kit.k-bg-a .k-mcard:hover, .kit.k-bg-a .k-card:hover, .kit.k-bg-a .k-level:hover { background: #efefef; box-shadow: inset 0 0 0 1px rgba(8, 8, 8, .16); }
+.kit .k-table th { color: #6f6f6f; font-weight: 500; font-size: 12px; letter-spacing: .02em; }
+.kit .k-table tbody tr:hover { background: #f1eeff; }
+.kit .k-table .k-tl, .kit .k-table .k-first { font-weight: 500; }
+@media (max-width: 720px) { .kit .k-table tr { border: 0; box-shadow: inset 0 0 0 1px var(--k-line); border-radius: 14px; } }
+.kit .k-say { border: 0; box-shadow: inset 0 0 0 1px var(--k-line); color: #6e56f8; background: #fff; }
+.kit .k-say:hover, .kit .k-say.is-on { background: #6e56f8; color: #fff; box-shadow: none; }
+.kit .k-badge { background: #fff0eb; color: #fe4a23; border-radius: 999px; font-weight: 500; }
+.kit .k-lv { background: #f1eeff; color: #6e56f8; border-radius: 999px; font-weight: 500; }
+.kit .k-price { border: 0; box-shadow: inset 0 0 0 1px var(--k-line); color: #080808; border-radius: 999px; }
+.kit .k-mimg { background: #f3f3f3; }
+.kit .k-mtip .k-ic { color: #fe4a23; }
+.kit .k-card-sub { color: #6e56f8; }
+.kit .k-cmp-no { background: #fafafa; }
+
+/* кнопки */
+.kit .k-btn { border: 0; font-weight: 500; }
+.kit .k-btn:hover { background: #e03a15; transform: none; box-shadow: none; }
+.kit .k-btn2 { border: 0; background: #fff; box-shadow: inset 0 0 0 1px rgba(8, 8, 8, .14); font-weight: 500; }
+.kit .k-btn2:hover { background: #f5f5f5; color: #080808; box-shadow: inset 0 0 0 1px #080808; }
+.kit .k-link { color: #6e56f8; }
+.kit .k-link:hover { color: #fe4a23; }
+
+/* тест */
+.kit .k-opt { border-color: rgba(8, 8, 8, .12); border-radius: 12px; }
+.kit .k-opt:hover { background: #f5f5f5; border-color: #080808; }
+.kit .k-opt-l { border-color: rgba(8, 8, 8, .14); color: #6e56f8; border-radius: 50%; }
+.kit .k-res-score { color: #080808; letter-spacing: -.05em; font-weight: 500; }
+.kit .k-bar { border-radius: 4px; background: #f3f3f3; }
+.kit .k-bar i { border-radius: 4px; background: #6e56f8; }
+
+/* платформа */
+.kit .k-pfacts b { color: #080808; letter-spacing: -.05em; font-weight: 500; }
+.kit .k-pfacts li { transition: transform .3s, box-shadow .3s; }
+.kit .k-pfacts li:hover { transform: translateY(-3px); box-shadow: var(--k-shadow-h), inset 0 0 0 1px rgba(8, 8, 8, .16); }
+.kit .k-pfacts li:nth-child(odd) b { color: #6e56f8; }
+.kit .k-pfacts li:nth-child(even) b { color: #fe4a23; }
+.kit .k-ptab:hover { box-shadow: var(--k-shadow), inset 0 0 0 1px #080808; background: #fff; }
+.kit .k-ptab.is-on { background-image: none; background-color: #080808; color: #fff; box-shadow: none; }
+.kit .k-ptab.is-on .k-ptab-tx span { color: rgba(255, 255, 255, .75); }
+.kit .k-ptab-n { background-image: none; background-color: #f1eeff; color: #6e56f8; border-radius: 50%; }
+.kit .k-ptab.is-on .k-ptab-n { background: #fe4a23; color: #fff; }
+.kit .k-pzoom { background: #080808; }
 .kit .k-wa:hover { background: #229ED9; border-color: #229ED9; color: #fff; }
+
+/* телефон: плотнее, без растянутых карточек и кнопок */
+@media (max-width: 600px) {
+  .kit .k-lead { font-size: 16px; }
+  .kit .k-m-wide .k-mcard:not(:has(.k-mtip)) { flex-direction: row; align-items: flex-start; gap: 0; }
+  .kit .k-m-wide .k-mcard:not(:has(.k-mtip)) .k-mimg { flex: none; width: 38%; aspect-ratio: 4 / 3; }
+  .kit .k-m-wide .k-mcard:has(.k-mtip) .k-mimg { aspect-ratio: 16 / 7; }
+  .kit .k-m-wide .k-mbody { padding: 10px 12px 12px; }
+  .kit .k-quiz[data-mode="list"] { gap: 10px; }
+  .kit .k-quiz[data-mode="list"] .k-q { padding: 14px; }
+  .kit .k-q-h { margin-bottom: 10px; }
+  .kit .k-opts { gap: 6px; }
+  .kit .k-opt { min-height: 44px; padding: 8px 12px; }
+  .kit .k-m-sq .k-mcard, .kit .k-m-round .k-mcard { padding: 12px; gap: 12px; }
+  .kit .k-m-sq .k-mimg, .kit .k-m-round .k-mimg { width: 52px; height: 52px; }
+  .kit .k-mbody .k-card-x, .kit .k-mtip { font-size: 14px; }
+  .kit .k-mgrid { gap: 10px; }
+  .kit .k-card, .kit .k-cmp, .kit .k-week, .kit .k-level { padding: 14px; }
+  .kit .k-cards { gap: 10px; }
+  .kit .k-ptab-tx span { display: none; }
+  .kit .k-ptab.is-on .k-ptab-tx span { display: block; }
+  .kit .k-ptab { padding: 10px 12px; }
+  .kit .k-btn, .kit .k-btn2 { width: auto; }
+}
+
+/* планшет и десктоп: тест списком в две колонки */
+@media (min-width: 760px) {
+  .kit .k-quiz[data-mode="list"] { max-width: none; grid-template-columns: 1fr 1fr; align-items: start; }
+  .kit .k-quiz[data-mode="list"] > :not(.k-q) { grid-column: 1 / -1; }
+}
+
+/* телефон: таблица карточками плотнее — слово заголовком без подписи, остальные строки с узкой подписью */
+@media (max-width: 720px) {
+  .kit .k-table tr { padding: 10px 14px 12px; margin-bottom: 8px; }
+  .kit .k-table td { padding: 2px 0; grid-template-columns: 70px 1fr auto; gap: 8px; font-size: 15px; line-height: 1.4; }
+  .kit .k-table td::before { font-size: 11px; font-weight: 500; padding-top: 2px; }
+  .kit .k-table td.k-first { grid-template-columns: 1fr auto; font-size: 18px; padding-bottom: 4px; }
+  .kit .k-table td.k-first::before { display: none; }
+}
+/* телефон: экраны платформы — вкладки в две колонки, открытая на всю ширину */
+@media (max-width: 480px) {
+  .kit .k-ptabs { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
+  .kit .k-ptab { padding: 8px 10px; gap: 8px; align-items: center; }
+  .kit .k-ptab.is-on { grid-column: 1 / -1; align-items: flex-start; padding: 10px 12px; }
+  .kit .k-ptab-n { width: 24px; height: 24px; font-size: 12px; }
+  .kit .k-ptab-tx b { font-size: 13.5px; line-height: 1.25; }
+  .kit .k-ptab-tx span { display: none; }
+  .kit .k-ptab.is-on .k-ptab-tx span { display: block; }
+  .kit .k-pfacts li { padding: 12px; }
+}

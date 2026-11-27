@@ -1,30 +1,109 @@
-/* Тема блоков материала для дизайна 08 (Stellas, SOLARA): бумага, чёрный, Rubik 900, салатовые и фиолетовые акценты. */
+/* Тема блоков материала для дизайна 10 (wohnung, редакционный): Inter 900, тонкие чёрные рамки, квадратные углы,
+   номера разделов (01) общим счётчиком страницы, розовый и голубой как подложки. */
 .kit {
-  --k-wrap: 1160px; --k-pad: clamp(56px, 8vw, 104px);
-  --k-font-h: "Rubik", system-ui, sans-serif; --k-font-b: "Onest", system-ui, sans-serif; --k-h-weight: 900; --k-h-ls: -.02em; --k-h-size: clamp(32px, 4.6vw, 58px);
-  --k-ink: #0B0B0B; --k-muted: #55565a; --k-bg-a: transparent; --k-bg-b: transparent; --k-card: #EDEDEA; --k-card-b: #EDEDEA;
-  --k-line: rgba(11, 11, 11, .9); --k-accent: #7700FF; --k-accent-ink: #fff; --k-accent-soft: rgba(198, 245, 60, .55);
-  --k-mark: #7700FF; --k-tl: #0B0B0B; --k-link: #0B0B0B; --k-r: 22px; --k-r-s: 16px; --k-btn-r: 999px;
-  --k-shadow: none; --k-shadow-h: 8px 8px 0 #0B0B0B; --k-yes: #2f9c63; --k-no: #FA0586; --k-th: rgba(198, 245, 60, .5);
-  --k-btn-bg: #0B0B0B; --k-btn-ink: #fff;
+  --k-wrap: 1116px; --k-pad: clamp(40px, 6vw, 80px);
+  --k-font-h: Inter, system-ui, sans-serif; --k-font-b: Inter, system-ui, sans-serif; --k-h-weight: 900; --k-h-ls: -.055em; --k-h-size: clamp(32px, 5.6vw, 68px);
+  --k-ink: #000; --k-muted: #6f6a6b; --k-bg-a: #fff; --k-bg-b: #FBF4F5; --k-card: #fff; --k-card-b: #fff;
+  --k-line: #E7DADB; --k-accent: #000; --k-accent-ink: #fff; --k-accent-soft: rgba(248, 197, 199, .45);
+  --k-mark: #AB010B; --k-tl: #000; --k-link: #000; --k-r: 0; --k-r-s: 0; --k-btn-r: 0;
+  --k-shadow: none; --k-shadow-h: 6px 6px 0 #F8C5C7; --k-yes: #3F7D3A; --k-no: #AB010B; --k-th: #FBF4F5;
+  --k-btn-bg: #000; --k-btn-ink: #fff;
 }
-.kit .k-head { text-align: left; max-width: none; margin-left: 0; }
-.kit .k-h2 { line-height: 1.04; }
-.kit .k-chips { justify-content: flex-start; }
-.kit .k-chip { border: 2px solid #0B0B0B; background: #EDEDEA; }
-.kit .k-chip:hover { background: #C6F53C; color: #0B0B0B; border-color: #0B0B0B; }
-.kit .k-chip.is-on, .kit .k-chip.is-on:hover { background: #0B0B0B; color: #fff; border-color: #0B0B0B; }
-.kit .k-search { border: 2px solid #0B0B0B; margin-left: 0; }
-.kit .k-mtools { align-items: flex-start; }
-.kit .k-tablewrap, .kit .k-card, .kit .k-mcard, .kit .k-week, .kit .k-cmp, .kit .k-level, .kit .k-q, .kit .k-pfacts li, .kit .k-ptab, .kit .k-pframe, .kit .k-pauthor { border: 2px solid #0B0B0B; }
-.kit .k-mcard:hover, .kit .k-card:hover { border-color: #0B0B0B; box-shadow: 8px 8px 0 #0B0B0B; }
-.kit .k-table tbody tr:hover { background: rgba(255, 232, 26, .45); }
-.kit .k-btn:hover { background: #7700FF; }
-.kit .k-ptab.is-on { box-shadow: inset 0 0 0 1px #0B0B0B; }
-.kit .k-pframe { box-shadow: 12px 12px 0 #0B0B0B; }
+.kit .k-wrap { width: 100%; max-width: 1180px; padding-inline: var(--pad, 16px); }
+/* заголовок блока: линейка + номер раздела, как у остальных разделов страницы */
+.kit .k-head { text-align: left; max-width: none; margin: 0 0 clamp(24px, 3.4vw, 40px); border-top: 1px solid #000; padding-top: 8px; }
+.kit .k-head::before { counter-increment: sec; content: "(" counter(sec, decimal-leading-zero) ")"; display: block; font: 500 12px/1.5 var(--k-font-b); margin-bottom: 18px; }
+.kit .k-h2 { line-height: .96; }
+.kit .k-h2 .k-mark { font-style: italic; font-weight: 300; color: inherit; letter-spacing: -.04em; }
+.kit .k-lead { color: #222; font-size: 17px; max-width: 46em; }
+.kit .k-h3 { letter-spacing: -.03em; font-weight: 800; }
+.kit.k-s-platform { background: #FBF4F5; }
+
+/* фильтры, вкладки, поиск: квадратные метки в тонкой рамке */
+.kit .k-chips, .kit .k-mtools { justify-content: flex-start; align-items: flex-start; }
+.kit .k-chip { border: 1px solid #000; background: #fff; font-size: 14px; min-height: 38px; padding: 8px 13px; }
+.kit .k-chip:hover { background: #F8C5C7; color: #000; border-color: #000; }
+.kit .k-chip.is-on, .kit .k-chip.is-on:hover { background: #000; color: #fff; border-color: #000; }
+.kit .k-search { border: 1px solid #000; margin-left: 0; background: #fff; }
+.kit .k-search:hover, .kit .k-search:focus-within { border-color: #AB010B; }
+
+/* рамки карточек и таблиц */
+.kit .k-tablewrap, .kit .k-card, .kit .k-mcard, .kit .k-week, .kit .k-cmp, .kit .k-level, .kit .k-panes, .kit .k-pfacts li, .kit .k-ptab, .kit .k-pframe, .kit .k-pauthor,
+.kit .k-quiz, .kit .k-quiz[data-mode="list"] .k-q, .kit .k-quiz[data-mode="list"] .k-result, .kit .k-points li { border: 1px solid #000; }
+.kit .k-mcard:hover, .kit .k-card:hover, .kit .k-level:hover { border-color: #000; background: #FBF4F5; }
+.kit .k-table th { color: #000; font-weight: 600; }
+.kit .k-table tbody tr:hover { background: rgba(248, 197, 199, .4); }
+@media (max-width: 720px) { .kit .k-table tr { border: 1px solid #000; } }
+.kit .k-say { border: 1px solid #000; color: #000; background: #fff; }
+.kit .k-say:hover, .kit .k-say.is-on { background: #000; color: #fff; border-color: #000; }
+.kit .k-badge { background: #AB010B; color: #fff; border-radius: 0; }
+.kit .k-lv { background: #BCD2EE; color: #000; border-radius: 0; }
+.kit .k-price { border: 1px solid #000; color: #000; border-radius: 0; }
+.kit .k-mbody .k-badge { background: #AB010B; color: #fff; }
+.kit .k-mimg { background: #FBF4F5; }
+.kit .k-mtip .k-ic { color: #AB010B; }
+.kit .k-card-sub { color: #AB010B; }
+.kit .k-cmp-yes { background: #fff; }
+.kit .k-cmp-no { background: #FBF4F5; }
+
+/* кнопки */
+.kit .k-btn { border: 1px solid #000; }
+.kit .k-btn:hover { background: #AB010B; border-color: #AB010B; transform: none; box-shadow: none; }
+.kit .k-btn2 { border: 1px solid #000; background: #fff; }
+.kit .k-btn2:hover { background: #F8C5C7; color: #000; border-color: #000; }
+.kit .k-link { color: #000; }
+.kit .k-link:hover { color: #AB010B; }
+
+/* тест */
+.kit .k-opt { border-color: #000; }
+.kit .k-opt:hover { background: #FBF4F5; border-color: #000; }
+.kit .k-opt-l { border-color: #000; color: #000; border-radius: 0; }
+.kit .k-res-score { color: #000; letter-spacing: -.05em; font-weight: 900; }
+.kit .k-bar { border-radius: 0; background: #F8C5C7; }
+.kit .k-bar i { border-radius: 0; background: #000; }
+
+/* платформа */
+.kit .k-pframe { box-shadow: none; }
+.kit .k-pbar i { background: #fff !important; border: 1px solid #000; }
+.kit .k-pfacts b { color: #000; letter-spacing: -.05em; }
+.kit .k-pfacts li:hover { border-color: #000; background: #F8C5C7; }
+.kit .k-ptab:hover { border-color: #000; background: #fff; }
+.kit .k-ptab.is-on { background-image: none; background-color: #000; color: #fff; box-shadow: none; border-color: #000; }
+.kit .k-ptab.is-on .k-ptab-tx span { color: rgba(255, 255, 255, .78); }
+.kit .k-ptab-n { border-radius: 0; background-image: none; background-color: #fff; border: 1px solid #000; color: #000; }
+.kit .k-ptab.is-on .k-ptab-n { background: #fff; color: #000; }
 .kit .k-note { text-align: left; margin-left: 0; }
-.kit .k-badge { background: #FA0586; color: #fff; }
-.kit .k-lv { background: #C6F53C; color: #0B0B0B; }
-.kit .k-ptab-n { background: #fff; background-image: none; border: 2px solid #0B0B0B; color: #0B0B0B; }
-.kit .k-ptab.is-on .k-ptab-n { background: #0B0B0B; color: #fff; }
+.kit .k-links { justify-content: flex-start; }
+.kit .k-more { margin-left: 0; }
+.kit .k-pzoom { border-radius: 0; background: #000; }
 .kit .k-wa:hover { background: #229ED9; border-color: #229ED9; color: #fff; }
+
+/* телефон: плотнее, без растянутых карточек */
+@media (max-width: 600px) {
+  /* короткие карточки с фото (без совета) — фото слева, текст справа; длинные остаются столбиком с низким фото */
+  .kit .k-m-wide .k-mcard:not(:has(.k-mtip)) { flex-direction: row; align-items: flex-start; gap: 0; }
+  .kit .k-m-wide .k-mcard:not(:has(.k-mtip)) .k-mimg { flex: none; width: 38%; aspect-ratio: 4 / 3; border-right: 1px solid #000; }
+  .kit .k-m-wide .k-mcard:has(.k-mtip) .k-mimg { aspect-ratio: 16 / 7; border-bottom: 1px solid #000; }
+  .kit .k-m-wide .k-mbody { padding: 10px 12px 12px; }
+  .kit .k-quiz[data-mode="list"] { gap: 10px; }
+  .kit .k-quiz[data-mode="list"] .k-q { padding: 14px; }
+  .kit .k-q-h { margin-bottom: 10px; }
+  .kit .k-opts { gap: 6px; }
+  .kit .k-opt { min-height: 44px; padding: 8px 12px; }
+  .kit .k-m-sq .k-mcard, .kit .k-m-round .k-mcard { padding: 12px; gap: 12px; }
+  .kit .k-m-sq .k-mimg, .kit .k-m-round .k-mimg { width: 52px; height: 52px; }
+  .kit .k-mbody .k-card-x, .kit .k-mtip { font-size: 14px; }
+  .kit .k-mgrid { gap: 10px; }
+  .kit .k-card, .kit .k-cmp, .kit .k-week, .kit .k-level { padding: 14px; }
+  .kit .k-cards { gap: 10px; }
+  .kit .k-lead { font-size: 16px; }
+  .kit .k-ptab-tx span { display: none; }
+  .kit .k-ptab.is-on .k-ptab-tx span { display: block; }
+  .kit .k-ptab { padding: 10px 12px; }
+}
+
+/* планшет и десктоп: тест списком в две колонки, итог и кнопки на всю ширину */
+@media (min-width: 760px) {
+  .kit .k-quiz[data-mode="list"] { max-width: none; grid-template-columns: 1fr 1fr; align-items: start; }
+  .kit .k-quiz[data-mode="list"] > :not(.k-q) { grid-column: 1 / -1; }
+}
